@@ -74,8 +74,8 @@ import { CommonModule } from '@angular/common';
           </div>
           <div class="relative">
             <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-8 transform rotate-3">
-              <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                   alt="HR Dashboard" 
+              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                   alt="HR Dashboard Interface" 
                    class="w-full h-64 object-cover rounded-lg mb-4">
               <div class="space-y-3">
                 <div class="flex items-center space-x-3">
@@ -119,6 +119,96 @@ import { CommonModule } from '@angular/common';
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">{{ feature.title }}</h3>
             <p class="text-gray-600 leading-relaxed">{{ feature.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            شاهد النظام في العمل
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            واجهات سهلة الاستخدام مصممة خصيصاً لتبسيط إدارة الموارد البشرية
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Employee Management Dashboard" 
+                 class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">لوحة إدارة الموظفين</h3>
+              <p class="text-gray-600">عرض شامل لجميع بيانات الموظفين مع إمكانية البحث والتصفية المتقدمة</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Payroll System" 
+                 class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">نظام الرواتب المتطور</h3>
+              <p class="text-gray-600">حساب تلقائي للرواتب والمكافآت مع تقارير مالية مفصلة</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Leave Management" 
+                 class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">إدارة الإجازات الذكية</h3>
+              <p class="text-gray-600">نظام متكامل لطلب الإجازات والموافقة عليها مع تتبع الأرصدة</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Analytics Dashboard" 
+                 class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">تحليلات وتقارير متقدمة</h3>
+              <p class="text-gray-600">رؤى عميقة وتحليلات ذكية لاتخاذ قرارات استراتيجية مدروسة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            ماذا يقول عملاؤنا
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            آراء حقيقية من شركات تستخدم WorkEnrich لإدارة مواردها البشرية
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div *ngFor="let testimonial of testimonials" 
+               class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <img [src]="testimonial.avatar" 
+                   [alt]="testimonial.name" 
+                   class="w-12 h-12 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-bold text-gray-900">{{ testimonial.name }}</h4>
+                <p class="text-gray-600 text-sm">{{ testimonial.position }}</p>
+                <p class="text-blue-600 text-sm">{{ testimonial.company }}</p>
+              </div>
+            </div>
+            <div class="flex mb-4">
+              <span *ngFor="let star of [1,2,3,4,5]" class="text-yellow-400 text-lg">★</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed">{{ testimonial.review }}</p>
           </div>
         </div>
       </div>
@@ -241,6 +331,30 @@ export class App {
     { number: '50K+', label: 'موظف يديره النظام' },
     { number: '99.9%', label: 'وقت التشغيل' },
     { number: '24/7', label: 'دعم فني متواصل' }
+  ];
+
+  testimonials = [
+    {
+      name: 'أحمد محمد',
+      position: 'مدير الموارد البشرية',
+      company: 'شركة التقنية المتقدمة',
+      avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150',
+      review: 'WorkEnrich غيّر طريقة عملنا تماماً. النظام سهل الاستخدام والدعم الفني ممتاز. وفرنا ساعات كثيرة في إدارة الموظفين والرواتب.'
+    },
+    {
+      name: 'فاطمة العلي',
+      position: 'مديرة العمليات',
+      company: 'مجموعة الخليج التجارية',
+      avatar: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150',
+      review: 'التقارير التحليلية في WorkEnrich ساعدتنا في اتخاذ قرارات استراتيجية مهمة. النظام موثوق وآمن ويلبي جميع احتياجاتنا.'
+    },
+    {
+      name: 'خالد السعيد',
+      position: 'الرئيس التنفيذي',
+      company: 'شركة الابتكار الرقمي',
+      avatar: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150',
+      review: 'منذ أن بدأنا استخدام WorkEnrich، تحسنت كفاءة إدارة الموارد البشرية بشكل كبير. أنصح به بشدة لأي شركة تريد التطوير.'
+    }
   ];
 
   scrollToSection(sectionId: string) {
