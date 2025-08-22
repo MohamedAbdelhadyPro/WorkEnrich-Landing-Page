@@ -51,7 +51,7 @@ import { CommonModule } from '@angular/common';
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all transform hover:scale-105 shadow-lg">
-               hh ابدأ تجربتك المجانية
+                ابدأ تجربتك المجانية
               </button>
               <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg text-lg font-medium transition-all">
                 مشاهدة العرض التوضيحي
