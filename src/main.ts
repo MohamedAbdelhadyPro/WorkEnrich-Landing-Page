@@ -80,7 +80,7 @@ import { CommonModule } from '@angular/common';
               <div class="space-y-3">
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span class="text-gray-700">الموظفون النشطونkkkkkkk: 1,248</span>
+                  <span class="text-gray-700">الموظفون النشطون: 1,248</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
