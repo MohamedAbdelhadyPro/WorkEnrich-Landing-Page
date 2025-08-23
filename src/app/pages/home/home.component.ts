@@ -10,45 +10,45 @@ import { LanguageService } from '../../services/language.service';
   imports: [CommonModule, RouterModule],
   template: `
     <!-- Hero Section -->
-    <section id="hero" class="pt-24 pb-20 relative overflow-hidden" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
+    <section id="hero" style="padding-top: 6rem; padding-bottom: 5rem; position: relative; overflow: hidden; background: linear-gradient(135deg, #1A3477, #2563eb);">
       <!-- Background Elements -->
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
+      <div style="position: absolute; inset: 0;">
+        <div style="position: absolute; top: 0; right: 0; width: 24rem; height: 24rem; background-color: rgba(255,255,255,0.05); border-radius: 50%; filter: blur(48px);"></div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 20rem; height: 20rem; background-color: rgba(255,255,255,0.05); border-radius: 50%; filter: blur(48px);"></div>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 16rem; height: 16rem; background-color: rgba(255,255,255,0.05); border-radius: 50%; filter: blur(32px);"></div>
       </div>
       
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="relative z-10 text-center">
+      <div style="max-width: 80rem; margin: 0 auto; padding: 0 1rem;">
+        <div style="position: relative; z-index: 10; text-align: center;">
           <!-- Badge -->
-          <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
-            <span class="text-white text-sm font-medium">🚀 نطور المستقبل الرقمي</span>
+          <div style="display: inline-flex; align-items: center; background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2); border-radius: 9999px; padding: 0.5rem 1rem; margin-bottom: 2rem;">
+            <span style="color: white; font-size: 0.875rem; font-weight: 500;">🚀 نطور المستقبل الرقمي</span>
           </div>
           
           <!-- Main Heading -->
-          <div class="max-w-4xl mx-auto mb-8">
-            <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <div style="max-width: 56rem; margin: 0 auto 2rem;">
+            <h1 style="font-size: 3rem; font-weight: 700; color: white; margin-bottom: 1.5rem; line-height: 1.1;">
               نطور حلولاً تقنية متقدمة لنجاح أعمالك
             </h1>
-            <p class="text-xl lg:text-2xl text-blue-100 mb-10 leading-relaxed max-w-3xl mx-auto">
+            <p style="font-size: 1.25rem; color: #dbeafe; margin-bottom: 2.5rem; line-height: 1.6; max-width: 48rem; margin-left: auto; margin-right: auto;">
               شركة متخصصة في تطوير البرمجيات والتطبيقات المبتكرة التي تساعد الشركات على النمو والتطور في العصر الرقمي
             </p>
           </div>
           
           <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <a routerLink="/contact" class="group bg-white text-slate-900 hover:bg-orange-50 px-10 py-4 rounded-xl text-lg font-bold transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl">
-              <span class="flex items-center justify-center">
+          <div style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center; margin-bottom: 4rem;">
+            <a routerLink="/contact" style="background-color: white; color: #0f172a; padding: 1rem 2.5rem; border-radius: 0.75rem; font-size: 1.125rem; font-weight: 700; transition: all 0.3s; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); text-decoration: none; display: inline-block;">
+              <span style="display: flex; align-items: center; justify-content: center;">
                 ابدأ مشروعك
-                <svg class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                 </svg>
               </span>
             </a>
-            <a routerLink="/services" class="group border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-10 py-4 rounded-xl text-lg font-bold transition-all hover:border-white/50" style="background: linear-gradient(135deg, rgba(26, 52, 119, 0.3), rgba(37, 99, 235, 0.3));">
-              <span class="flex items-center justify-center">
+            <a routerLink="/services" style="border: 2px solid rgba(255,255,255,0.3); color: white; backdrop-filter: blur(4px); padding: 1rem 2.5rem; border-radius: 0.75rem; font-size: 1.125rem; font-weight: 700; transition: all 0.3s; background: linear-gradient(135deg, rgba(26, 52, 119, 0.3), rgba(37, 99, 235, 0.3)); text-decoration: none; display: inline-block;">
+              <span style="display: flex; align-items: center; justify-content: center;">
                 اعرض أعمالنا
-                <svg class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                 </svg>
@@ -57,21 +57,21 @@ import { LanguageService } from '../../services/language.service';
           </div>
           
           <!-- Stats -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-4xl font-bold text-white mb-2">+200</div>
-              <div class="text-blue-200 font-medium">مشروع مكتمل</div>
-              <div class="text-blue-300 text-sm mt-1">مشاريع متنوعة ومبتكرة</div>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; max-width: 56rem; margin: 0 auto;">
+            <div style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s;">
+              <div style="font-size: 2.25rem; font-weight: 700; color: white; margin-bottom: 0.5rem;">+200</div>
+              <div style="color: #dbeafe; font-weight: 500;">مشروع مكتمل</div>
+              <div style="color: #bfdbfe; font-size: 0.875rem; margin-top: 0.25rem;">مشاريع متنوعة ومبتكرة</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-4xl font-bold text-white mb-2">+150</div>
-              <div class="text-blue-200 font-medium">عميل سعيد</div>
-              <div class="text-blue-300 text-sm mt-1">عملاء راضون عن خدماتنا</div>
+            <div style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s;">
+              <div style="font-size: 2.25rem; font-weight: 700; color: white; margin-bottom: 0.5rem;">+150</div>
+              <div style="color: #dbeafe; font-weight: 500;">عميل سعيد</div>
+              <div style="color: #bfdbfe; font-size: 0.875rem; margin-top: 0.25rem;">عملاء راضون عن خدماتنا</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-4xl font-bold text-white mb-2">+15</div>
-              <div class="text-blue-200 font-medium">سنوات خبرة</div>
-              <div class="text-blue-300 text-sm mt-1">خبرة متراكمة في السوق</div>
+            <div style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s;">
+              <div style="font-size: 2.25rem; font-weight: 700; color: white; margin-bottom: 0.5rem;">+15</div>
+              <div style="color: #dbeafe; font-weight: 500;">سنوات خبرة</div>
+              <div style="color: #bfdbfe; font-size: 0.875rem; margin-top: 0.25rem;">خبرة متراكمة في السوق</div>
             </div>
           </div>
         </div>

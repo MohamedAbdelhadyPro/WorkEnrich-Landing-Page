@@ -3,31 +3,59 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Critical base layer */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+    font-display: swap;
+    height: 100%;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: rtl;
+    text-align: right;
+    min-height: 100vh;
+  }
+}
+
+/* Components layer */
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .max-w-7xl {
+    max-width: 80rem;
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, #1A3477, #2563eb);
+  }
+  
+  .orange-gradient {
+    background: linear-gradient(135deg, #ff7000, #ff5722);
+  }
+}
+
 /* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  direction: rtl;
-  font-display: swap;
-  height: 100%;
-}
-
-body {
-  font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  color: #1f2937;
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  direction: rtl;
-  text-align: right;
-  min-height: 100vh;
-}
 
 /* Force Tailwind utilities */
 .bg-white {
@@ -48,15 +76,6 @@ body {
 
 .text-blue-600 {
   color: #2563eb !important;
-}
-
-/* Gradient backgrounds - force them */
-.hero-gradient {
-  background: linear-gradient(135deg, #1A3477, #2563eb) !important;
-}
-
-.orange-gradient {
-  background: linear-gradient(135deg, #ff7000, #ff5722) !important;
 }
 
 /* Flexbox fixes */
@@ -91,6 +110,34 @@ body {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+@media (min-width: 768px) {
+  .md\\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .md\\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  .md\\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .lg\\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  .lg\\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
 }
 
 /* Spacing fixes */
@@ -128,6 +175,19 @@ body {
   margin-bottom: 2rem !important;
 }
 
+.py-20 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.pt-24 {
+  padding-top: 6rem !important;
+}
+
+.pb-20 {
+  padding-bottom: 5rem !important;
+}
+
 /* Border radius */
 .rounded-lg {
   border-radius: 0.5rem !important;
@@ -139,6 +199,10 @@ body {
 
 .rounded-2xl {
   border-radius: 1rem !important;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem !important;
 }
 
 /* Shadow fixes */
@@ -197,6 +261,58 @@ body {
 
 .font-bold {
   font-weight: 700 !important;
+}
+
+/* Width and height utilities */
+.w-full {
+  width: 100% !important;
+}
+
+.h-16 {
+  height: 4rem !important;
+}
+
+.max-w-7xl {
+  max-width: 80rem !important;
+}
+
+/* Position utilities */
+.fixed {
+  position: fixed !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.z-50 {
+  z-index: 50 !important;
+}
+
+/* Background utilities */
+.bg-gray-50 {
+  background-color: #f9fafb !important;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6 !important;
+}
+
+/* Border utilities */
+.border-b {
+  border-bottom-width: 1px !important;
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb !important;
 }
 
 /* Custom scrollbar */

@@ -7,12 +7,12 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <nav class="fixed w-full top-0 z-50 bg-white border-b border-gray-200">
+    <nav style="position: fixed; width: 100%; top: 0; z-index: 50; background-color: white; border-bottom: 1px solid #e5e7eb;">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center h-16 justify-between" dir="rtl">
+        <div style="display: flex; align-items: center; height: 4rem; justify-content: space-between; direction: rtl;">
           <!-- Logo -->
-          <a routerLink="/" class="flex items-center">
-            <img src="assets/New Project (4).svg" alt="WorkEnrich" class="h-20 w-auto">
+          <a routerLink="/" style="display: flex; align-items: center;">
+            <img src="assets/New Project (4).svg" alt="WorkEnrich" style="height: 5rem; width: auto;">
           </a>
           
           <!-- Mobile menu button -->
