@@ -7,18 +7,46 @@
     <meta name="description" content="WorkEnrich - شركة متخصصة في تطوير البرمجيات والتطبيقات المبتكرة">
     <base href="/">
     
-    <!-- Preload critical fonts -->
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              'cairo': ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#1A3477',
+              'secondary': '#2563eb',
+              'orange': '#ff7000',
+            }
+          },
+        },
+        plugins: [],
+      }
+    </script>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Critical CSS inline -->
+    <!-- Critical CSS -->
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
       html {
         scroll-behavior: smooth;
         direction: rtl;
         font-display: swap;
       }
+      
       body {
         font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         margin: 0;
@@ -33,145 +61,13 @@
         min-height: 100vh;
       }
       
-      /* Reset */
-      *, *::before, *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+      /* RTL Support */
+      [dir="rtl"] {
+        text-align: right;
       }
       
-      /* Tailwind Base Classes - Critical */
-      .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-      .flex { display: flex; }
-      .grid { display: grid; }
-      .hidden { display: none !important; }
-      .block { display: block; }
-      .inline-block { display: inline-block; }
-      .inline-flex { display: inline-flex; }
-      .relative { position: relative; }
-      .absolute { position: absolute; }
-      .fixed { position: fixed; }
-      .top-0 { top: 0; }
-      .right-0 { right: 0; }
-      .bottom-0 { bottom: 0; }
-      .left-0 { left: 0; }
-      .z-10 { z-index: 10; }
-      .z-20 { z-index: 20; }
-      .z-50 { z-index: 50; }
-      .w-full { width: 100%; }
-      .h-full { height: 100%; }
-      .min-h-screen { min-height: 100vh; }
-      .max-w-7xl { max-width: 80rem; }
-      .max-w-4xl { max-width: 56rem; }
-      .max-w-3xl { max-width: 48rem; }
-      .mx-auto { margin-left: auto; margin-right: auto; }
-      .px-4 { padding-left: 1rem; padding-right: 1rem; }
-      .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-      .px-8 { padding-left: 2rem; padding-right: 2rem; }
-      .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
-      .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-      .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
-      .pt-24 { padding-top: 6rem; }
-      .pb-12 { padding-bottom: 3rem; }
-      .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
-      .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
-      .mb-4 { margin-bottom: 1rem; }
-      .mb-6 { margin-bottom: 1.5rem; }
-      .mb-8 { margin-bottom: 2rem; }
-      .mb-12 { margin-bottom: 3rem; }
-      .mb-16 { margin-bottom: 4rem; }
-      .mr-2 { margin-right: 0.5rem; }
-      .mr-3 { margin-right: 0.75rem; }
-      .mr-4 { margin-right: 1rem; }
-      .text-center { text-align: center; }
-      .text-right { text-align: right; }
-      .text-white { color: #ffffff; }
-      .text-gray-900 { color: #111827; }
-      .text-gray-800 { color: #1f2937; }
-      .text-gray-700 { color: #374151; }
-      .text-gray-600 { color: #4b5563; }
-      .text-gray-500 { color: #6b7280; }
-      .text-blue-600 { color: #2563eb; }
-      .text-blue-100 { color: #dbeafe; }
-      .bg-white { background-color: #ffffff; }
-      .bg-gray-50 { background-color: #f9fafb; }
-      .bg-gray-100 { background-color: #f3f4f6; }
-      .bg-blue-600 { background-color: #2563eb; }
-      .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
-      .text-base { font-size: 1rem; line-height: 1.5rem; }
-      .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-      .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-      .text-2xl { font-size: 1.5rem; line-height: 2rem; }
-      .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-      .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-      .text-5xl { font-size: 3rem; line-height: 1; }
-      .font-medium { font-weight: 500; }
-      .font-semibold { font-weight: 600; }
-      .font-bold { font-weight: 700; }
-      .leading-tight { line-height: 1.25; }
-      .leading-relaxed { line-height: 1.625; }
-      .rounded-lg { border-radius: 0.5rem; }
-      .rounded-xl { border-radius: 0.75rem; }
-      .rounded-2xl { border-radius: 1rem; }
-      .rounded-3xl { border-radius: 1.5rem; }
-      .rounded-full { border-radius: 9999px; }
-      .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
-      .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
-      .shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
-      .border { border-width: 1px; }
-      .border-2 { border-width: 2px; }
-      .border-gray-200 { border-color: #e5e7eb; }
-      .border-white { border-color: #ffffff; }
-      .items-center { align-items: center; }
-      .justify-center { justify-content: center; }
-      .justify-between { justify-content: space-between; }
-      .flex-col { flex-direction: column; }
-      .gap-4 { gap: 1rem; }
-      .gap-6 { gap: 1.5rem; }
-      .gap-8 { gap: 2rem; }
-      .gap-12 { gap: 3rem; }
-      .space-y-4 > * + * { margin-top: 1rem; }
-      .space-y-6 > * + * { margin-top: 1.5rem; }
-      .space-y-8 > * + * { margin-top: 2rem; }
-      .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
-      .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .overflow-hidden { overflow: hidden; }
-      .object-cover { object-fit: cover; }
-      .transition-all { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-      .hover\:scale-105:hover { transform: scale(1.05); }
-      .hover\:shadow-xl:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
-      .hover\:bg-gray-100:hover { background-color: #f3f4f6; }
-      .hover\:text-blue-600:hover { color: #2563eb; }
-      .transform { transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1); }
-      .duration-300 { transition-duration: 300ms; }
-      .ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-      
-      /* Responsive */
-      @media (min-width: 640px) {
-        .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-        .sm\:flex-row { flex-direction: row; }
-        .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      }
-      
-      @media (min-width: 768px) {
-        .md\:hidden { display: none; }
-        .md\:flex { display: flex; }
-        .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-        .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-      }
-      
-      @media (min-width: 1024px) {
-        .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
-        .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-        .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-        .lg\:grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-        .lg\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-        .lg\:text-5xl { font-size: 3rem; line-height: 1; }
-        .lg\:text-7xl { font-size: 4.5rem; line-height: 1; }
+      [dir="rtl"] * {
+        direction: rtl;
       }
       
       /* Custom scrollbar */
@@ -189,108 +85,148 @@
         background: #94a3b8;
       }
       
-      /* RTL Support */
-      [dir="rtl"] {
-        text-align: right;
+      /* Loading animations */
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
       
-      [dir="rtl"] * {
-        direction: rtl;
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.1); opacity: 0.8; }
       }
       
-      /* Transitions */
-      button, a, .group {
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      @keyframes progress {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0%); }
+        100% { transform: translateX(100%); }
       }
       
-      /* Focus states */
-      button:focus, a:focus {
-        outline: 2px solid #3b82f6;
-        outline-offset: 2px;
+      .animate-spin {
+        animation: spin 1s linear infinite;
       }
       
-      /* Card hover effects */
-      .feature-card {
-        transition: all 0.3s ease;
-        transform: translateY(0);
+      .animate-pulse {
+        animation: pulse 2s infinite;
       }
       
-      .feature-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      /* Loader styles */
+      #app-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg, #1A3477, #2563eb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        font-family: 'Cairo', sans-serif;
       }
       
-      /* Mobile responsive */
-      @media (max-width: 768px) {
-        .text-5xl {
-          font-size: 2.25rem !important;
-          line-height: 2.5rem !important;
-        }
-        .text-4xl {
-          font-size: 1.875rem !important;
-          line-height: 2.25rem !important;
-        }
-        .lg\:text-7xl {
-          font-size: 2.5rem !important;
-          line-height: 1.2 !important;
-        }
+      .loader-content {
+        text-align: center;
+        color: white;
+      }
+      
+      .loader-logo {
+        width: 80px;
+        height: 80px;
+        background: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        animation: pulse 2s infinite;
+      }
+      
+      .loader-logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1A3477;
+      }
+      
+      .loader-spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid rgba(255,255,255,0.3);
+        border-top: 4px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+      }
+      
+      .loader-text {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      
+      .loader-subtext {
+        color: rgba(255,255,255,0.8);
+        font-size: 14px;
+      }
+      
+      .loader-progress {
+        width: 200px;
+        height: 4px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 2px;
+        margin: 20px auto;
+        overflow: hidden;
+      }
+      
+      .loader-progress-bar {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, white, #ff7000);
+        animation: progress 3s ease-in-out infinite;
       }
     </style>
   </head>
   <body>
     <app-root>
-      <div id="app-loader" style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: 'Cairo', sans-serif; background: linear-gradient(135deg, #1A3477, #2563eb); position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
-        <div style="text-align: center;">
+      <div id="app-loader">
+        <div class="loader-content">
           <!-- Logo Animation -->
-          <div style="margin-bottom: 30px;">
-            <div style="width: 80px; height: 80px; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; animation: pulse 2s infinite;">
-              <span style="font-size: 24px; font-weight: bold; color: #1A3477;">WE</span>
-            </div>
+          <div class="loader-logo">
+            <span>WE</span>
           </div>
           
           <!-- Loading Spinner -->
-          <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid white; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+          <div class="loader-spinner"></div>
           
           <!-- Loading Text -->
-          <p style="color: white; font-size: 20px; font-weight: 600; margin-bottom: 10px;">جاري تحميل WorkEnrich</p>
-          <p style="color: rgba(255,255,255,0.8); font-size: 14px;">يتم تحميل التنسيقات والموارد...</p>
+          <p class="loader-text">جاري تحميل WorkEnrich</p>
+          <p class="loader-subtext">يتم تحميل التنسيقات والموارد...</p>
           
           <!-- Progress Bar -->
-          <div style="width: 200px; height: 4px; background: rgba(255,255,255,0.3); border-radius: 2px; margin: 20px auto; overflow: hidden;">
-            <div style="width: 100%; height: 100%; background: linear-gradient(90deg, white, #ff7000); animation: progress 3s ease-in-out infinite;"></div>
+          <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
           </div>
         </div>
       </div>
-      <style>
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        @keyframes pulse {
-          0%, 100% { transform: scale(1); opacity: 1; }
-          50% { transform: scale(1.1); opacity: 0.8; }
-        }
-        @keyframes progress {
-          0% { transform: translateX(-100%); }
-          50% { transform: translateX(0%); }
-          100% { transform: translateX(100%); }
-        }
-      </style>
     </app-root>
     
     <script>
       // Hide loader when everything is loaded
+      function hideLoader() {
+        const loader = document.getElementById('app-loader');
+        if (loader) {
+          loader.style.opacity = '0';
+          loader.style.transition = 'opacity 0.5s ease-out';
+          setTimeout(function() {
+            loader.style.display = 'none';
+          }, 500);
+        }
+      }
+      
+      // Wait for all resources to load
       window.addEventListener('load', function() {
-        setTimeout(function() {
-          const loader = document.getElementById('app-loader');
-          if (loader) {
-            loader.style.opacity = '0';
-            loader.style.transition = 'opacity 0.5s ease-out';
-            setTimeout(function() {
-              loader.style.display = 'none';
-            }, 500);
-          }
-        }, 1000); // Wait 1 second to ensure CSS is fully loaded
+        setTimeout(hideLoader, 1500);
       });
       
       // Also hide loader when Angular app is ready
@@ -298,17 +234,13 @@
         setTimeout(function() {
           const appRoot = document.querySelector('app-root');
           if (appRoot && appRoot.children.length > 1) {
-            const loader = document.getElementById('app-loader');
-            if (loader) {
-              loader.style.opacity = '0';
-              loader.style.transition = 'opacity 0.5s ease-out';
-              setTimeout(function() {
-                loader.style.display = 'none';
-              }, 500);
-            }
+            hideLoader();
           }
-        }, 2000);
+        }, 3000);
       });
+      
+      // Fallback - hide loader after 5 seconds maximum
+      setTimeout(hideLoader, 5000);
     </script>
   </body>
 </html>
