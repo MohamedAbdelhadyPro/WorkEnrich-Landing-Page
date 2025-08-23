@@ -296,34 +296,6 @@ import { LanguageService } from '../../services/language.service';
               </div>
             </div>
           </div>
-          
-          <!-- Navigation Dots -->
-          <div class="flex justify-center space-x-2 mt-6">
-            <button *ngFor="let testimonial of testimonials; let i = index"
-                    (click)="setCurrentTestimonial(i)"
-                    class="w-2 h-2 rounded-full transition-all duration-300"
-                    [class.bg-blue-600]="i === currentTestimonial"
-                    [class.bg-gray-300]="i !== currentTestimonial">
-            </button>
-          </div>
-          
-          <!-- Navigation Arrows -->
-          <div class="absolute top-1/2 transform -translate-y-1/2 left-4">
-            <button (click)="previousTestimonial()"
-                    class="w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
-              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-              </svg>
-            </button>
-          </div>
-          <div class="absolute top-1/2 transform -translate-y-1/2 right-4">
-            <button (click)="nextTestimonial()"
-                    class="w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
-              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
         </div>
         
         <!-- CTA -->
