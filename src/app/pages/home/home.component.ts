@@ -83,28 +83,6 @@ import { LanguageService } from '../../services/language.service';
               </div>
             </div>
           </div>
-          <div class="relative">
-            <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-8 transform rotate-3">
-              <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                   alt="Software Development" 
-                   class="w-full h-64 object-cover rounded-lg mb-4">
-              <div class="space-y-3">
-                <div class="flex items-center space-x-3">
-                  <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span class="text-gray-700">مشاريع قيد التطوير: 12</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span class="text-gray-700">فريق المطورين: 15</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
-                  <span class="text-gray-700">تقنيات حديثة: 25+</span>
-                </div>
-              </div>
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-2xl transform -rotate-3"></div>
-          </div>
         </div>
       </div>
     </section>
