@@ -147,7 +147,7 @@ export class ContactComponent {
     {
       icon: '📱',
       title: 'الهاتف',
-      value: '+2 010 929 633 85'
+      value: '+2010 929 633 85'
     },
     {
       icon: '📍',
