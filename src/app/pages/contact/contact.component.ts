@@ -13,10 +13,10 @@ import { TranslationService } from '../../services/translation.service';
       <section class="bg-gradient-to-br from-purple-50 via-white to-blue-50 py-16">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            {{ translationService.get('contact.title') }}
+            تواصل معنا
           </h1>
           <p class="text-xl text-gray-600">
-            {{ translationService.get('contact.subtitle') }}
+            نحن هنا لمساعدتك في تحقيق أهدافك التقنية
           </p>
         </div>
       </section>
