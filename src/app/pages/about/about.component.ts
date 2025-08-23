@@ -110,9 +110,11 @@ import { TranslationService } from '../../services/translation.service';
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Row 1 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="محمد عبدالهادي" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">محمد عبدالهادي</h3>
               <p class="text-[#1E2E40] font-medium mb-3">CTO</p>
               <p class="text-gray-600 text-sm mb-4">مدير التقنية الرئيسي ومسؤول الاستراتيجية التقنية</p>
@@ -127,9 +129,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="احمد ابراهيم" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">احمد ابراهيم</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Backend Lead</p>
               <p class="text-gray-600 text-sm mb-4">قائد فريق تطوير الخادم والأنظمة الخلفية</p>
@@ -144,9 +148,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="كيرلس سعد" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">كيرلس سعد</h3>
               <p class="text-[#1E2E40] font-medium mb-3">UI-UX Lead</p>
               <p class="text-gray-600 text-sm mb-4">قائد فريق تصميم واجهات وتجربة المستخدم</p>
@@ -162,9 +168,11 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 2 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="مصطفي مجدي" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">مصطفي مجدي</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Operational Manager</p>
               <p class="text-gray-600 text-sm mb-4">مدير العمليات ومسؤول تنسيق المشاريع</p>
@@ -179,9 +187,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="محمد حسام" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">محمد حسام</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Project Manager</p>
               <p class="text-gray-600 text-sm mb-4">مدير مشاريع ومسؤول متابعة التنفيذ</p>
@@ -196,9 +206,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="دينا عماد" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">دينا عماد</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Project Manager</p>
               <p class="text-gray-600 text-sm mb-4">مديرة مشاريع ومتخصصة في إدارة الفرق</p>
@@ -214,9 +226,11 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 3 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="جهاد علي" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">جهاد علي</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Project Manager</p>
               <p class="text-gray-600 text-sm mb-4">مدير مشاريع ومتخصص في التخطيط الاستراتيجي</p>
@@ -231,9 +245,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="ادهم محمد" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">ادهم محمد</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Backend Developer</p>
               <p class="text-gray-600 text-sm mb-4">مطور خادم ومتخصص في قواعد البيانات</p>
@@ -248,9 +264,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="ندا اشرف" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">ندا اشرف</h3>
               <p class="text-[#1E2E40] font-medium mb-3">UI-UX Designer</p>
               <p class="text-gray-600 text-sm mb-4">مصممة واجهات وتجربة مستخدم</p>
@@ -266,9 +284,11 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 4 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="ندا صالح" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">ندا صالح</h3>
               <p class="text-[#1E2E40] font-medium mb-3">UI-UX Designer</p>
               <p class="text-gray-600 text-sm mb-4">مصممة واجهات ومتخصصة في تجربة المستخدم</p>
@@ -283,9 +303,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="عاصم احمد" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">عاصم احمد</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Front-End Developer</p>
               <p class="text-gray-600 text-sm mb-4">مطور واجهات أمامية ومتخصص في React</p>
@@ -300,9 +322,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="عمر الساحب" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">عمر الساحب</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Front-End Developer</p>
               <p class="text-gray-600 text-sm mb-4">مطور واجهات أمامية ومتخصص في Angular</p>
@@ -318,9 +342,11 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 5 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184301/pexels-photo-3184301.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="محمود عيدروس" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">محمود عيدروس</h3>
               <p class="text-[#1E2E40] font-medium mb-3">Mobile Engineer</p>
               <p class="text-gray-600 text-sm mb-4">مهندس تطبيقات الجوال ومتخصص في Flutter</p>
@@ -335,9 +361,11 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg?auto=compress&cs=tinysrgb&w=150" 
-                   alt="مصطفي الغندور" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-slate-500 to-slate-600 flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">مصطفي الغندور</h3>
               <p class="text-[#1E2E40] font-medium mb-3">QC Engineer</p>
               <p class="text-gray-600 text-sm mb-4">مهندس ضمان الجودة ومتخصص في الاختبارات</p>
