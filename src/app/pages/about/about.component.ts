@@ -40,7 +40,7 @@ import { TranslationService } from '../../services/translation.service';
               </p>
               <div class="space-y-4">
                 <div *ngFor="let value of values" class="flex items-start">
-                  <div class="w-6 h-6 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 mr-3">
+                  <div class="w-6 h-6 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 ml-3">
                     <span class="text-[#1E2E40] text-sm">✓</span>
                   </div>
                   <div>
