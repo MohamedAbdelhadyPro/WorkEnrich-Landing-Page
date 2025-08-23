@@ -206,57 +206,57 @@ import { LanguageService } from '../../services/language.service';
         
         <!-- Client Logos Grid -->
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-xs leading-tight">BEST<br>SHIELD</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">بست شيلد</div>
+              <div class="text-sm font-semibold text-gray-800">بست شيلد</div>
             </div>
           </div>
           
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-sm">ACME</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">أكمي</div>
+              <div class="text-sm font-semibold text-gray-800">أكمي</div>
             </div>
           </div>
           
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-sm">CARPI</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">كاربي</div>
+              <div class="text-sm font-semibold text-gray-800">كاربي</div>
             </div>
           </div>
           
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-xs">MALAFY</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">ملافي</div>
+              <div class="text-sm font-semibold text-gray-800">ملافي</div>
             </div>
           </div>
           
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-sm">AZRAQ</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">أزرق</div>
+              <div class="text-sm font-semibold text-gray-800">أزرق</div>
             </div>
           </div>
           
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-xs">PDENTAL</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">بي دنتال</div>
+              <div class="text-sm font-semibold text-gray-800">بي دنتال</div>
             </div>
           </div>
         </div>
