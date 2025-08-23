@@ -9,14 +9,15 @@ import { RouterModule } from '@angular/router';
   template: `
     <nav class="fixed w-full top-0 z-50 bg-white border-b border-gray-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16" dir="rtl">
-          <div class="flex items-center">
+        <div class="flex items-center h-16 justify-end" dir="rtl">
+          <div class="flex items-center space-x-4 space-x-reverse">
+            <!-- Logo on the right -->
             <div class="flex-shrink-0 flex items-center">
-              <a routerLink="/" class="mr-2 text-xl font-bold text-gray-900">WorkEnrich</a>
+              <a routerLink="/" class="text-xl font-bold text-gray-900">WorkEnrich</a>
             </div>
-          </div>
-          <div class="hidden md:block">
-            <div class="mr-10 flex items-baseline space-x-4 space-x-reverse">
+            
+            <!-- Navigation items -->
+            <div class="hidden md:flex items-baseline space-x-4 space-x-reverse">
               <a routerLink="/" 
                  routerLinkActive="text-[#1E2E40]" 
                  [routerLinkActiveOptions]="{exact: true}"
@@ -72,7 +73,6 @@ import { RouterModule } from '@angular/router';
               <button class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
                 احصل على عرض سعر
               </button>
-            </div>
           </div>
         </div>
       </div>
