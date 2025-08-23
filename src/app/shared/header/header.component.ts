@@ -136,17 +136,12 @@ import { RouterModule } from '@angular/router';
                class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
               من نحن
             </a>
-            <div class="px-3 py-2">
-              <a routerLink="/contact" 
-                 (click)="closeMobileMenu()"
-                 routerLinkActive="shadow-lg font-semibold"
-                 class="block text-white px-4 py-2 rounded-lg text-base font-medium transition-all shadow-md hover:shadow-lg text-center"
-                 style="background-color: #2563eb;"
-                 onmouseover="this.style.backgroundColor='#1d4ed8'"
-                 onmouseout="this.style.backgroundColor='#2563eb'">
-                تواصل معنا
-              </a>
-            </div>
+            <a routerLink="/contact" 
+               (click)="closeMobileMenu()"
+               routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600"
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
+              تواصل معنا
+            </a>
           </div>
         </div>
       </div>
