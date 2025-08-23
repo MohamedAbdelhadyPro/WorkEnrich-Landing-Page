@@ -73,6 +73,7 @@ import { RouterModule } from '@angular/router';
               <button class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
                 احصل على عرض سعر
               </button>
+            </div>
           </div>
         </div>
       </div>
