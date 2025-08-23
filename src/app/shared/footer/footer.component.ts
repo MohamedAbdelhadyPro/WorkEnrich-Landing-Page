@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-footer',
@@ -15,31 +16,32 @@ import { RouterModule } from '@angular/router';
               <span class="ml-2 text-xl font-bold">WorkEnrich</span>
             </div>
             <p class="text-gray-400 mb-4">
-              شركة متخصصة في تطوير البرمجيات والحلول الرقمية. 
-              نحول أفكارك إلى واقع تقني يساعد في نمو أعمالك.
+              {{ translationService.get('home.heroDescription') }}
             </p>
           </div>
           <div>
-            <h4 class="font-bold mb-4">الخدمات</h4>
+            <h4 class="font-bold mb-4">{{ translationService.get('footer.services') }}</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a routerLink="/services" class="hover:text-white transition-colors">خدمات البرمجة</a></li>
-              <li><a routerLink="/services" class="hover:text-white transition-colors">مشاريعنا المنجزة</a></li>
-              <li><a routerLink="/services" class="hover:text-white transition-colors">نظام الموارد البشرية</a></li>
+              <li><a routerLink="/services" class="hover:text-white transition-colors">{{ translationService.get('footer.programmingServices') }}</a></li>
+              <li><a routerLink="/services" class="hover:text-white transition-colors">{{ translationService.get('footer.completedProjects') }}</a></li>
+              <li><a routerLink="/services" class="hover:text-white transition-colors">{{ translationService.get('footer.hrSystem') }}</a></li>
             </ul>
           </div>
           <div>
-            <h4 class="font-bold mb-4">الشركة</h4>
+            <h4 class="font-bold mb-4">{{ translationService.get('footer.company') }}</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a routerLink="/about" class="hover:text-white transition-colors">من نحن</a></li>
-              <li><a routerLink="/contact" class="hover:text-white transition-colors">اتصل بنا</a></li>
+              <li><a routerLink="/about" class="hover:text-white transition-colors">{{ translationService.get('footer.aboutUs') }}</a></li>
+              <li><a routerLink="/contact" class="hover:text-white transition-colors">{{ translationService.get('footer.contactUs') }}</a></li>
             </ul>
           </div>
         </div>
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 WorkEnrich. جميع الحقوق محفوظة.</p>
+          <p>&copy; 2025 WorkEnrich. {{ translationService.get('footer.allRightsReserved') }}</p>
         </div>
       </div>
     </footer>
   `
 })
-export class FooterComponent {}
+export class FooterComponent {
+  constructor(public translationService: TranslationService) {}
+}
