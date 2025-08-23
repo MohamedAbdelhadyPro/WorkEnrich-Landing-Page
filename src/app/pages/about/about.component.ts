@@ -83,12 +83,12 @@ import { TranslationService } from '../../services/translation.service';
               <div class="text-gray-500 text-sm mt-2">عملاء راضون عن خدماتنا</div>
             </div>
             <div class="text-center bg-white p-8 rounded-xl shadow-lg">
-              <div class="text-4xl font-bold mb-2 text-green-600">15+</div>
+              <div class="text-4xl font-bold mb-2 text-green-600">40+</div>
               <div class="text-gray-600 font-medium">مطور محترف</div>
               <div class="text-gray-500 text-sm mt-2">فريق متخصص وذو خبرة</div>
             </div>
             <div class="text-center bg-white p-8 rounded-xl shadow-lg">
-              <div class="text-4xl font-bold mb-2 text-purple-600">5+</div>
+              <div class="text-4xl font-bold mb-2 text-purple-600">15+</div>
               <div class="text-gray-600 font-medium">سنوات خبرة</div>
               <div class="text-gray-500 text-sm mt-2">خبرة متراكمة في السوق</div>
             </div>
