@@ -132,18 +132,16 @@ import { RouterModule } from '@angular/router';
             </a>
             <a routerLink="/contact"
                (click)="closeMobileMenu()"
-               class="block mx-3 my-2 px-4 py-2 text-base font-medium text-white rounded-lg transition-all shadow-md"
-               style="background-color: #ff6b35;"
-               (mouseenter)="($event.target as HTMLElement).style.backgroundColor='#e55a2b'"
-               (mouseleave)="($event.target as HTMLElement).style.backgroundColor='#ff6b35'">
+               routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600" 
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
               من نحن
             </a>
             <a routerLink="/contact"
-               class="text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg"
+               (click)="closeMobileMenu()"
+               class="block mx-3 my-2 px-4 py-2 text-base font-medium text-white rounded-lg transition-all shadow-md"
                style="background-color: #ff6b35;"
-               (mouseenter)="($event.target as HTMLElement).style.backgroundColor='#e55a2b'"
-               (mouseleave)="($event.target as HTMLElement).style.backgroundColor='#ff6b35'">
-               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
+               (mouseenter)="($event.target as HTMLElement)?.style ? ($event.target as HTMLElement).style.backgroundColor='#e55a2b' : null"
+               (mouseleave)="($event.target as HTMLElement)?.style ? ($event.target as HTMLElement).style.backgroundColor='#ff6b35' : null">
               تواصل معنا
             </a>
           </div>
