@@ -121,23 +121,6 @@ import { TranslationService } from '../../services/translation.service';
                 </ul>
               </div>
 
-              <div class="bg-gray-50 p-6 rounded-xl">
-                <h3 class="font-bold text-gray-900 mb-3">ساعات العمل</h3>
-                <div class="space-y-2 text-sm text-gray-600">
-                  <div class="flex justify-between">
-                    <span>الأحد - الخميس</span>
-                    <span>9:00 ص - 6:00 م</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span>الجمعة</span>
-                    <span>مغلق</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span>السبت</span>
-                    <span>مغلق</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
