@@ -186,7 +186,7 @@ export class ServicesComponent {
       title: this.translationService.get('services.servicesList.webDevelopment.title'),
       description: this.translationService.get('services.servicesList.webDevelopment.description'),
       bgColor: 'from-blue-400 to-blue-600',
-      features: this.translationService.get('services.servicesList.webDevelopment.features'),
+      features: this.translationService.get('services.servicesList.webDevelopment.features') as string[],
       price: this.translationService.get('services.servicesList.webDevelopment.price')
     },
     {

@@ -55,7 +55,7 @@ export class TranslationService {
       }
     }
     
-    return typeof value === 'string' ? value : key;
+    return value !== undefined ? value : key;
   }
 
   get(key: string): string {
