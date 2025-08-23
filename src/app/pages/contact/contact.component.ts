@@ -93,7 +93,7 @@ import { TranslationService } from '../../services/translation.service';
                     </div>
                     <div>
                       <h3 class="font-bold text-gray-900 mb-1">{{ contact.title }}</h3>
-                      <p class="text-gray-600" dir="ltr">{{ contact.value }}</p>
+                      <p class="text-gray-600" dir="ltr" [style.font-family]="contact.title === 'الهاتف' ? 'Arial, sans-serif' : 'inherit'">{{ contact.value }}</p>
                     </div>
                   </div>
                 </div>
