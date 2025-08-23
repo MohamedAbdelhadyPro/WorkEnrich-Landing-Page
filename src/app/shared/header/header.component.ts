@@ -14,11 +14,11 @@ import { RouterModule } from '@angular/router';
           <div class="flex items-center">
             <a routerLink="/" class="flex items-center space-x-2">
               <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-lg">WE</span>
+                <span class="text-white font-bold text-lg">TC</span>
               </div>
               <div class="mr-3">
-                <div class="text-xl font-bold text-gray-900">WorkEnrich</div>
-                <div class="text-xs text-gray-500">حلول البرمجة المتخصصة</div>
+                <div class="text-xl font-bold text-gray-900">TechCraft</div>
+                <div class="text-xs text-gray-500">حلول البرمجة المتقدمة</div>
               </div>
             </a>
           </div>
@@ -31,20 +31,34 @@ import { RouterModule } from '@angular/router';
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               الرئيسية
             </a>
-            <a routerLink="/services" 
+            <div class="relative group">
+              <button class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                خدماتنا
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="py-1">
+                  <a routerLink="/development-services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">خدمات البرمجة</a>
+                  <a routerLink="/managed-solutions" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">الحلول المدارة</a>
+                </div>
+              </div>
+            </div>
+            <a routerLink="/portfolio" 
                routerLinkActive="text-blue-600"
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              خدماتنا
+              معرض الأعمال
             </a>
-            <a routerLink="/hr-system" 
+            <a routerLink="/case-studies" 
                routerLinkActive="text-blue-600"
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              نظام HR
+              دراسات الحالة
             </a>
-            <a routerLink="/accounting-system" 
+            <a routerLink="/blog" 
                routerLinkActive="text-blue-600"
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              نظام المحاسبة
+              المدونة
             </a>
             <a routerLink="/about" 
                routerLinkActive="text-blue-600"
@@ -77,20 +91,30 @@ import { RouterModule } from '@angular/router';
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
               الرئيسية
             </a>
-            <a routerLink="/services" 
+            <a routerLink="/development-services" 
                (click)="closeMobileMenu()"
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              خدماتنا
+              خدمات البرمجة
             </a>
-            <a routerLink="/hr-system" 
+            <a routerLink="/managed-solutions" 
                (click)="closeMobileMenu()"
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              نظام HR
+              الحلول المدارة
             </a>
-            <a routerLink="/accounting-system" 
+            <a routerLink="/portfolio" 
                (click)="closeMobileMenu()"
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              نظام المحاسبة
+              معرض الأعمال
+            </a>
+            <a routerLink="/case-studies" 
+               (click)="closeMobileMenu()"
+               class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
+              دراسات الحالة
+            </a>
+            <a routerLink="/blog" 
+               (click)="closeMobileMenu()"
+               class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
+              المدونة
             </a>
             <a routerLink="/about" 
                (click)="closeMobileMenu()"
