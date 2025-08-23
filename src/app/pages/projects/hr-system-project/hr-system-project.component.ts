@@ -74,7 +74,7 @@ import { RouterModule } from '@angular/router';
               <!-- Decorative frame -->
               <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-3xl blur opacity-20"></div>
               <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                   alt="HR Management System" 
+                   alt="نظام إدارة الموارد البشرية" 
                    class="w-full h-96 object-cover rounded-2xl shadow-2xl">
               <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
                 <div class="text-blue-600 font-bold text-sm">منتج جديد</div>
@@ -232,7 +232,7 @@ import { RouterModule } from '@angular/router';
             </div>
             <div class="relative">
               <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                   alt="HR Management System"
+                   alt="نظام إدارة الموارد البشرية"
                    class="w-full h-96 object-cover rounded-2xl shadow-2xl relative z-10 border-4 border-white">
               <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl z-20"></div>
               <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm px-6 py-4 rounded-xl shadow-xl z-30 border border-blue-200">
