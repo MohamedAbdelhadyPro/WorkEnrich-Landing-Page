@@ -27,7 +27,7 @@ import { TranslationService } from '../../services/translation.service';
               <div class="space-y-3">
                 <div class="flex items-center text-gray-600">
                   <span class="text-orange-500 ml-3">📧</span>
-                  <span class="text-sm">info@workenrich.com</span>
+                  <span class="text-sm">info&#64;workenrich.com</span>
                 </div>
                 <div class="flex items-center text-gray-600">
                   <span class="text-orange-500 ml-3">📱</span>
