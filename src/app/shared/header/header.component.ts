@@ -76,9 +76,8 @@ import { RouterModule } from '@angular/router';
                 من نحن
               </a>
               <a routerLink="/contact" 
-                 class="text-white px-4 py-2 rounded-lg text-sm font-medium transition-all hover:opacity-90" 
-                 style="background: linear-gradient(135deg, #ff7000, #ff5722);"
-                 routerLinkActive="opacity-90 shadow-lg">
+                 class="text-orange-600 px-4 py-2 text-sm font-medium transition-all hover:text-orange-700 border-b-2 border-orange-600 hover:border-orange-700"
+                 routerLinkActive="text-orange-700 border-orange-700 font-semibold">
                 تواصل معنا
               </a>
           </div>
@@ -139,8 +138,8 @@ import { RouterModule } from '@angular/router';
             </a>
             <a routerLink="/contact" 
                (click)="closeMobileMenu()"
-               routerLinkActive="opacity-90 shadow-lg"
-               class="block mx-3 my-2 px-4 py-2 text-base font-medium border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white transition-all text-center rounded-lg">
+               routerLinkActive="text-orange-700 border-orange-700 font-semibold"
+               class="block mx-3 my-2 px-4 py-2 text-base font-medium border-b-2 border-orange-600 text-orange-600 hover:text-orange-700 hover:border-orange-700 transition-all text-center">
               تواصل معنا
             </a>
           </div>
