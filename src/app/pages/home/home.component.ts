@@ -208,8 +208,8 @@ import { LanguageService } from '../../services/language.service';
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
           <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-white border-2 border-gray-300 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-gray-800 font-bold text-xs leading-tight">BEST<br>SHIELD</span>
+              <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-xs leading-tight">BEST<br>SHIELD</span>
               </div>
               <div class="text-sm font-semibold text-gray-800">بست شيلد</div>
             </div>
