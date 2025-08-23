@@ -10,12 +10,12 @@ import { TranslationService } from '../../services/translation.service';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="bg-gradient-to-br from-purple-50 via-white to-blue-50 py-16">
+      <section class="py-16" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">
             تواصل معنا
           </h1>
-          <p class="text-xl text-gray-600">
+          <p class="text-xl text-blue-100">
             نحن هنا لمساعدتك في تحقيق أهدافك التقنية
           </p>
         </div>

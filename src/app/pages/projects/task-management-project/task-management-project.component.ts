@@ -9,29 +9,29 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="bg-gradient-to-br from-green-50 via-white to-blue-50 py-16">
+      <section class="py-16" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div class="mb-4">
-                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
+                <span class="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full">
                   تطبيق جوال
                 </span>
               </div>
-              <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">
                 تطبيق إدارة المهام
               </h1>
-              <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p class="text-xl text-blue-100 mb-8 leading-relaxed">
                 تطبيق جوال متطور لإدارة المشاريع والمهام مع فريق العمل، يوفر أدوات تعاون فعالة وتتبع دقيق للإنجازات.
               </p>
               <div class="flex flex-wrap gap-2 mb-8">
                 <span *ngFor="let tech of technologies" 
-                      class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+                      class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">
                   {{ tech }}
                 </span>
               </div>
               <a routerLink="/contact" 
-                 class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                 class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors" style="color: #1A3477;">
                 طلب مشروع مماثل
               </a>
             </div>

@@ -9,19 +9,19 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-16">
+      <section class="py-16" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div class="mb-4">
-                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
+                <span class="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full">
                   منتج جديد
                 </span>
               </div>
-              <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">
                 نظام إدارة الموارد البشرية
               </h1>
-              <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+              <p class="text-xl text-blue-100 mb-6 leading-relaxed">
                 نظام شامل ومتكامل من تطوير <span class="font-bold" style="color: #1A306F">WorkEnrich</span> لإدارة جميع عمليات الموارد البشرية بنظام الاشتراك الشهري المرن.
               </p>
               <div class="bg-gradient-to-r from-blue-500/10 to-blue-600/10 p-4 rounded-lg mb-8">
