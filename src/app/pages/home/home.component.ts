@@ -209,7 +209,7 @@ import { LanguageService } from '../../services/language.service';
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-sm">BESTSHEILD</span>
+                <span class="text-white font-bold text-xs leading-tight">BEST<br>SHIELD</span>
               </div>
               <div class="text-sm font-medium text-gray-700">بست شيلد</div>
             </div>
@@ -218,7 +218,7 @@ import { LanguageService } from '../../services/language.service';
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">ACME</span>
+                <span class="text-white font-bold text-sm">ACME</span>
               </div>
               <div class="text-sm font-medium text-gray-700">أكمي</div>
             </div>
@@ -227,7 +227,7 @@ import { LanguageService } from '../../services/language.service';
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">CARPI</span>
+                <span class="text-white font-bold text-sm">CARPI</span>
               </div>
               <div class="text-sm font-medium text-gray-700">كاربي</div>
             </div>
@@ -236,7 +236,7 @@ import { LanguageService } from '../../services/language.service';
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">MALAFY</span>
+                <span class="text-white font-bold text-xs">MALAFY</span>
               </div>
               <div class="text-sm font-medium text-gray-700">ملافي</div>
             </div>
@@ -245,7 +245,7 @@ import { LanguageService } from '../../services/language.service';
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">AZRAQ</span>
+                <span class="text-white font-bold text-sm">AZRAQ</span>
               </div>
               <div class="text-sm font-medium text-gray-700">أزرق</div>
             </div>
@@ -254,7 +254,7 @@ import { LanguageService } from '../../services/language.service';
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-sm">PDENTAL</span>
+                <span class="text-white font-bold text-xs">PDENTAL</span>
               </div>
               <div class="text-sm font-medium text-gray-700">بي دنتال</div>
             </div>
