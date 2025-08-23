@@ -110,7 +110,7 @@ import { TranslationService } from '../../services/translation.service';
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Row 1 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/4A90E2/FFFFFF?text=MA" 
                    alt="محمد عبدالهادي" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">محمد عبدالهادي</h3>
@@ -127,7 +127,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/50C878/FFFFFF?text=AI" 
                    alt="احمد ابراهيم" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">احمد ابراهيم</h3>
@@ -144,7 +144,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/9B59B6/FFFFFF?text=KS" 
                    alt="كيرلس سعد" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">كيرلس سعد</h3>
@@ -162,7 +162,7 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 2 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/E67E22/FFFFFF?text=MM" 
                    alt="مصطفي مجدي" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">مصطفي مجدي</h3>
@@ -179,7 +179,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2182971/pexels-photo-2182971.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/3498DB/FFFFFF?text=MH" 
                    alt="محمد حسام" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">محمد حسام</h3>
@@ -196,7 +196,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3763189/pexels-photo-3763189.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/E91E63/FFFFFF?text=DE" 
                    alt="دينا عماد" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">دينا عماد</h3>
@@ -214,7 +214,7 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 3 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/27AE60/FFFFFF?text=JA" 
                    alt="جهاد علي" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">جهاد علي</h3>
@@ -231,7 +231,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2182972/pexels-photo-2182972.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/8E44AD/FFFFFF?text=AM" 
                    alt="ادهم محمد" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">ادهم محمد</h3>
@@ -248,7 +248,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3763190/pexels-photo-3763190.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/F39C12/FFFFFF?text=NA" 
                    alt="ندا اشرف" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">ندا اشرف</h3>
@@ -266,7 +266,7 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 4 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3763191/pexels-photo-3763191.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/E74C3C/FFFFFF?text=NS" 
                    alt="ندا صالح" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">ندا صالح</h3>
@@ -283,7 +283,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2379007/pexels-photo-2379007.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/16A085/FFFFFF?text=AA" 
                    alt="عاصم احمد" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">عاصم احمد</h3>
@@ -300,7 +300,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2182973/pexels-photo-2182973.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/2980B9/FFFFFF?text=OS" 
                    alt="عمر الساحب" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">عمر الساحب</h3>
@@ -318,7 +318,7 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 5 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2379008/pexels-photo-2379008.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/D35400/FFFFFF?text=ME" 
                    alt="محمود عيدروس" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">محمود عيدروس</h3>
@@ -335,7 +335,7 @@ import { TranslationService } from '../../services/translation.service';
             </div>
             
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/2182974/pexels-photo-2182974.jpeg?auto=compress&cs=tinysrgb&w=300" 
+              <img src="https://via.placeholder.com/150x150/7F8C8D/FFFFFF?text=MG" 
                    alt="مصطفي الغندور" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">مصطفي الغندور</h3>
