@@ -99,28 +99,6 @@ import { TranslationService } from '../../services/translation.service';
           </div>
         </div>
         
-        <!-- Stats Section -->
-        <div class="py-8 border-t border-gray-100">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="group">
-              <div class="text-2xl font-bold text-gray-900 group-hover:text-orange-500 transition-colors">200+</div>
-              <div class="text-sm text-gray-600">مشروع مكتمل</div>
-            </div>
-            <div class="group">
-              <div class="text-2xl font-bold text-gray-900 group-hover:text-orange-500 transition-colors">150+</div>
-              <div class="text-sm text-gray-600">عميل سعيد</div>
-            </div>
-            <div class="group">
-              <div class="text-2xl font-bold text-gray-900 group-hover:text-orange-500 transition-colors">40+</div>
-              <div class="text-sm text-gray-600">مطور محترف</div>
-            </div>
-            <div class="group">
-              <div class="text-2xl font-bold text-gray-900 group-hover:text-orange-500 transition-colors">15+</div>
-              <div class="text-sm text-gray-600">سنوات خبرة</div>
-            </div>
-          </div>
-        </div>
-        
         <!-- Bottom Section -->
         <div class="border-t border-gray-100 py-6">
           <div class="flex flex-col md:flex-row justify-between items-center">
