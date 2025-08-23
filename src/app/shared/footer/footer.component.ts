@@ -23,8 +23,8 @@ import { TranslationService } from '../../services/translation.service';
             <h4 class="font-bold mb-4">الخدمات</h4>
             <ul class="space-y-2 text-gray-400">
               <li><a routerLink="/services" class="hover:text-white transition-colors">خدمات البرمجة</a></li>
-              <li><a routerLink="/services" class="hover:text-white transition-colors">المشاريع المنجزة</a></li>
-              <li><a routerLink="/services" class="hover:text-white transition-colors">نظام الموارد البشرية</a></li>
+              <li><a routerLink="/projects/ecommerce" class="hover:text-white transition-colors">المشاريع المنجزة</a></li>
+              <li><a routerLink="/projects/hr-system" class="hover:text-white transition-colors">نظام الموارد البشرية</a></li>
             </ul>
           </div>
           <div>
