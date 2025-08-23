@@ -52,6 +52,18 @@ button, a, .group {
   background-clip: text;
 }
 
+/* Logo gradient effect */
+.logo-gradient {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1686%) hue-rotate(217deg) brightness(95%) contrast(95%);
+  transition: all 0.3s ease;
+}
+
+.logo-gradient:hover {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1686%) hue-rotate(217deg) brightness(105%) contrast(105%);
+  transform: scale(1.05);
+  drop-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Card hover effects */
 .feature-card {
   transition: all 0.3s ease;
