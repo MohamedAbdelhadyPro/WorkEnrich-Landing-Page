@@ -168,7 +168,7 @@ import { TranslationService } from '../../services/translation.service';
             
             <!-- Row 2 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+              <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
                 <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
