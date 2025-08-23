@@ -134,7 +134,7 @@ import { TranslationService } from '../../services/translation.service';
                   </div>
                   <div class="flex justify-between">
                     <span>السبت</span>
-                    <span>10:00 ص - 4:00 م</span>
+                    <span>مغلق</span>
                   </div>
                 </div>
               </div>
