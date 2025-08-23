@@ -21,21 +21,21 @@ import { TranslationService } from '../../services/translation.service';
           </div>
           <div>
             <h4 class="font-bold mb-4">الخدمات</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a routerLink="/services" class="hover:text-white transition-colors">خدمات البرمجة</a></li>
-              <li><a routerLink="/projects/ecommerce" class="hover:text-white transition-colors">المشاريع المنجزة</a></li>
-              <li><a routerLink="/projects/hr-system" class="hover:text-white transition-colors">نظام الموارد البشرية</a></li>
+            <ul class="space-y-2 text-white">
+              <li><a routerLink="/services" class="hover:text-gray-300 transition-colors">خدمات البرمجة</a></li>
+              <li><a routerLink="/projects/ecommerce" class="hover:text-gray-300 transition-colors">المشاريع المنجزة</a></li>
+              <li><a routerLink="/projects/hr-system" class="hover:text-gray-300 transition-colors">نظام الموارد البشرية</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-bold mb-4">الشركة</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a routerLink="/about" class="hover:text-white transition-colors">من نحن</a></li>
-              <li><a routerLink="/contact" class="hover:text-white transition-colors">تواصل معنا</a></li>
+            <ul class="space-y-2 text-white">
+              <li><a routerLink="/about" class="hover:text-gray-300 transition-colors">من نحن</a></li>
+              <li><a routerLink="/contact" class="hover:text-gray-300 transition-colors">تواصل معنا</a></li>
             </ul>
           </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-white">
           <p>&copy; 2025 WorkEnrich. جميع الحقوق محفوظة</p>
         </div>
       </div>
