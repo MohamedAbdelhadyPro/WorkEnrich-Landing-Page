@@ -17,6 +17,7 @@ import { CommonModule } from '@angular/common';
                 💻
               </div>
               <span class="ml-2 text-xl font-bold text-gray-900">TechCraft</span>
+              <span class="ml-2 text-xl font-bold text-gray-900">WorkEnrich</span>
             </div>
           </div>
           <div class="hidden md:block">
