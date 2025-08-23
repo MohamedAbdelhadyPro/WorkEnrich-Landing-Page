@@ -98,7 +98,6 @@ import { TranslationService } from '../../services/translation.service';
                   </div>
                 </div>
               </div>
-                    <p class="text-gray-600" [attr.dir]="contact.title === 'الهاتف' ? 'rtl' : 'ltr'">{{ contact.value }}</p>
               <div class="p-8 rounded-2xl text-white" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
                 <h3 class="text-xl font-bold mb-4">لماذا تختارنا؟</h3>
                 <ul class="space-y-3">
