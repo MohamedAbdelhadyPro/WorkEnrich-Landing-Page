@@ -9,76 +9,89 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 relative overflow-hidden">
-        <!-- Subtle background pattern -->
-        <div class="absolute inset-0 opacity-5">
-          <div class="absolute top-10 right-10 w-32 h-32 bg-slate-300 rounded-full"></div>
-          <div class="absolute top-40 left-20 w-20 h-20 bg-blue-300 rounded-full"></div>
-          <div class="absolute bottom-20 right-40 w-24 h-24 bg-gray-300 rounded-full"></div>
-          <div class="absolute bottom-40 left-10 w-16 h-16 bg-slate-400 rounded-full"></div>
-        </div>
-        
+      <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div>
-              <div class="mb-4">
-                <span class="px-4 py-2 bg-slate-100 text-slate-700 text-sm font-medium rounded-full border border-slate-200 shadow-sm">
-                  منتج جديد
-                </span>
-              </div>
-              <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                نظام إدارة الموارد البشرية
-              </h1>
-              <p class="text-xl text-slate-600 mb-6 leading-relaxed">
-                نظام شامل ومتكامل من تطوير <span class="font-bold" style="color: #1A306F">WorkEnrich</span> لإدارة جميع عمليات الموارد البشرية بنظام الاشتراك الشهري المرن.
-              </p>
-              <div class="bg-white border border-slate-200 p-6 rounded-2xl mb-8 shadow-sm hover:shadow-md transition-all duration-300">
-                <div class="flex items-center">
-                  <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mr-4">
-                    <span class="text-slate-600 text-xl">💼</span>
-                  </div>
-                  <div>
-                    <h3 class="font-bold text-slate-800 mb-1 text-lg">نظام اشتراكات مرن</h3>
-                    <p class="text-slate-600">ادفع حسب احتياجاتك - بدون تكاليف إضافية</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                <a href="https://client.workenrich.com/auth/register"
-                   target="_blank"
-                   class="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-xl font-bold transition-all text-center shadow-lg hover:shadow-xl transform hover:scale-105">
-                  تسجيل حساب جديد
-                </a>
-                <a href="https://client.workenrich.com/auth/login"
-                   target="_blank"
-                   class="border-2 border-slate-300 text-slate-700 hover:bg-slate-100 px-8 py-4 rounded-xl font-bold transition-all text-center shadow-sm hover:shadow-md">
-                  تسجيل الدخول
-                </a>
-              </div>
-              <!-- Trust indicators -->
-              <div class="flex flex-wrap gap-4 text-sm text-slate-500">
-                <div class="flex items-center">
-                  <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
-                  آمن ومشفر 100%
-                </div>
-                <div class="flex items-center">
-                  <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
-                  دعم فني 24/7
-                </div>
-                <div class="flex items-center">
-                  <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
-                  تجربة مجانية 30 يوم
-                </div>
-              </div>
+          <!-- Header with centered content -->
+          <div class="text-center mb-12">
+            <div class="inline-flex items-center bg-gray-100 px-4 py-2 rounded-full mb-6">
+              <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+              <span class="text-gray-700 text-sm font-medium">منتج جديد</span>
             </div>
-            <div class="relative">
-              <!-- Subtle decorative frame -->
-              <div class="absolute -inset-2 bg-slate-200 rounded-3xl opacity-30"></div>
-              <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                   alt="نظام إدارة الموارد البشرية" 
-                   class="w-full h-96 object-cover rounded-2xl shadow-lg border-4 border-white relative z-10">
-              <div class="absolute top-4 right-4 bg-white px-4 py-2 rounded-lg shadow-md border border-slate-200">
-                <div class="text-slate-700 font-bold text-sm">منتج جديد</div>
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              نظام إدارة الموارد البشرية
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-4xl mx-auto">
+              نظام شامل ومتكامل من تطوير <span class="font-semibold text-gray-800">WorkEnrich</span> لإدارة جميع عمليات الموارد البشرية بنظام الاشتراك الشهري المرن
+            </p>
+          </div>
+          
+          <!-- Main content card -->
+          <div class="bg-gray-50 rounded-3xl p-8 lg:p-12 shadow-sm border border-gray-200">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <!-- Left side - Content -->
+              <div class="order-2 lg:order-1">
+                <!-- Feature highlight -->
+                <div class="bg-white p-6 rounded-2xl mb-8 shadow-sm border border-gray-200">
+                  <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mr-4">
+                      <span class="text-gray-600 text-lg">🚀</span>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg">نظام اشتراكات مرن</h3>
+                  </div>
+                  <p class="text-gray-600 leading-relaxed">
+                    ادفع حسب احتياجاتك - بدون تكاليف إضافية أو التزامات طويلة المدى
+                  </p>
+                </div>
+                
+                <!-- Action buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                  <a href="https://client.workenrich.com/auth/register"
+                     target="_blank"
+                     class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-2xl font-semibold transition-all text-center shadow-md hover:shadow-lg">
+                    تسجيل حساب جديد
+                  </a>
+                  <a href="https://client.workenrich.com/auth/login"
+                     target="_blank"
+                     class="bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-2xl font-semibold transition-all text-center shadow-sm">
+                    تسجيل الدخول
+                  </a>
+                </div>
+                
+                <!-- Trust indicators -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                  <div class="flex items-center justify-center sm:justify-start">
+                    <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                    <span class="text-gray-600">آمن ومشفر 100%</span>
+                  </div>
+                  <div class="flex items-center justify-center sm:justify-start">
+                    <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                    <span class="text-gray-600">دعم فني 24/7</span>
+                  </div>
+                  <div class="flex items-center justify-center sm:justify-start">
+                    <span class="w-2 h-2 bg-purple-400 rounded-full mr-2"></span>
+                    <span class="text-gray-600">تجربة مجانية 30 يوم</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Right side - Image -->
+              <div class="order-1 lg:order-2 relative">
+                <div class="relative bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
+                  <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                       alt="فريق عمل يستخدم نظام الموارد البشرية" 
+                       class="w-full h-80 object-cover rounded-xl">
+                  
+                  <!-- Floating info card -->
+                  <div class="absolute -bottom-4 -right-4 bg-white px-6 py-4 rounded-xl shadow-lg border border-gray-200">
+                    <div class="flex items-center">
+                      <div class="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">نظام متطور</div>
+                        <div class="text-gray-500 text-xs">متاح الآن</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
