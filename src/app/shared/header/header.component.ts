@@ -138,10 +138,7 @@ import { RouterModule } from '@angular/router';
             </a>
             <a routerLink="/contact"
                (click)="closeMobileMenu()"
-               class="block mx-3 my-2 px-4 py-2 text-base font-medium text-white rounded-lg transition-all shadow-md"
-               style="background-color: #ff6b35;"
-               (mouseenter)="($event.target as HTMLElement)?.style ? ($event.target as HTMLElement).style.backgroundColor='#e55a2b' : null"
-               (mouseleave)="($event.target as HTMLElement)?.style ? ($event.target as HTMLElement).style.backgroundColor='#ff6b35' : null">
+               class="block mx-3 my-2 px-4 py-2 text-base font-medium text-white rounded-lg transition-all shadow-md bg-orange-600 hover:bg-orange-700">
               تواصل معنا
             </a>
           </div>
