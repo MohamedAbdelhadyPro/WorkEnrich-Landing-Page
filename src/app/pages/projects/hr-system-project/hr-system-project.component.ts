@@ -9,26 +9,26 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="py-16" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
+      <section class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div class="mb-4">
-                <span class="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full">
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
                   منتج جديد
                 </span>
               </div>
-              <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+              <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 نظام إدارة الموارد البشرية
               </h1>
-              <p class="text-xl text-blue-100 mb-6 leading-relaxed">
+              <p class="text-xl text-gray-600 mb-6 leading-relaxed">
                 نظام شامل ومتكامل من تطوير <span class="font-bold" style="color: #1A306F">WorkEnrich</span> لإدارة جميع عمليات الموارد البشرية بنظام الاشتراك الشهري المرن.
               </p>
-              <div class="bg-gradient-to-r from-blue-500/10 to-blue-600/10 p-4 rounded-lg mb-8">
+              <div class="bg-white/80 backdrop-blur-sm border border-blue-200 p-4 rounded-lg mb-8">
                 <div class="flex items-center">
                   <span class="text-2xl mr-3">🚀</span>
                   <div>
-                    <h3 class="font-bold text-blue-600 mb-1">نظام اشتراكات مرن</h3>
+                    <h3 class="font-bold text-gray-900 mb-1">نظام اشتراكات مرن</h3>
                     <p class="text-gray-600 text-sm">ادفع حسب احتياجاتك - بدون تكاليف إضافية</p>
                   </div>
                 </div>
@@ -42,7 +42,7 @@ import { RouterModule } from '@angular/router';
                 </a>
                 <a href="https://client.workenrich.com/auth/login"
                    target="_blank"
-                   class="border-2 text-white px-8 py-3 rounded-lg font-medium transition-all text-center hover:text-white"
+                   class="border-2 px-8 py-3 rounded-lg font-medium transition-all text-center"
                    style="border-color: #1A306F; color: #1A306F; hover:background: linear-gradient(to right, #1A306F, #2563eb);">
                   تسجيل الدخول
                 </a>
