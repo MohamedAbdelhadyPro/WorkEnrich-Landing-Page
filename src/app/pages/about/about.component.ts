@@ -10,13 +10,17 @@ import { TranslationService } from '../../services/translation.service';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="py-16" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+      <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div class="inline-flex items-center bg-white/80 backdrop-blur-sm border border-blue-200/50 px-6 py-3 rounded-full mb-8 shadow-sm">
+            <div class="w-3 h-3 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
+            <span class="text-gray-700 font-semibold text-sm">تعرف على فريقنا</span>
+          </div>
+          <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             من نحن
           </h1>
-          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
-            تعرف على قصتنا ورؤيتنا في تطوير الحلول التقنية المبتكرة
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            تعرف على قصتنا ورؤيتنا في تطوير الحلول التقنية المبتكرة التي تساعد الشركات على النمو والتطور
           </p>
         </div>
       </section>
