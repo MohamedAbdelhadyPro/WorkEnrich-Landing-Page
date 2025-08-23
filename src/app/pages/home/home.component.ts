@@ -96,7 +96,7 @@ import { RouterModule } from '@angular/router';
         <a routerLink="/services" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
         </a>
         <a routerLink="/services" class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
-          عرض جميع الخدمات
+          عرض خدمات البرمجة المتخصصة
         </a>
       </div>
     </section>

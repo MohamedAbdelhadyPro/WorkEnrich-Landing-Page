@@ -20,7 +20,7 @@ import { RouterModule } from '@angular/router';
               <a routerLink="/services" 
                  routerLinkActive="text-purple-600" 
                  class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
-                الخدمات
+                خدمات البرمجة المتخصصة
               </a>
               <div class="relative group">
                 <button class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer flex items-center">
@@ -53,11 +53,6 @@ import { RouterModule } from '@angular/router';
                 </div>
               </div>
               <a routerLink="/portfolio" 
-                 routerLinkActive="text-[#1E2E40]"
-                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
-                معرض الأعمال
-              </a>
-              <a routerLink="/about" 
                  routerLinkActive="text-[#1E2E40]"
                  class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 من نحن

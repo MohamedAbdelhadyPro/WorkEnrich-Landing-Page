@@ -22,16 +22,15 @@ import { RouterModule } from '@angular/router';
           <div>
             <h4 class="font-bold mb-4">الخدمات</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a routerLink="/services" class="hover:text-white transition-colors">تطوير المواقع</a></li>
-              <li><a routerLink="/services" class="hover:text-white transition-colors">تطبيقات الجوال</a></li>
-              <li><a routerLink="/services" class="hover:text-white transition-colors">أنظمة إدارة</a></li>
+              <li><a routerLink="/services" class="hover:text-white transition-colors">خدمات البرمجة</a></li>
+              <li><a routerLink="/services" class="hover:text-white transition-colors">مشاريعنا المنجزة</a></li>
+              <li><a routerLink="/services" class="hover:text-white transition-colors">نظام الموارد البشرية</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-bold mb-4">الشركة</h4>
             <ul class="space-y-2 text-gray-400">
               <li><a routerLink="/about" class="hover:text-white transition-colors">من نحن</a></li>
-              <li><a routerLink="/portfolio" class="hover:text-white transition-colors">أعمالنا</a></li>
               <li><a routerLink="/contact" class="hover:text-white transition-colors">اتصل بنا</a></li>
             </ul>
           </div>

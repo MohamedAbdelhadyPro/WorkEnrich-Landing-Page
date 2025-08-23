@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { EcommerceProjectComponent } from './pages/projects/ecommerce-project/ecommerce-project.component';
@@ -15,7 +14,6 @@ import { HrSystemProjectComponent } from './pages/projects/hr-system-project/hr-
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
-  { path: 'portfolio', component: PortfolioComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'projects/ecommerce', component: EcommerceProjectComponent },
