@@ -10,6 +10,7 @@ import { HospitalSystemProjectComponent } from './pages/projects/hospital-system
 import { ElearningProjectComponent } from './pages/projects/elearning-project/elearning-project.component';
 import { BankingAppProjectComponent } from './pages/projects/banking-app-project/banking-app-project.component';
 import { InventorySystemProjectComponent } from './pages/projects/inventory-system-project/inventory-system-project.component';
+import { HrSystemProjectComponent } from './pages/projects/hr-system-project/hr-system-project.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,5 +24,6 @@ export const routes: Routes = [
   { path: 'projects/elearning', component: ElearningProjectComponent },
   { path: 'projects/banking-app', component: BankingAppProjectComponent },
   { path: 'projects/inventory-system', component: InventorySystemProjectComponent },
+  { path: 'projects/hr-system', component: HrSystemProjectComponent },
   { path: '**', redirectTo: '' }
 ];

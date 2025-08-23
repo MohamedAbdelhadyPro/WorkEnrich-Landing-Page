@@ -114,6 +114,15 @@ export class PortfolioComponent {
       categoryColor: 'bg-purple-100 text-purple-800',
       technologies: ['Django', 'PostgreSQL', 'Redis', 'Docker'],
       link: '/projects/inventory-system'
+    },
+    {
+      title: 'نظام إدارة الموارد البشرية',
+      description: 'نظام شامل لإدارة الموظفين والحضور والرواتب والإجازات',
+      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'نظام إدارة',
+      categoryColor: 'bg-indigo-100 text-indigo-800',
+      technologies: ['Angular', 'Node.js', 'PostgreSQL', 'JWT', 'Chart.js'],
+      link: '/projects/hr-system'
     }
   ];
 }
