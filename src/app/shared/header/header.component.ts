@@ -15,6 +15,17 @@ import { RouterModule } from '@angular/router';
             <img src="assets/13.png" alt="WorkEnrich" class="h-8 w-auto">
           </a>
           
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button (click)="toggleMobileMenu()" 
+                    class="text-gray-900 hover:text-[#1E2E40] p-2 rounded-lg transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path *ngIf="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                <path *ngIf="isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          
           <!-- Navigation items -->
           <div class="hidden md:flex items-center space-x-4 space-x-reverse">
               <a routerLink="/" 
@@ -70,10 +81,90 @@ import { RouterModule } from '@angular/router';
               </a>
           </div>
         </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden" [class.hidden]="!isMobileMenuOpen">
+          <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+            <a routerLink="/" 
+               (click)="closeMobileMenu()"
+               routerLinkActive="bg-[#1E2E40]/10 text-[#1E2E40]" 
+               [routerLinkActiveOptions]="{exact: true}"
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-[#1E2E40] hover:bg-gray-50 rounded-lg transition-colors">
+              الرئيسية
+            </a>
+            
+            <!-- Mobile Products Dropdown -->
+            <div class="space-y-1">
+              <button (click)="toggleProductsDropdown()"
+                      class="w-full flex items-center justify-between px-3 py-2 text-base font-medium text-gray-900 hover:text-[#1E2E40] hover:bg-gray-50 rounded-lg transition-colors">
+                <span>منتجاتنا</span>
+                <svg class="w-4 h-4 transition-transform" [class.rotate-180]="isProductsDropdownOpen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="pr-4 space-y-1" [class.hidden]="!isProductsDropdownOpen">
+                <a routerLink="/projects/hr-system" 
+                   (click)="closeMobileMenu()"
+                   class="block px-3 py-2 text-sm text-gray-700 hover:text-[#1E2E40] hover:bg-gray-50 rounded-lg transition-colors">
+                  <div class="flex items-center">
+                    <span class="text-[#1E2E40] text-lg mr-3">👥</span>
+                    <div>
+                      <div class="font-medium">نظام إدارة الموارد البشرية</div>
+                      <div class="text-xs text-gray-500">إدارة شاملة للموظفين والرواتب</div>
+                    </div>
+                  </div>
+                </a>
+                <a routerLink="/contact" 
+                   (click)="closeMobileMenu()"
+                   class="block px-3 py-2 text-sm text-[#1E2E40] hover:bg-[#1E2E40]/5 rounded-lg transition-colors">
+                  طلب منتج مخصص
+                </a>
+              </div>
+            </div>
+            
+            <a routerLink="/services" 
+               (click)="closeMobileMenu()"
+               routerLinkActive="bg-purple-100 text-purple-600" 
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-[#1E2E40] hover:bg-gray-50 rounded-lg transition-colors">
+              خدمات البرمجة المتخصصة
+            </a>
+            <a routerLink="/about" 
+               (click)="closeMobileMenu()"
+               routerLinkActive="bg-[#1E2E40]/10 text-[#1E2E40]"
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-[#1E2E40] hover:bg-gray-50 rounded-lg transition-colors">
+              من نحن
+            </a>
+            <a routerLink="/contact" 
+               (click)="closeMobileMenu()"
+               routerLinkActive="bg-[#1E2E40]/10 text-[#1E2E40]"
+               class="block mx-3 my-2 px-4 py-2 text-base font-medium border-2 border-[#1E2E40] text-[#1E2E40] hover:bg-[#1E2E40] hover:text-white rounded-lg transition-colors text-center">
+              تواصل معنا
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
   `
 })
 export class HeaderComponent {
+  isMobileMenuOpen = false;
+  isProductsDropdownOpen = false;
+
   constructor() {}
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    if (!this.isMobileMenuOpen) {
+      this.isProductsDropdownOpen = false;
+    }
+  }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+    this.isProductsDropdownOpen = false;
+  }
+
+  toggleProductsDropdown() {
+    this.isProductsDropdownOpen = !this.isProductsDropdownOpen;
+  }
 }
