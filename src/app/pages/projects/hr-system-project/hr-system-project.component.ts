@@ -246,12 +246,12 @@ import { RouterModule } from '@angular/router';
       </section>
 
       <!-- CTA Section -->
-      <section class="py-20" style="background: linear-gradient(to right, #1A306F, #2563eb);">
+      <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
             جاهز لتحويل إدارة الموارد البشرية في شركتك؟
           </h2>
-          <p class="text-xl text-blue-100 mb-8">
+          <p class="text-xl text-gray-600 mb-8">
             ابدأ تجربتك المجانية اليوم ولا تدفع شيئاً لمدة 30 يوم
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -260,11 +260,11 @@ import { RouterModule } from '@angular/router';
                class="bg-white hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 shadow-lg text-lg" style="color: #1A306F;">
               ابدأ التجربة المجانية
             </a>
-            <button class="border-2 border-white text-white hover:bg-white px-8 py-4 rounded-lg font-bold transition-all text-lg" style="hover:color: #1A306F;">
+            <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-bold transition-all text-lg">
               احجز عرض توضيحي
             </button>
           </div>
-          <p class="text-blue-200 text-sm mt-4">
+          <p class="text-gray-500 text-sm mt-4">
             ✓ تجربة مجانية 30 يوم  ✓ لا حاجة لبطاقة ائتمان  ✓ إعداد فوري
           </p>
         </div>
