@@ -13,7 +13,7 @@ import { TranslationService } from '../../services/translation.service';
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div class="col-span-1 md:col-span-2">
             <div class="flex items-center mb-4">
-              <span class="ml-2 text-xl font-bold">WorkEnrich</span>
+              <img src="assets/13.png" alt="WorkEnrich" class="h-8 w-auto">
             </div>
             <p class="text-gray-400 mb-4">
               شركة متخصصة في تطوير البرمجيات والتطبيقات المبتكرة التي تساعد الشركات على النمو والتطور في العصر الرقمي
