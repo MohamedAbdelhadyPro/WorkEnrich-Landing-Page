@@ -69,7 +69,7 @@ import { LanguageService } from '../../services/language.service';
               <div class="text-blue-300 text-sm mt-1">عملاء راضون عن خدماتنا</div>
             </div>
             <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-4xl font-bold text-white mb-2">+5</div>
+              <div class="text-4xl font-bold text-white mb-2">+15</div>
               <div class="text-blue-200 font-medium">سنوات خبرة</div>
               <div class="text-blue-300 text-sm mt-1">خبرة متراكمة في السوق</div>
             </div>
