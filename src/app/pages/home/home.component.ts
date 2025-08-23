@@ -270,7 +270,10 @@ import { LanguageService } from '../../services/language.service';
           </div>
           
           <!-- Testimonials Container -->
-          <div class="relative h-40 overflow-hidden">
+          <div class="relative h-40 overflow-hidden" 
+               (touchstart)="onTouchStart($event)"
+               (touchmove)="onTouchMove($event)"
+               (touchend)="onTouchEnd($event)">
             <div class="absolute inset-0 transition-transform duration-700 ease-in-out"
                  [style.transform]="'translateX(' + (currentTestimonial * -100) + '%)'">
               <div class="flex">
@@ -295,6 +298,32 @@ import { LanguageService } from '../../services/language.service';
           </div>
           
           <!-- Navigation Dots -->
+          <div class="flex justify-center space-x-2 mt-6">
+            <button *ngFor="let testimonial of testimonials; let i = index"
+                    (click)="setCurrentTestimonial(i)"
+                    class="w-2 h-2 rounded-full transition-all duration-300"
+                    [class.bg-blue-600]="i === currentTestimonial"
+                    [class.bg-gray-300]="i !== currentTestimonial">
+            </button>
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <div class="absolute top-1/2 transform -translate-y-1/2 left-4">
+            <button (click)="previousTestimonial()"
+                    class="w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 right-4">
+            <button (click)="nextTestimonial()"
+                    class="w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
         </div>
         
         <!-- CTA -->
@@ -381,9 +410,81 @@ export class HomeComponent {
       position: 'مدير تقنية المعلومات',
       company: 'شركة الحلول المتقدمة',
       initials: 'عف'
+    },
+    {
+      quote: 'نظام إدارة العيادات الذي طوروه لنا سهل علينا متابعة المرضى وتنظيم المواعيد. نظام متكامل ورائع.',
+      name: 'د. منى الأحمد',
+      position: 'مديرة العيادة',
+      company: 'مجمع العيادات الطبية',
+      initials: 'مأ'
+    },
+    {
+      quote: 'تطبيق التوصيل الذي طوروه لنا زاد من كفاءة العمليات وقلل أوقات التسليم. عمل احترافي.',
+      name: 'يوسف الخالدي',
+      position: 'مدير العمليات',
+      company: 'شركة التوصيل السريع',
+      initials: 'يخ'
+    },
+    {
+      quote: 'منصة التجارة الإلكترونية التي طوروها لنا حققت أرباحاً ممتازة وزادت قاعدة عملائنا بشكل كبير.',
+      name: 'لينا الحمود',
+      position: 'مديرة المبيعات',
+      company: 'متجر الإلكترونيات',
+      initials: 'لح'
+    },
+    {
+      quote: 'نظام إدارة المدارس الذي طوروه سهل على الإدارة والمعلمين متابعة الطلاب وأولياء الأمور.',
+      name: 'أمل الرشيد',
+      position: 'مديرة المدرسة',
+      company: 'مدارس النور الأهلية',
+      initials: 'أر'
+    },
+    {
+      quote: 'تطبيق إدارة الصالة الرياضية ساعدنا في تنظيم العضويات والحصص التدريبية بشكل مثالي.',
+      name: 'طارق العنزي',
+      position: 'مدير الصالة الرياضية',
+      company: 'فيتنس بلس',
+      initials: 'طع'
+    },
+    {
+      quote: 'نظام إدارة المطاعم الذي طوروه لنا حسن من خدمة العملاء وسرع عمليات الطلب والدفع.',
+      name: 'سلمان القرني',
+      position: 'مالك المطعم',
+      company: 'مطعم الأصالة',
+      initials: 'سق'
+    },
+    {
+      quote: 'تطبيق إدارة العقارات ساعدنا في تنظيم الممتلكات ومتابعة العقود والإيجارات بكفاءة عالية.',
+      name: 'هند الدوسري',
+      position: 'مديرة العقارات',
+      company: 'شركة العقارات المتميزة',
+      initials: 'هد'
+    },
+    {
+      quote: 'نظام إدارة الورش الذي طوروه لنا نظم عمليات الصيانة وتتبع قطع الغيار بشكل ممتاز.',
+      name: 'عبدالعزيز المطيري',
+      position: 'مدير الورشة',
+      company: 'ورشة السيارات المتقدمة',
+      initials: 'عم'
+    },
+    {
+      quote: 'تطبيق إدارة الصيدلية سهل علينا تتبع الأدوية وإدارة المخزون والوصفات الطبية.',
+      name: 'نادية الشهري',
+      position: 'مديرة الصيدلية',
+      company: 'صيدلية الشفاء',
+      initials: 'نش'
+    },
+    {
+      quote: 'نظام إدارة المكتبة الذي طوروه لنا حسن من تجربة القراء وسهل عمليات الاستعارة والإرجاع.',
+      name: 'محمد الزهراني',
+      position: 'أمين المكتبة',
+      company: 'مكتبة المعرفة العامة',
+      initials: 'مز'
     }
   ];
   private testimonialInterval: any;
+  private touchStartX: number = 0;
+  private touchEndX: number = 0;
 
   constructor(
     public translationService: TranslationService,
@@ -416,5 +517,39 @@ export class HomeComponent {
 
   setCurrentTestimonial(index: number) {
     this.currentTestimonial = index;
+    // Reset auto-slide timer when manually navigating
+    this.resetAutoSlide();
+  }
+
+  resetAutoSlide() {
+    if (this.testimonialInterval) {
+      clearInterval(this.testimonialInterval);
+    }
+    this.startAutoSlide();
+  }
+
+  // Touch/Swipe functionality
+  onTouchStart(event: TouchEvent) {
+    this.touchStartX = event.touches[0].clientX;
+  }
+
+  onTouchMove(event: TouchEvent) {
+    this.touchEndX = event.touches[0].clientX;
+  }
+
+  onTouchEnd(event: TouchEvent) {
+    const swipeThreshold = 50; // Minimum distance for swipe
+    const swipeDistance = this.touchStartX - this.touchEndX;
+
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+      if (swipeDistance > 0) {
+        // Swipe left - next testimonial
+        this.nextTestimonial();
+      } else {
+        // Swipe right - previous testimonial
+        this.previousTestimonial();
+      }
+      this.resetAutoSlide();
+    }
   }
 }
