@@ -14,11 +14,11 @@ import { RouterModule } from '@angular/router';
           <div class="flex items-center">
             <a routerLink="/" class="flex items-center space-x-2">
               <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-lg">TC</span>
+                <span class="text-white font-bold text-lg">WE</span>
               </div>
               <div class="mr-3">
-                <div class="text-xl font-bold text-gray-900">TechCraft</div>
-                <div class="text-xs text-gray-500">Solutions</div>
+                <div class="text-xl font-bold text-gray-900">WorkEnrich</div>
+                <div class="text-xs text-gray-500">حلول البرمجة المتخصصة</div>
               </div>
             </a>
           </div>
@@ -31,30 +31,25 @@ import { RouterModule } from '@angular/router';
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               الرئيسية
             </a>
-            <a routerLink="/development-services" 
+            <a routerLink="/services" 
                routerLinkActive="text-blue-600"
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              خدمات التطوير
+              خدماتنا
             </a>
-            <a routerLink="/managed-solutions" 
+            <a routerLink="/hr-system" 
                routerLinkActive="text-blue-600"
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              الحلول المدارة
+              نظام HR
             </a>
-            <a routerLink="/case-studies" 
+            <a routerLink="/accounting-system" 
                routerLinkActive="text-blue-600"
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              دراسات الحالة
+              نظام المحاسبة
             </a>
-            <a routerLink="/blog" 
+            <a routerLink="/about" 
                routerLinkActive="text-blue-600"
                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              المدونة
-            </a>
-            <a routerLink="/faq" 
-               routerLinkActive="text-blue-600"
-               class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              الأسئلة الشائعة
+              من نحن
             </a>
             <a routerLink="/contact" 
                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">
@@ -82,30 +77,25 @@ import { RouterModule } from '@angular/router';
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
               الرئيسية
             </a>
-            <a routerLink="/development-services" 
+            <a routerLink="/services" 
                (click)="closeMobileMenu()"
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              خدمات التطوير
+              خدماتنا
             </a>
-            <a routerLink="/managed-solutions" 
+            <a routerLink="/hr-system" 
                (click)="closeMobileMenu()"
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              الحلول المدارة
+              نظام HR
             </a>
-            <a routerLink="/case-studies" 
+            <a routerLink="/accounting-system" 
                (click)="closeMobileMenu()"
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              دراسات الحالة
+              نظام المحاسبة
             </a>
-            <a routerLink="/blog" 
+            <a routerLink="/about" 
                (click)="closeMobileMenu()"
                class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              المدونة
-            </a>
-            <a routerLink="/faq" 
-               (click)="closeMobileMenu()"
-               class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">
-              الأسئلة الشائعة
+              من نحن
             </a>
             <a routerLink="/contact" 
                (click)="closeMobileMenu()"

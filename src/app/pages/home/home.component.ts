@@ -13,37 +13,37 @@ import { RouterModule } from '@angular/router';
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="text-center lg:text-right">
             <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              نحن نبني 
+              حلول برمجية 
               <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                حلول البرمجة
+                متخصصة
               </span>
-              التي تحتاجها شركتك
+              لشركتك
             </h1>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              بينما ندير بعض العمليات من أجلك. متخصصون في تطوير أنظمة إدارة الموارد البشرية، 
-              علاقات العملاء، تخطيط موارد المؤسسة، والمبيعات والمخزون.
+              نقدم أنظمة إدارة الموارد البشرية وأنظمة المحاسبة المالية المتطورة 
+              لتحسين كفاءة عمليات شركتك وزيادة الإنتاجية
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a routerLink="/contact" 
                  class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all transform hover:scale-105 shadow-lg">
-                احصل على استشارة مجانية
+                احصل على عرض مجاني
               </a>
-              <a routerLink="/development-services" 
+              <a routerLink="/services" 
                  class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg text-lg font-medium transition-all text-center">
-                استكشف خدماتنا
+                استكشف حلولنا
               </a>
             </div>
             <div class="flex items-center justify-center lg:justify-start space-x-8">
               <div class="text-center">
-                <div class="text-3xl font-bold text-blue-600">500+</div>
-                <div class="text-gray-600 text-sm">مشروع مكتمل</div>
+                <div class="text-3xl font-bold text-blue-600">200+</div>
+                <div class="text-gray-600 text-sm">شركة تثق بنا</div>
               </div>
               <div class="text-center">
-                <div class="text-3xl font-bold text-purple-600">200+</div>
-                <div class="text-gray-600 text-sm">عميل راضي</div>
+                <div class="text-3xl font-bold text-purple-600">50K+</div>
+                <div class="text-gray-600 text-sm">مستخدم نشط</div>
               </div>
               <div class="text-center">
-                <div class="text-3xl font-bold text-green-600">10+</div>
+                <div class="text-3xl font-bold text-green-600">8+</div>
                 <div class="text-gray-600 text-sm">سنوات خبرة</div>
               </div>
             </div>
@@ -51,20 +51,20 @@ import { RouterModule } from '@angular/router';
           <div class="relative">
             <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-8 transform rotate-2">
               <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                   alt="Software Solutions" 
+                   alt="HR Management System" 
                    class="w-full h-64 object-cover rounded-lg mb-4">
               <div class="space-y-3">
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span class="text-gray-700">أنظمة نشطة: 150+</span>
+                  <span class="text-gray-700">أنظمة نشطة: 200+</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span class="text-gray-700">فريق المطورين: 25+</span>
+                  <span class="text-gray-700">موظف مُدار: 50K+</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
-                  <span class="text-gray-700">تقنيات حديثة: 30+</span>
+                  <span class="text-gray-700">معاملة مالية يومياً: 10K+</span>
                 </div>
               </div>
             </div>
@@ -74,29 +74,67 @@ import { RouterModule } from '@angular/router';
       </div>
     </section>
 
-    <!-- Services Overview -->
+    <!-- Main Products -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            خدماتنا الأساسية
+            برامجنا المتخصصة
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            نقدم حلول برمجية متكاملة تلبي احتياجات شركتك وتساعدها على النمو والازدهار
+            حلول برمجية متكاملة مصممة خصيصاً لتلبية احتياجات الشركات الحديثة
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div *ngFor="let service of mainServices" 
-               class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 group text-center">
-            <div class="w-16 h-16 mx-auto mb-6 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg text-4xl"
-                 [ngClass]="service.bgColor">
-              {{ service.icon }}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- HR System -->
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center text-white text-3xl ml-4">
+                👥
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">نظام إدارة الموارد البشرية</h3>
+                <p class="text-blue-600 font-medium">HR Management System</p>
+              </div>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ service.title }}</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">{{ service.description }}</p>
-            <a [routerLink]="service.link" 
-               class="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors">
-              اعرف المزيد ←
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              نظام شامل لإدارة جميع عمليات الموارد البشرية من الحضور والانصراف إلى الرواتب والإجازات والتقييمات
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div *ngFor="let feature of hrFeatures" class="flex items-center">
+                <span class="w-2 h-2 bg-blue-500 rounded-full ml-2"></span>
+                <span class="text-gray-700 text-sm">{{ feature }}</span>
+              </div>
+            </div>
+            <a routerLink="/hr-system" 
+               class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-block">
+              اعرف المزيد عن نظام HR
+            </a>
+          </div>
+
+          <!-- Accounting System -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center text-white text-3xl ml-4">
+                💰
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">نظام إدارة الحسابات</h3>
+                <p class="text-green-600 font-medium">Accounting Management System</p>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              نظام محاسبي متكامل يدير جميع العمليات المالية من الفواتير والمدفوعات إلى التقارير المالية والميزانيات
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div *ngFor="let feature of accountingFeatures" class="flex items-center">
+                <span class="w-2 h-2 bg-green-500 rounded-full ml-2"></span>
+                <span class="text-gray-700 text-sm">{{ feature }}</span>
+              </div>
+            </div>
+            <a routerLink="/accounting-system" 
+               class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-block">
+              اعرف المزيد عن نظام المحاسبة
             </a>
           </div>
         </div>
@@ -106,31 +144,23 @@ import { RouterModule } from '@angular/router';
     <!-- Why Choose Us -->
     <section class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              لماذا تختار TechCraft Solutions؟
-            </h2>
-            <p class="text-lg text-gray-600 mb-8">
-              نحن لا نقدم فقط حلول برمجية، بل نصبح شريكك في النجاح من خلال إدارة العمليات التقنية وتقديم الدعم المستمر.
-            </p>
-            <div class="space-y-6">
-              <div *ngFor="let feature of whyChooseUs" class="flex items-start">
-                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1 ml-4">
-                  <span class="text-blue-600 text-sm">✓</span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-gray-900 mb-2">{{ feature.title }}</h4>
-                  <p class="text-gray-600">{{ feature.description }}</p>
-                </div>
-              </div>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            لماذا تختار WorkEnrich؟
+          </h2>
+          <p class="text-xl text-gray-600">
+            نحن نقدم أكثر من مجرد برامج، نقدم حلول متكاملة لنجاح أعمالك
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div *ngFor="let advantage of advantages" 
+               class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-3xl"
+                 [ngClass]="advantage.bgColor">
+              {{ advantage.icon }}
             </div>
-          </div>
-          <div class="relative">
-            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                 alt="Our Team" 
-                 class="w-full h-96 object-cover rounded-2xl shadow-lg">
-            <div class="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ advantage.title }}</h3>
+            <p class="text-gray-600 leading-relaxed">{{ advantage.description }}</p>
           </div>
         </div>
       </div>
@@ -140,19 +170,19 @@ import { RouterModule } from '@angular/router';
     <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
       <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
-          جاهز لتطوير حلول برمجية لشركتك؟
+          جاهز لتطوير شركتك؟
         </h2>
         <p class="text-xl text-blue-100 mb-8">
-          احصل على استشارة مجانية واكتشف كيف يمكننا مساعدتك في تحقيق أهدافك التقنية
+          احصل على استشارة مجانية واكتشف كيف يمكن لحلولنا البرمجية تحسين أداء شركتك
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a routerLink="/contact" 
              class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-medium transition-colors">
             احجز استشارة مجانية
           </a>
-          <a routerLink="/case-studies" 
+          <a routerLink="/services" 
              class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-medium transition-colors">
-            شاهد أعمالنا
+            تصفح خدماتنا
           </a>
         </div>
       </div>
@@ -160,61 +190,60 @@ import { RouterModule } from '@angular/router';
   `
 })
 export class HomeComponent {
-  mainServices = [
+  hrFeatures = [
+    'إدارة الموظفين',
+    'الحضور والانصراف',
+    'حساب الرواتب',
+    'إدارة الإجازات',
+    'تقييم الأداء',
+    'التقارير التفصيلية'
+  ];
+
+  accountingFeatures = [
+    'إدارة الفواتير',
+    'تتبع المدفوعات',
+    'التقارير المالية',
+    'إدارة الميزانية',
+    'حسابات العملاء',
+    'التحليل المالي'
+  ];
+
+  advantages = [
     {
-      icon: '👥',
-      title: 'أنظمة الموارد البشرية',
-      description: 'إدارة شاملة للموظفين، الحضور، الرواتب والإجازات',
-      bgColor: 'bg-blue-100',
-      link: '/development-services'
+      icon: '🎯',
+      title: 'حلول مخصصة',
+      description: 'نطور الأنظمة وفقاً لاحتياجاتك الخاصة وليس قوالب جاهزة',
+      bgColor: 'bg-blue-100'
     },
     {
-      icon: '🤝',
-      title: 'أنظمة إدارة العملاء',
-      description: 'تنظيم علاقات العملاء وتحسين المبيعات',
-      bgColor: 'bg-green-100',
-      link: '/development-services'
+      icon: '🔒',
+      title: 'أمان عالي',
+      description: 'نطبق أعلى معايير الأمان لحماية بيانات شركتك الحساسة',
+      bgColor: 'bg-green-100'
     },
     {
-      icon: '⚙️',
-      title: 'تخطيط موارد المؤسسة',
-      description: 'تكامل جميع عمليات الشركة في نظام واحد',
-      bgColor: 'bg-purple-100',
-      link: '/development-services'
+      icon: '⚡',
+      title: 'أداء سريع',
+      description: 'أنظمة محسنة للأداء العالي تتحمل أعباء العمل الكثيفة',
+      bgColor: 'bg-yellow-100'
+    },
+    {
+      icon: '🛠️',
+      title: 'دعم مستمر',
+      description: 'فريق دعم فني متاح 24/7 لضمان استمرارية عمل أنظمتك',
+      bgColor: 'bg-purple-100'
     },
     {
       icon: '📊',
-      title: 'أنظمة المبيعات والمخزون',
-      description: 'إدارة المخزون وتتبع المبيعات والتقارير',
-      bgColor: 'bg-orange-100',
-      link: '/development-services'
-    }
-  ];
-
-  whyChooseUs = [
-    {
-      title: 'خبرة عميقة',
-      description: 'أكثر من 10 سنوات في تطوير الحلول البرمجية للشركات'
+      title: 'تقارير ذكية',
+      description: 'تقارير تحليلية متقدمة تساعدك في اتخاذ القرارات الصحيحة',
+      bgColor: 'bg-indigo-100'
     },
     {
-      title: 'حلول مخصصة',
-      description: 'نطور الأنظمة وفقاً لاحتياجاتك الخاصة وليس قوالب جاهزة'
-    },
-    {
-      title: 'دعم مستمر',
-      description: 'فريق دعم فني متاح 24/7 لضمان استمرارية عملك'
-    },
-    {
-      title: 'إدارة العمليات',
-      description: 'ندير الأنظمة نيابة عنك لتركز على نمو أعمالك'
-    },
-    {
-      title: 'تقنيات حديثة',
-      description: 'نستخدم أحدث التقنيات لضمان الأداء والأمان'
-    },
-    {
-      title: 'أسعار تنافسية',
-      description: 'حلول عالية الجودة بأسعار مناسبة لجميع أحجام الشركات'
+      icon: '💡',
+      title: 'سهولة الاستخدام',
+      description: 'واجهات بديهية وسهلة الاستخدام لجميع مستويات المستخدمين',
+      bgColor: 'bg-pink-100'
     }
   ];
 }

@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
             تواصل معنا
           </h1>
           <p class="text-xl text-gray-600">
-            جاهز لبدء مشروعك القادم؟ تواصل معنا اليوم واحصل على استشارة مجانية
+            جاهز لتطوير شركتك؟ تواصل معنا اليوم واحصل على استشارة مجانية
           </p>
         </div>
       </section>
@@ -70,18 +70,17 @@ import { FormsModule } from '@angular/forms';
                 </div>
                 
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">نوع الخدمة المطلوبة</label>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">الخدمة المطلوبة</label>
                   <select [(ngModel)]="contactForm.service"
                           name="service"
                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    <option value="">اختر نوع الخدمة</option>
-                    <option value="hr">نظام إدارة الموارد البشرية (HR)</option>
-                    <option value="crm">نظام إدارة علاقات العملاء (CRM)</option>
-                    <option value="erp">نظام تخطيط موارد المؤسسة (ERP)</option>
-                    <option value="inventory">نظام المبيعات والمخزون</option>
-                    <option value="managed">الحلول المدارة</option>
+                    <option value="">اختر الخدمة المطلوبة</option>
+                    <option value="hr">نظام إدارة الموارد البشرية</option>
+                    <option value="accounting">نظام إدارة الحسابات</option>
+                    <option value="both">كلا النظامين</option>
                     <option value="consultation">استشارة تقنية</option>
-                    <option value="other">أخرى</option>
+                    <option value="support">دعم فني</option>
+                    <option value="training">تدريب</option>
                   </select>
                 </div>
                 
@@ -93,8 +92,8 @@ import { FormsModule } from '@angular/forms';
                     <option value="">اختر حجم الشركة</option>
                     <option value="small">صغيرة (1-50 موظف)</option>
                     <option value="medium">متوسطة (51-200 موظف)</option>
-                    <option value="large">كبيرة (201-1000 موظف)</option>
-                    <option value="enterprise">مؤسسية (أكثر من 1000 موظف)</option>
+                    <option value="large">كبيرة (201-500 موظف)</option>
+                    <option value="enterprise">مؤسسية (أكثر من 500 موظف)</option>
                   </select>
                 </div>
                 
@@ -105,21 +104,7 @@ import { FormsModule } from '@angular/forms';
                             required
                             rows="5"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                            placeholder="اكتب تفاصيل مشروعك، احتياجاتك، والنتائج المتوقعة..."></textarea>
-                </div>
-                
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">الميزانية المتوقعة</label>
-                  <select [(ngModel)]="contactForm.budget"
-                          name="budget"
-                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    <option value="">اختر الميزانية المتوقعة</option>
-                    <option value="10k-25k">10,000 - 25,000 ريال</option>
-                    <option value="25k-50k">25,000 - 50,000 ريال</option>
-                    <option value="50k-100k">50,000 - 100,000 ريال</option>
-                    <option value="100k+">أكثر من 100,000 ريال</option>
-                    <option value="discuss">أفضل مناقشتها</option>
-                  </select>
+                            placeholder="اكتب تفاصيل احتياجاتك والنتائج المتوقعة..."></textarea>
                 </div>
                 
                 <button type="submit" 
@@ -157,7 +142,7 @@ import { FormsModule } from '@angular/forms';
                   </li>
                   <li class="flex items-center">
                     <span class="w-2 h-2 bg-white rounded-full ml-3"></span>
-                    فريق متخصص مع خبرة 10+ سنوات
+                    فريق متخصص في أنظمة HR والمحاسبة
                   </li>
                   <li class="flex items-center">
                     <span class="w-2 h-2 bg-white rounded-full ml-3"></span>
@@ -165,7 +150,7 @@ import { FormsModule } from '@angular/forms';
                   </li>
                   <li class="flex items-center">
                     <span class="w-2 h-2 bg-white rounded-full ml-3"></span>
-                    دعم فني مستمر وحلول مدارة
+                    دعم فني مستمر وتدريب شامل
                   </li>
                   <li class="flex items-center">
                     <span class="w-2 h-2 bg-white rounded-full ml-3"></span>
@@ -202,7 +187,7 @@ import { FormsModule } from '@angular/forms';
               <div class="bg-green-50 p-6 rounded-xl border border-green-200">
                 <h3 class="font-bold text-green-900 mb-2">🎯 احجز استشارة مجانية</h3>
                 <p class="text-green-700 text-sm mb-4">
-                  احصل على استشارة مجانية لمدة 30 دقيقة لمناقشة مشروعك واحتياجاتك
+                  احصل على استشارة مجانية لمدة 30 دقيقة لمناقشة احتياجاتك
                 </p>
                 <a href="tel:+966501234567" 
                    class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
@@ -224,15 +209,14 @@ export class ContactComponent {
     phone: '',
     service: '',
     companySize: '',
-    message: '',
-    budget: ''
+    message: ''
   };
 
   contactInfo = [
     {
       icon: '📧',
       title: 'البريد الإلكتروني',
-      value: 'info@techcraft-solutions.com',
+      value: 'info@workenrich.com',
       additional: 'نرد خلال 24 ساعة'
     },
     {
@@ -282,8 +266,7 @@ export class ContactComponent {
       phone: '',
       service: '',
       companySize: '',
-      message: '',
-      budget: ''
+      message: ''
     };
   }
 }
