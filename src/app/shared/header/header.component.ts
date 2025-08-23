@@ -137,9 +137,8 @@ import { RouterModule } from '@angular/router';
               من نحن
             </a>
             <a routerLink="/contact" 
-               class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg"
-               routerLinkActive="bg-orange-600 shadow-lg font-semibold">
-              تواصل معنا
+               (click)="closeMobileMenu()"
+               class="block mx-3 my-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg text-center">
             </a>
           </div>
         </div>
