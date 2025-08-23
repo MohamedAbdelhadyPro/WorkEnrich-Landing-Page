@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { Users, Building2, Award, Clock, BarChart3, Shield } from 'lucide-angular';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, Users, Building2, Award, Clock, BarChart3, Shield],
   template: `
     <!-- Navigation -->
     <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
@@ -13,8 +14,8 @@ import { CommonModule } from '@angular/common';
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center">
             <div class="flex-shrink-0 flex items-center">
-              <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">WE</span>
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+                <lucide-users class="w-6 h-6 text-white"></lucide-users>
               </div>
               <span class="ml-2 text-xl font-bold text-gray-900">WorkEnrich</span>
             </div>
@@ -113,9 +114,16 @@ import { CommonModule } from '@angular/common';
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div *ngFor="let feature of features" 
                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 group">
-            <div class="w-12 h-12 bg-gradient-to-r rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            <div class="w-14 h-14 bg-gradient-to-r rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg"
                  [ngClass]="feature.bgColor">
-              <span class="text-2xl">{{ feature.icon }}</span>
+              <ng-container [ngSwitch]="feature.iconType">
+                <lucide-users *ngSwitchCase="'users'" class="w-7 h-7 text-white"></lucide-users>
+                <lucide-building2 *ngSwitchCase="'building'" class="w-7 h-7 text-white"></lucide-building2>
+                <lucide-award *ngSwitchCase="'award'" class="w-7 h-7 text-white"></lucide-award>
+                <lucide-clock *ngSwitchCase="'clock'" class="w-7 h-7 text-white"></lucide-clock>
+                <lucide-bar-chart3 *ngSwitchCase="'chart'" class="w-7 h-7 text-white"></lucide-bar-chart3>
+                <lucide-shield *ngSwitchCase="'shield'" class="w-7 h-7 text-white"></lucide-shield>
+              </ng-container>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">{{ feature.title }}</h3>
             <p class="text-gray-600 leading-relaxed">{{ feature.description }}</p>
@@ -252,8 +260,8 @@ import { CommonModule } from '@angular/common';
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div class="col-span-1 md:col-span-2">
             <div class="flex items-center mb-4">
-              <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">WE</span>
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+                <lucide-users class="w-6 h-6 text-white"></lucide-users>
               </div>
               <span class="ml-2 text-xl font-bold">WorkEnrich</span>
             </div>
@@ -289,37 +297,37 @@ import { CommonModule } from '@angular/common';
 export class App {
   features = [
     {
-      icon: '👥',
+      iconType: 'users',
       title: 'إدارة الموظفين',
       description: 'نظام شامل لإدارة بيانات الموظفين، التوظيف، والتقييمات مع واجهة سهلة الاستخدام.',
       bgColor: 'from-blue-400 to-blue-600'
     },
     {
-      icon: '💰',
+      iconType: 'building',
       title: 'نظام الرواتب',
       description: 'حساب الرواتب والمكافآت والخصومات تلقائياً مع إنتاج التقارير المالية الشاملة.',
       bgColor: 'from-green-400 to-green-600'
     },
     {
-      icon: '📅',
+      iconType: 'award',
       title: 'إدارة الإجازات',
       description: 'نظام متطور لطلب الإجازات والموافقة عليها مع تتبع الرصيد والتنبيهات الذكية.',
       bgColor: 'from-orange-400 to-orange-600'
     },
     {
-      icon: '⏰',
+      iconType: 'clock',
       title: 'الحضور والانصراف',
       description: 'مراقبة دقيقة لأوقات الحضور والانصراف مع التكامل مع أنظمة البصمة الحديثة.',
       bgColor: 'from-purple-400 to-purple-600'
     },
     {
-      icon: '📊',
+      iconType: 'chart',
       title: 'التقارير التحليلية',
       description: 'تقارير مفصلة وتحليلات ذكية تساعد في اتخاذ القرارات الاستراتيجية للموارد البشرية.',
       bgColor: 'from-teal-400 to-teal-600'
     },
     {
-      icon: '🔒',
+      iconType: 'shield',
       title: 'الأمان والخصوصية',
       description: 'حماية عالية المستوى لبيانات الموظفين مع التشفير والنسخ الاحتياطي التلقائي.',
       bgColor: 'from-red-400 to-red-600'
