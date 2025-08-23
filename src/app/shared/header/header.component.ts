@@ -23,11 +23,6 @@ import { RouterModule } from '@angular/router';
                  class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 الرئيسية
               </a>
-              <a routerLink="/services" 
-                 routerLinkActive="text-purple-600" 
-                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
-                خدمات البرمجة المتخصصة
-              </a>
               <div class="relative group">
                 <button class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer flex items-center">
                   منتجاتنا
@@ -58,6 +53,11 @@ import { RouterModule } from '@angular/router';
                   </div>
                 </div>
               </div>
+              <a routerLink="/services" 
+                 routerLinkActive="text-purple-600" 
+                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
+                خدمات البرمجة المتخصصة
+              </a>
               <a routerLink="/portfolio" 
                  routerLinkActive="text-[#1E2E40]"
                  class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
