@@ -76,7 +76,7 @@ import { RouterModule } from '@angular/router';
                 من نحن
               </a>
               <a routerLink="/contact" 
-                 class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg"
+                 class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg"
                  routerLinkActive="bg-orange-700 shadow-lg font-semibold">
                 تواصل معنا
               </a>
@@ -139,8 +139,8 @@ import { RouterModule } from '@angular/router';
             <div class="px-3 py-2">
               <a routerLink="/contact" 
                (click)="closeMobileMenu()"
-                 routerLinkActive="bg-gray-900 shadow-lg font-semibold"
-                 class="block bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-base font-medium transition-all shadow-md hover:shadow-lg text-center">
+                 routerLinkActive="bg-orange-700 shadow-lg font-semibold"
+                 class="block bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg text-base font-medium transition-all shadow-md hover:shadow-lg text-center">
                 تواصل معنا
               </a>
             </div>
