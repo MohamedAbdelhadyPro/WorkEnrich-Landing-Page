@@ -19,11 +19,11 @@ import { RouterModule } from '@angular/router';
             <div class="ml-10 flex items-baseline space-x-4">
               <a routerLink="/services" 
                  routerLinkActive="text-purple-600" 
-                 class="text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
+                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 الخدمات
               </a>
               <div class="relative group">
-                <button class="text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer flex items-center">
+                <button class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer flex items-center">
                   منتجاتنا
                   <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -32,10 +32,10 @@ import { RouterModule } from '@angular/router';
                 <div class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                   <div class="py-2">
                     <a routerLink="/projects/hr-system" 
-                       class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors">
+                       class="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1E2E40]/5 hover:text-[#1E2E40] transition-colors">
                       <div class="flex items-center">
-                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center ml-3">
-                          <span class="text-purple-600 text-lg">👥</span>
+                        <div class="w-10 h-10 bg-[#1E2E40]/10 rounded-lg flex items-center justify-center ml-3">
+                          <span class="text-[#1E2E40] text-lg">👥</span>
                         </div>
                         <div>
                           <div class="font-medium">نظام إدارة الموارد البشرية</div>
@@ -45,7 +45,7 @@ import { RouterModule } from '@angular/router';
                     </a>
                     <div class="border-t border-gray-100 mt-2 pt-2">
                       <a routerLink="/contact" 
-                         class="block px-4 py-2 text-sm text-purple-600 hover:bg-purple-50 transition-colors text-center">
+                         class="block px-4 py-2 text-sm text-[#1E2E40] hover:bg-[#1E2E40]/5 transition-colors text-center">
                         طلب منتج مخصص
                       </a>
                     </div>
@@ -53,21 +53,21 @@ import { RouterModule } from '@angular/router';
                 </div>
               </div>
               <a routerLink="/portfolio" 
-                 routerLinkActive="text-purple-600"
-                 class="text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
+                 routerLinkActive="text-[#1E2E40]"
+                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 معرض الأعمال
               </a>
               <a routerLink="/about" 
-                 routerLinkActive="text-purple-600"
-                 class="text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
+                 routerLinkActive="text-[#1E2E40]"
+                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 من نحن
               </a>
               <a routerLink="/contact" 
-                 routerLinkActive="text-purple-600"
-                 class="text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
+                 routerLinkActive="text-[#1E2E40]"
+                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 تواصل معنا
               </a>
-              <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+              <button class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
                 احصل على عرض سعر
               </button>
             </div>

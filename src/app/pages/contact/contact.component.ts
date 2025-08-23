@@ -33,7 +33,7 @@ import { FormsModule } from '@angular/forms';
                   <input type="text" 
                          [(ngModel)]="contactForm.name"
                          name="name"
-                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E2E40] focus:border-transparent"
                          placeholder="أدخل اسمك الكامل">
                 </div>
                 <div>
@@ -41,7 +41,7 @@ import { FormsModule } from '@angular/forms';
                   <input type="email" 
                          [(ngModel)]="contactForm.email"
                          name="email"
-                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E2E40] focus:border-transparent"
                          placeholder="أدخل بريدك الإلكتروني">
                 </div>
                 <div>
@@ -49,14 +49,14 @@ import { FormsModule } from '@angular/forms';
                   <input type="tel" 
                          [(ngModel)]="contactForm.phone"
                          name="phone"
-                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E2E40] focus:border-transparent"
                          placeholder="أدخل رقم هاتفك">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">نوع الخدمة</label>
                   <select [(ngModel)]="contactForm.service"
                           name="service"
-                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E2E40] focus:border-transparent">
                     <option value="">اختر نوع الخدمة</option>
                     <option value="web">تطوير موقع إلكتروني</option>
                     <option value="mobile">تطبيق جوال</option>
@@ -71,11 +71,11 @@ import { FormsModule } from '@angular/forms';
                   <textarea [(ngModel)]="contactForm.message"
                             name="message"
                             rows="4"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E2E40] focus:border-transparent"
                             placeholder="اكتب تفاصيل مشروعك هنا..."></textarea>
                 </div>
                 <button type="submit" 
-                        class="w-full bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                        class="w-full bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
                   إرسال الرسالة
                 </button>
               </form>
@@ -87,8 +87,8 @@ import { FormsModule } from '@angular/forms';
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">معلومات التواصل</h2>
                 <div class="space-y-6">
                   <div *ngFor="let contact of contactInfo" class="flex items-start">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                      <span class="text-purple-600 text-xl">{{ contact.icon }}</span>
+                    <div class="w-12 h-12 bg-[#1E2E40]/10 rounded-lg flex items-center justify-center mr-4">
+                      <span class="text-[#1E2E40] text-xl">{{ contact.icon }}</span>
                     </div>
                     <div>
                       <h3 class="font-bold text-gray-900 mb-1">{{ contact.title }}</h3>
@@ -98,7 +98,7 @@ import { FormsModule } from '@angular/forms';
                 </div>
               </div>
 
-              <div class="bg-gradient-to-r from-purple-600 to-blue-600 p-8 rounded-2xl text-white">
+              <div class="bg-gradient-to-r from-[#1E2E40] to-blue-600 p-8 rounded-2xl text-white">
                 <h3 class="text-xl font-bold mb-4">لماذا تختارنا؟</h3>
                 <ul class="space-y-3">
                   <li class="flex items-center">

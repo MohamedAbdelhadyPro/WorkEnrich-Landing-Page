@@ -36,8 +36,8 @@ import { CommonModule } from '@angular/common';
               </p>
               <div class="space-y-4">
                 <div *ngFor="let value of values" class="flex items-start">
-                  <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mt-1 mr-3">
-                    <span class="text-purple-600 text-sm">✓</span>
+                  <div class="w-6 h-6 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 mr-3">
+                    <span class="text-[#1E2E40] text-sm">✓</span>
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-900">{{ value.title }}</h4>
@@ -73,7 +73,7 @@ import { CommonModule } from '@angular/common';
                    [alt]="member.name" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
               <h3 class="text-xl font-bold text-gray-900 mb-2">{{ member.name }}</h3>
-              <p class="text-purple-600 font-medium mb-3">{{ member.position }}</p>
+              <p class="text-[#1E2E40] font-medium mb-3">{{ member.position }}</p>
               <p class="text-gray-600 text-sm">{{ member.description }}</p>
             </div>
           </div>
@@ -84,7 +84,7 @@ import { CommonModule } from '@angular/common';
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div class="bg-gradient-to-br from-purple-600 to-blue-600 p-8 rounded-2xl text-white">
+            <div class="bg-gradient-to-br from-[#1E2E40] to-blue-600 p-8 rounded-2xl text-white">
               <h3 class="text-2xl font-bold mb-4">رؤيتنا</h3>
               <p class="text-lg leading-relaxed">
                 أن نكون الشركة الرائدة في المنطقة في تقديم الحلول التقنية المبتكرة التي تساعد الشركات على النمو والازدهار في العصر الرقمي.

@@ -31,7 +31,7 @@ import { RouterModule } from '@angular/router';
                 </span>
               </div>
               <a routerLink="/contact" 
-                 class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                 class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
                 طلب مشروع مماثل
               </a>
             </div>
@@ -59,8 +59,8 @@ import { RouterModule } from '@angular/router';
                 <h3 class="text-xl font-bold text-gray-900 mb-4">الوحدات الرئيسية:</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <div *ngFor="let module of modules" class="flex items-start">
-                    <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center mt-1 mr-3">
-                      <span class="text-indigo-600 text-sm">✓</span>
+                    <div class="w-6 h-6 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 mr-3">
+                      <span class="text-[#1E2E40] text-sm">✓</span>
                     </div>
                     <div>
                       <h4 class="font-semibold text-gray-900 mb-1">{{ module.title }}</h4>
@@ -92,12 +92,12 @@ import { RouterModule } from '@angular/router';
               </div>
 
               <!-- Results -->
-              <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-xl text-white">
+              <div class="bg-gradient-to-r from-[#1E2E40] to-blue-600 p-6 rounded-xl text-white">
                 <h3 class="font-bold mb-4">النتائج المحققة</h3>
                 <div class="space-y-3">
                   <div *ngFor="let result of results" class="text-center">
                     <div class="text-2xl font-bold">{{ result.value }}</div>
-                    <div class="text-indigo-100 text-sm">{{ result.label }}</div>
+                    <div class="text-[#1E2E40]/20 text-sm">{{ result.label }}</div>
                   </div>
                 </div>
               </div>

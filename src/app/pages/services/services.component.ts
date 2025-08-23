@@ -25,6 +25,7 @@ import { CommonModule } from '@angular/common';
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div *ngFor="let service of services" 
                  class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200 group">
+                 class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
               <div class="w-14 h-14 bg-gradient-to-r rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl"
                    [ngClass]="service.bgColor">
                 {{ service.icon }}
@@ -37,7 +38,7 @@ import { CommonModule } from '@angular/common';
                   {{ feature }}
                 </li>
               </ul>
-              <div class="text-purple-600 font-semibold">{{ service.price }}</div>
+              <div class="text-[#1E2E40] font-semibold">{{ service.price }}</div>
             </div>
           </div>
         </div>
@@ -46,13 +47,14 @@ import { CommonModule } from '@angular/common';
       <!-- HR System Highlight -->
       <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-12 text-white">
+          <div class="bg-gradient-to-r from-[#1E2E40] to-blue-600 rounded-2xl p-12 text-white">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 class="text-3xl lg:text-4xl font-bold mb-6">
                   نظام إدارة الموارد البشرية (HR)
                 </h2>
                 <p class="text-xl mb-8 text-purple-100">
+                <p class="text-xl mb-8 text-[#1E2E40]/20">
                   حل شامل ومتكامل لإدارة جميع عمليات الموارد البشرية في شركتك بكفاءة عالية
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -62,11 +64,11 @@ import { CommonModule } from '@angular/common';
                     </div>
                     <div>
                       <h4 class="font-semibold text-white mb-1">{{ feature.title }}</h4>
-                      <p class="text-purple-100 text-sm">{{ feature.description }}</p>
+                      <p class="text-[#1E2E40]/20 text-sm">{{ feature.description }}</p>
                     </div>
                   </div>
                 </div>
-                <button class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors">
+                <button class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors">
                   طلب عرض توضيحي
                 </button>
               </div>
@@ -94,8 +96,8 @@ import { CommonModule } from '@angular/common';
           </div>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div *ngFor="let step of processSteps; let i = index" class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-purple-600 font-bold text-xl">{{ i + 1 }}</span>
+              <div class="w-16 h-16 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-[#1E2E40] font-bold text-xl">{{ i + 1 }}</span>
               </div>
               <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
               <p class="text-gray-600">{{ step.description }}</p>

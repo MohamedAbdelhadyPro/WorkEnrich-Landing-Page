@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
           <div class="text-center lg:text-right">
             <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
               نطور
-              <span class="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span class="bg-gradient-to-r from-[#1E2E40] to-blue-600 bg-clip-text text-transparent">
                 الحلول الرقمية
               </span>
               التي تحتاجها
@@ -24,16 +24,16 @@ import { RouterModule } from '@angular/router';
               نحول أفكارك إلى حلول تقنية مبتكرة تساعد في نمو أعمالك.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all transform hover:scale-105 shadow-lg">
+              <button class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all transform hover:scale-105 shadow-lg">
                 ابدأ مشروعك الآن
               </button>
-              <a routerLink="/portfolio" class="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg text-lg font-medium transition-all text-center">
+              <a routerLink="/portfolio" class="border-2 border-[#1E2E40] text-[#1E2E40] hover:bg-[#1E2E40] hover:text-white px-8 py-3 rounded-lg text-lg font-medium transition-all text-center">
                 شاهد أعمالنا
               </a>
             </div>
             <div class="mt-8 flex items-center justify-center lg:justify-start space-x-8">
               <div class="text-center">
-                <div class="text-2xl font-bold text-purple-600">200+</div>
+                <div class="text-2xl font-bold text-[#1E2E40]">200+</div>
                 <div class="text-gray-600 text-sm">مشروع مكتمل</div>
               </div>
               <div class="text-center">
@@ -61,7 +61,7 @@ import { RouterModule } from '@angular/router';
                   <span class="text-gray-700">فريق المطورين: 15</span>
                 </div>
                 <div class="flex items-center space-x-3">
-                  <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+                <div class="text-2xl font-bold text-[#1E2E40] rounded-full"></div>
                   <span class="text-gray-700">تقنيات حديثة: 25+</span>
                 </div>
               </div>
@@ -94,13 +94,14 @@ import { RouterModule } from '@angular/router';
           </div>
         </div>
         <a routerLink="/services" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+        <a routerLink="/services" class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
           عرض جميع الخدمات
         </a>
       </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="py-20 bg-gradient-to-r from-purple-600 to-blue-600">
+    <section class="py-20 bg-gradient-to-r from-[#1E2E40] to-blue-600">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
           <div class="text-white">
@@ -109,15 +110,15 @@ import { RouterModule } from '@angular/router';
           </div>
           <div class="text-white">
             <div class="text-4xl font-bold mb-2">150+</div>
-            <div class="text-purple-100">عميل راضي</div>
+            <div class="text-[#1E2E40]/20">عميل راضي</div>
           </div>
           <div class="text-white">
             <div class="text-4xl font-bold mb-2">15+</div>
-            <div class="text-purple-100">مطور متخصص</div>
+            <div class="text-[#1E2E40]/20">مطور متخصص</div>
           </div>
           <div class="text-white">
             <div class="text-4xl font-bold mb-2">5+</div>
-            <div class="text-purple-100">سنوات خبرة</div>
+            <div class="text-[#1E2E40]/20">سنوات خبرة</div>
           </div>
         </div>
       </div>

@@ -47,8 +47,8 @@ import { RouterModule } from '@angular/router';
                     {{ tech }}
                   </span>
                 </div>
-                <a [routerLink]="project.link" 
-                   class="text-purple-600 hover:text-purple-700 font-medium text-sm transition-colors">
+                <a [routerLink]="project.link"
+                   class="text-[#1E2E40] hover:text-[#1E2E40]/80 font-medium text-sm transition-colors">
                   عرض التفاصيل ←
                 </a>
               </div>
