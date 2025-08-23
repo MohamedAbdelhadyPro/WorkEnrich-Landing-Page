@@ -16,7 +16,6 @@ import { CommonModule } from '@angular/common';
               <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                 💻
               </div>
-              <span class="ml-2 text-xl font-bold text-gray-900">TechCraft</span>
               <span class="ml-2 text-xl font-bold text-gray-900">WorkEnrich</span>
             </div>
           </div>
@@ -186,7 +185,7 @@ import { CommonModule } from '@angular/common';
               من نحن؟
             </h2>
             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-              TechCraft هي شركة رائدة في مجال تطوير البرمجيات والحلول الرقمية. 
+              WorkEnrich هي شركة رائدة في مجال تطوير البرمجيات والحلول الرقمية. 
               نجمع بين الخبرة التقنية العميقة والفهم الدقيق لاحتياجات السوق لنقدم حلولاً مبتكرة تساعد عملاءنا على تحقيق أهدافهم.
             </p>
             <div class="space-y-4">
@@ -294,7 +293,7 @@ import { CommonModule } from '@angular/common';
               <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                 💻
               </div>
-              <span class="ml-2 text-xl font-bold">TechCraft</span>
+              <span class="ml-2 text-xl font-bold">WorkEnrich</span>
             </div>
             <p class="text-gray-400 mb-4">
               شركة متخصصة في تطوير البرمجيات والحلول الرقمية. 
@@ -319,7 +318,7 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 TechCraft. جميع الحقوق محفوظة.</p>
+          <p>&copy; 2025 WorkEnrich. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>
