@@ -9,75 +9,76 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
-        <!-- Background decorative elements -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-purple-200/20 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-200/20 rounded-full blur-2xl"></div>
+      <section class="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 relative overflow-hidden">
+        <!-- Subtle background pattern -->
+        <div class="absolute inset-0 opacity-5">
+          <div class="absolute top-10 right-10 w-32 h-32 bg-slate-300 rounded-full"></div>
+          <div class="absolute top-40 left-20 w-20 h-20 bg-blue-300 rounded-full"></div>
+          <div class="absolute bottom-20 right-40 w-24 h-24 bg-gray-300 rounded-full"></div>
+          <div class="absolute bottom-40 left-10 w-16 h-16 bg-slate-400 rounded-full"></div>
+        </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
             <div>
               <div class="mb-4">
-                <span class="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-medium rounded-full shadow-lg animate-pulse">
+                <span class="px-4 py-2 bg-slate-100 text-slate-700 text-sm font-medium rounded-full border border-slate-200 shadow-sm">
                   منتج جديد
                 </span>
               </div>
               <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 نظام إدارة الموارد البشرية
               </h1>
-              <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+              <p class="text-xl text-slate-600 mb-6 leading-relaxed">
                 نظام شامل ومتكامل من تطوير <span class="font-bold" style="color: #1A306F">WorkEnrich</span> لإدارة جميع عمليات الموارد البشرية بنظام الاشتراك الشهري المرن.
               </p>
-              <div class="bg-white/90 backdrop-blur-sm border-2 border-blue-300/50 p-6 rounded-xl mb-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div class="bg-white border border-slate-200 p-6 rounded-2xl mb-8 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-center">
-                  <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <span class="text-white text-xl">🚀</span>
+                  <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mr-4">
+                    <span class="text-slate-600 text-xl">💼</span>
                   </div>
                   <div>
-                    <h3 class="font-bold text-gray-900 mb-1 text-lg">نظام اشتراكات مرن</h3>
-                    <p class="text-gray-600">ادفع حسب احتياجاتك - بدون تكاليف إضافية</p>
+                    <h3 class="font-bold text-slate-800 mb-1 text-lg">نظام اشتراكات مرن</h3>
+                    <p class="text-slate-600">ادفع حسب احتياجاتك - بدون تكاليف إضافية</p>
                   </div>
                 </div>
               </div>
               <div class="flex flex-col sm:flex-row gap-4 mb-8">
                 <a href="https://client.workenrich.com/auth/register"
                    target="_blank"
-                   class="text-white px-8 py-4 rounded-xl font-bold transition-all text-center shadow-xl hover:shadow-2xl transform hover:scale-105"
-                   style="background: linear-gradient(to right, #1A306F, #2563eb); hover:background: linear-gradient(to right, #16285a, #1d4ed8);">
+                   class="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-xl font-bold transition-all text-center shadow-lg hover:shadow-xl transform hover:scale-105">
                   تسجيل حساب جديد
                 </a>
                 <a href="https://client.workenrich.com/auth/login"
                    target="_blank"
-                   class="border-2 px-8 py-4 rounded-xl font-bold transition-all text-center hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white hover:border-transparent shadow-lg"
-                   style="border-color: #1A306F; color: #1A306F; hover:background: linear-gradient(to right, #1A306F, #2563eb);">
+                   class="border-2 border-slate-300 text-slate-700 hover:bg-slate-100 px-8 py-4 rounded-xl font-bold transition-all text-center shadow-sm hover:shadow-md">
                   تسجيل الدخول
                 </a>
               </div>
               <!-- Trust indicators -->
-              <div class="flex flex-wrap gap-4 text-sm text-gray-500">
+              <div class="flex flex-wrap gap-4 text-sm text-slate-500">
                 <div class="flex items-center">
-                  <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
                   آمن ومشفر 100%
                 </div>
                 <div class="flex items-center">
-                  <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
                   دعم فني 24/7
                 </div>
                 <div class="flex items-center">
-                  <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
                   تجربة مجانية 30 يوم
                 </div>
               </div>
             </div>
             <div class="relative">
-              <!-- Decorative frame -->
-              <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-3xl blur opacity-20"></div>
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              <!-- Subtle decorative frame -->
+              <div class="absolute -inset-2 bg-slate-200 rounded-3xl opacity-30"></div>
+              <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800" 
                    alt="نظام إدارة الموارد البشرية" 
-                   class="w-full h-96 object-cover rounded-2xl shadow-2xl">
-              <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
-                <div class="text-blue-600 font-bold text-sm">منتج جديد</div>
+                   class="w-full h-96 object-cover rounded-2xl shadow-lg border-4 border-white relative z-10">
+              <div class="absolute top-4 right-4 bg-white px-4 py-2 rounded-lg shadow-md border border-slate-200">
+                <div class="text-slate-700 font-bold text-sm">منتج جديد</div>
               </div>
             </div>
           </div>
