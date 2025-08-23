@@ -101,10 +101,9 @@ import { LanguageService } from '../../services/language.service';
                    class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 text-center shadow-lg">
                   عرض التفاصيل
                 </a>
-                <a routerLink="/contact" 
-                   class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-4 rounded-xl font-bold transition-all text-center">
-                  احصل على عرض سعر
-                </a>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-4 rounded-xl font-bold transition-all">
+                  دخول النظام
+                </button>
               </div>
             </div>
             <div class="relative">
