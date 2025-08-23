@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
         <div class="flex items-center h-16 justify-between" dir="rtl">
           <!-- Logo -->
           <a routerLink="/" class="flex items-center">
-            <img src="assets/New Project (4).svg" alt="WorkEnrich" class="h-8 w-auto logo-gradient">
+            <img src="assets/New Project (4).svg" alt="WorkEnrich" class="h-7 w-auto">
           </a>
           
           <!-- Mobile menu button -->
