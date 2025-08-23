@@ -136,9 +136,9 @@ import { RouterModule } from '@angular/router';
                class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
               من نحن
             </a>
-            <a routerLink="/contact"
-               (click)="closeMobileMenu()"
-               class="block mx-3 my-2 px-4 py-2 text-base font-medium text-white rounded-lg transition-all shadow-md bg-orange-600 hover:bg-orange-700">
+            <a routerLink="/contact" 
+               class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg"
+               routerLinkActive="bg-orange-600 shadow-lg font-semibold">
               تواصل معنا
             </a>
           </div>
