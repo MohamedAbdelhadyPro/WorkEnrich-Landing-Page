@@ -208,109 +208,55 @@ import { LanguageService } from '../../services/language.service';
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">STC</span>
+              <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-sm">BESTSHEILD</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">شركة الاتصالات السعودية</div>
+              <div class="text-sm font-medium text-gray-700">بست شيلد</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">ACME</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">أكمي</div>
             </div>
           </div>
           
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">NCB</span>
+                <span class="text-white font-bold text-lg">CARPI</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">البنك الأهلي</div>
+              <div class="text-sm font-medium text-gray-700">كاربي</div>
             </div>
           </div>
           
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">SABIC</span>
+                <span class="text-white font-bold text-lg">MALAFY</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">سابك</div>
+              <div class="text-sm font-medium text-gray-700">ملافي</div>
             </div>
           </div>
           
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">ARAMCO</span>
+                <span class="text-white font-bold text-lg">AZRAQ</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">أرامكو السعودية</div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">MOBILY</span>
-              </div>
-              <div class="text-sm font-medium text-gray-700">موبايلي</div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-teal-600 to-teal-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">SAMBA</span>
-              </div>
-              <div class="text-sm font-medium text-gray-700">بنك سامبا</div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">ALRAJHI</span>
-              </div>
-              <div class="text-sm font-medium text-gray-700">بنك الراجحي</div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-pink-600 to-pink-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">ZAIN</span>
-              </div>
-              <div class="text-sm font-medium text-gray-700">زين السعودية</div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-yellow-600 to-yellow-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">MAADEN</span>
-              </div>
-              <div class="text-sm font-medium text-gray-700">معادن</div>
+              <div class="text-sm font-medium text-gray-700">أزرق</div>
             </div>
           </div>
           
           <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">ACWA</span>
+                <span class="text-white font-bold text-sm">PDENTAL</span>
               </div>
-              <div class="text-sm font-medium text-gray-700">أكوا باور</div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">NEOM</span>
-              </div>
-              <div class="text-sm font-medium text-gray-700">نيوم</div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-rose-600 to-rose-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
-                <span class="text-white font-bold text-lg">PIF</span>
-              </div>
-              <div class="text-sm font-medium text-gray-700">صندوق الاستثمارات</div>
+              <div class="text-sm font-medium text-gray-700">بي دنتال</div>
             </div>
           </div>
         </div>
