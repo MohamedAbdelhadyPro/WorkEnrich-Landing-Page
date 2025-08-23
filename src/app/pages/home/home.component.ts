@@ -45,7 +45,7 @@ import { LanguageService } from '../../services/language.service';
                 </svg>
               </span>
             </a>
-            <a routerLink="/services" class="group border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-10 py-4 rounded-xl text-lg font-bold transition-all hover:border-white/50">
+            <a routerLink="/services" class="group border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-10 py-4 rounded-xl text-lg font-bold transition-all hover:border-white/50" style="background: linear-gradient(135deg, rgba(26, 52, 119, 0.3), rgba(37, 99, 235, 0.3));">
               <span class="flex items-center justify-center">
                 اعرض أعمالنا
                 <svg class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -81,7 +81,7 @@ import { LanguageService } from '../../services/language.service';
     <!-- HR Product Banner -->
     <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-r from-[#1E2E40] to-blue-600 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+        <div class="rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
           <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
           <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
           <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -98,12 +98,12 @@ import { LanguageService } from '../../services/language.service';
               </p>
               <div class="flex flex-col sm:flex-row gap-4">
                 <a routerLink="/projects/hr-system" 
-                   class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 text-center shadow-lg">
+                   class="bg-white hover:bg-gray-100 px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 text-center shadow-lg" style="color: #1A3477;">
                   عرض التفاصيل
                 </a>
-                <a href="https://client.workenrich.com/auth/login" 
+                <a href="https://client.workenrich.com/auth/login"
                    target="_blank"
-                   class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-4 rounded-xl font-bold transition-all text-center">
+                   class="border-2 border-white text-white hover:bg-white px-8 py-4 rounded-xl font-bold transition-all text-center" style="hover:color: #1A3477;">
                   دخول النظام
                 </a>
               </div>
@@ -114,7 +114,7 @@ import { LanguageService } from '../../services/language.service';
                    class="w-full h-80 object-cover rounded-2xl shadow-2xl">
               <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>
               <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg">
-                <div class="text-[#1E2E40] font-bold">نظام إدارة الموارد البشرية</div>
+                <div class="font-bold" style="color: #1A3477;">نظام إدارة الموارد البشرية</div>
                 <div class="text-gray-600 text-sm">إدارة شاملة للموظفين والرواتب</div>
               </div>
             </div>
@@ -286,7 +286,7 @@ import { LanguageService } from '../../services/language.service';
         <!-- CTA -->
         <div class="text-center mt-12">
           <p class="text-lg text-gray-600 mb-6">هل تريد أن تكون من عملائنا المميزين؟</p>
-          <a routerLink="/contact" class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg">
+          <a routerLink="/contact" class="text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
             ابدأ مشروعك معنا
           </a>
         </div>

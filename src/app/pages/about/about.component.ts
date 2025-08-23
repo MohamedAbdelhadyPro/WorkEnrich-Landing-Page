@@ -512,6 +512,7 @@ import { TranslationService } from '../../services/translation.service';
 
       <!-- CTA Section -->
       <section class="py-20 bg-[#1E2E40]">
+      <section class="py-20" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
             جاهز للعمل معنا؟
@@ -521,11 +522,11 @@ import { TranslationService } from '../../services/translation.service';
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a routerLink="/contact" 
-               class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors text-lg">
+               class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors text-lg" style="color: #1A3477;">
               تواصل معنا الآن
             </a>
-            <a routerLink="/services" 
-               class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-3 rounded-lg font-medium transition-colors text-lg">
+            <a routerLink="/services"
+               class="border-2 border-white text-white hover:bg-white px-8 py-3 rounded-lg font-medium transition-colors text-lg" style="hover:color: #1A3477;">
               اعرض خدماتنا
             </a>
           </div>

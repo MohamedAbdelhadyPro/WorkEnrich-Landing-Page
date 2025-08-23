@@ -76,7 +76,7 @@ import { TranslationService } from '../../services/translation.service';
                             placeholder="اكتب تفاصيل مشروعك هنا..."></textarea>
                 </div>
                 <button type="submit" 
-                        class="w-full bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                        class="w-full text-white px-8 py-3 rounded-lg font-medium transition-all" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
                   إرسال الرسالة
                 </button>
               </form>
@@ -99,7 +99,7 @@ import { TranslationService } from '../../services/translation.service';
                 </div>
               </div>
 
-              <div class="bg-gradient-to-r from-[#1E2E40] to-blue-600 p-8 rounded-2xl text-white">
+              <div class="p-8 rounded-2xl text-white" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
                 <h3 class="text-xl font-bold mb-4">لماذا تختارنا؟</h3>
                 <ul class="space-y-3">
                   <li class="flex items-center">
