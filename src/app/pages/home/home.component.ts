@@ -217,7 +217,7 @@ import { LanguageService } from '../../services/language.service';
           
           <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-sm">ACME</span>
               </div>
               <div class="text-sm font-semibold text-gray-800">أكمي</div>
