@@ -108,13 +108,14 @@ import { TranslationService } from '../../services/translation.service';
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Row 1 -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
               <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300" 
-                   alt="أحمد محمد السعيد" 
+                   alt="محمد عبدالهادي" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">أحمد محمد السعيد</h3>
-              <p class="text-[#1E2E40] font-medium mb-3">مدير التطوير التقني</p>
-              <p class="text-gray-600 text-sm mb-4">خبرة 10 سنوات في تطوير التطبيقات والأنظمة المعقدة</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">محمد عبدالهادي</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">CTO</p>
+              <p class="text-gray-600 text-sm mb-4">مدير التقنية الرئيسي ومسؤول الاستراتيجية التقنية</p>
               <div class="flex justify-center space-x-3">
                 <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
                   <span class="text-sm">💼</span>
@@ -124,29 +125,222 @@ import { TranslationService } from '../../services/translation.service';
                 </div>
               </div>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300" 
-                   alt="فاطمة أحمد علي" 
-                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">فاطمة أحمد علي</h3>
-              <p class="text-[#1E2E40] font-medium mb-3">مصممة واجهات المستخدم</p>
-              <p class="text-gray-600 text-sm mb-4">متخصصة في تصميم تجربة المستخدم والواجهات التفاعلية</p>
-              <div class="flex justify-center space-x-3">
-                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
-                  <span class="text-sm">💼</span>
-                </div>
-                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
-                  <span class="text-sm">📧</span>
-                </div>
-              </div>
-            </div>
+            
             <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
               <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300" 
-                   alt="محمد علي حسن" 
+                   alt="احمد ابراهيم" 
                    class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">محمد علي حسن</h3>
-              <p class="text-[#1E2E40] font-medium mb-3">مطور تطبيقات الجوال</p>
-              <p class="text-gray-600 text-sm mb-4">خبير في تطوير تطبيقات iOS و Android</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">احمد ابراهيم</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Backend Lead</p>
+              <p class="text-gray-600 text-sm mb-4">قائد فريق تطوير الخادم والأنظمة الخلفية</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="كيرلس سعد" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">كيرلس سعد</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">UI-UX Lead</p>
+              <p class="text-gray-600 text-sm mb-4">قائد فريق تصميم واجهات وتجربة المستخدم</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="مصطفي مجدي" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">مصطفي مجدي</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Operational Manager</p>
+              <p class="text-gray-600 text-sm mb-4">مدير العمليات ومسؤول تنسيق المشاريع</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2182971/pexels-photo-2182971.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="محمد حسام" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">محمد حسام</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Project Manager</p>
+              <p class="text-gray-600 text-sm mb-4">مدير مشاريع ومسؤول متابعة التنفيذ</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/3763189/pexels-photo-3763189.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="دينا عماد" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">دينا عماد</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Project Manager</p>
+              <p class="text-gray-600 text-sm mb-4">مديرة مشاريع ومتخصصة في إدارة الفرق</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="جهاد علي" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">جهاد علي</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Project Manager</p>
+              <p class="text-gray-600 text-sm mb-4">مدير مشاريع ومتخصص في التخطيط الاستراتيجي</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2182972/pexels-photo-2182972.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="ادهم محمد" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">ادهم محمد</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Backend Developer</p>
+              <p class="text-gray-600 text-sm mb-4">مطور خادم ومتخصص في قواعد البيانات</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/3763190/pexels-photo-3763190.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="ندا اشرف" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">ندا اشرف</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">UI-UX Designer</p>
+              <p class="text-gray-600 text-sm mb-4">مصممة واجهات وتجربة مستخدم</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/3763191/pexels-photo-3763191.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="ندا صالح" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">ندا صالح</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">UI-UX Designer</p>
+              <p class="text-gray-600 text-sm mb-4">مصممة واجهات ومتخصصة في تجربة المستخدم</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2379007/pexels-photo-2379007.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="عاصم احمد" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">عاصم احمد</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Front-End Developer</p>
+              <p class="text-gray-600 text-sm mb-4">مطور واجهات أمامية ومتخصص في React</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2182973/pexels-photo-2182973.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="عمر الساحب" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">عمر الساحب</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Front-End Developer</p>
+              <p class="text-gray-600 text-sm mb-4">مطور واجهات أمامية ومتخصص في Angular</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Row 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2379008/pexels-photo-2379008.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="محمود عيدروس" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">محمود عيدروس</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">Mobile Engineer</p>
+              <p class="text-gray-600 text-sm mb-4">مهندس تطبيقات الجوال ومتخصص في Flutter</p>
+              <div class="flex justify-center space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">💼</span>
+                </div>
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <span class="text-sm">📧</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <img src="https://images.pexels.com/photos/2182974/pexels-photo-2182974.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="مصطفي الغندور" 
+                   class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">مصطفي الغندور</h3>
+              <p class="text-[#1E2E40] font-medium mb-3">QC Engineer</p>
+              <p class="text-gray-600 text-sm mb-4">مهندس ضمان الجودة ومتخصص في الاختبارات</p>
               <div class="flex justify-center space-x-3">
                 <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#1E2E40] hover:text-white transition-colors cursor-pointer">
                   <span class="text-sm">💼</span>
