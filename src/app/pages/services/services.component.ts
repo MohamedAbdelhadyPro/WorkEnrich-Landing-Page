@@ -13,10 +13,10 @@ import { TranslationService } from '../../services/translation.service';
       <section class="bg-gradient-to-br from-purple-50 via-white to-blue-50 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            {{ translationService.get('services.title') }}
+            خدمات البرمجة المتخصصة
           </h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            {{ translationService.get('services.subtitle') }}
+            نقدم مجموعة شاملة من الخدمات التقنية المتخصصة لتلبية احتياجات عملك
           </p>
         </div>
       </section>
@@ -26,28 +26,173 @@ import { TranslationService } from '../../services/translation.service';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              {{ translationService.get('services.specializedServices') }}
+              خدماتنا المتخصصة
             </h2>
             <p class="text-xl text-gray-600">
-              {{ translationService.get('services.servicesDesc') }}
+              حلول تقنية متطورة مصممة خصيصاً لتحقيق أهدافك
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div *ngFor="let service of services" 
-                 class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
-              <div class="w-14 h-14 bg-gradient-to-r rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl"
-                   [ngClass]="service.bgColor">
-                {{ service.icon }}
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
+              <div class="w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
+                🌐
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">{{ service.title }}</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">{{ service.description }}</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">تطوير المواقع الإلكترونية</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">مواقع إلكترونية حديثة ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات.</p>
               <ul class="space-y-2 mb-6">
-                <li *ngFor="let feature of service.features" class="flex items-center text-sm text-gray-600">
+                <li class="flex items-center text-sm text-gray-600">
                   <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
-                  {{ feature }}
+                  تطوير مواقع متجاوبة
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تصميم واجهات احترافي
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تحسين محركات البحث
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  أداء عالي وأمان
                 </li>
               </ul>
-              <div class="text-[#1E2E40] font-semibold">{{ service.price }}</div>
+              <div class="text-[#1E2E40] font-semibold">يبدأ من 5,000 ريال</div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
+              <div class="w-14 h-14 bg-gradient-to-r from-green-400 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
+                📱
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">تطبيقات الجوال</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">تطبيقات iOS و Android أصلية ومتعددة المنصات بأداء عالي.</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  iOS & Android
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  واجهة سهلة
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  أداء سريع
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تحديثات مستمرة
+                </li>
+              </ul>
+              <div class="text-[#1E2E40] font-semibold">يبدأ من 8,000 ريال</div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
+              <div class="w-14 h-14 bg-gradient-to-r from-purple-400 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
+                ⚙️
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">أنظمة إدارة مخصصة</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">حلول برمجية مخصصة لإدارة العمليات وتحسين الإنتاجية.</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  حلول مخصصة
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تكامل سهل
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تقارير تفصيلية
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  أمان عالي
+                </li>
+              </ul>
+              <div class="text-[#1E2E40] font-semibold">يبدأ من 12,000 ريال</div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
+              <div class="w-14 h-14 bg-gradient-to-r from-pink-400 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
+                🎨
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">تصميم واجهات المستخدم</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">تصاميم عصرية وجذابة تركز على تجربة المستخدم المثلى.</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تصميم حديث
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تجربة مستخدم
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  ألوان متناسقة
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  سهولة الاستخدام
+                </li>
+              </ul>
+              <div class="text-[#1E2E40] font-semibold">يبدأ من 3,000 ريال</div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
+              <div class="w-14 h-14 bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
+                ☁️
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">الحوسبة السحابية</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">حلول سحابية آمنة وقابلة للتوسع لاستضافة وإدارة التطبيقات.</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  استضافة آمنة
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  نسخ احتياطي
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  قابلية التوسع
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  مراقبة مستمرة
+                </li>
+              </ul>
+              <div class="text-[#1E2E40] font-semibold">يبدأ من 500 ريال/شهر</div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
+              <div class="w-14 h-14 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
+                🛠️
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">الدعم الفني والصيانة</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">دعم فني متواصل وصيانة دورية لضمان استمرارية العمل.</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  دعم 24/7
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  صيانة دورية
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  تحديثات أمنية
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                  استجابة سريعة
+                </li>
+              </ul>
+              <div class="text-[#1E2E40] font-semibold">يبدأ من 1,000 ريال/شهر</div>
             </div>
           </div>
         </div>
@@ -179,58 +324,7 @@ import { TranslationService } from '../../services/translation.service';
 })
 export class ServicesComponent {
   constructor(public translationService: TranslationService) {}
-
-  services = [
-    {
-      icon: '🌐',
-      title: this.translationService.get('services.servicesList.webDevelopment.title'),
-      description: this.translationService.get('services.servicesList.webDevelopment.description'),
-      bgColor: 'from-blue-400 to-blue-600',
-      features: ['تطوير مواقع متجاوبة', 'تصميم واجهات احترافي', 'تحسين محركات البحث', 'أداء عالي وأمان'],
-      price: this.translationService.get('services.servicesList.webDevelopment.price')
-    },
-    {
-      icon: '📱',
-      title: 'تطبيقات الجوال',
-      description: 'تطبيقات iOS و Android أصلية ومتعددة المنصات بأداء عالي.',
-      bgColor: 'from-green-400 to-green-600',
-      features: ['iOS & Android', 'واجهة سهلة', 'أداء سريع', 'تحديثات مستمرة'],
-      price: 'يبدأ من 8,000 ريال'
-    },
-    {
-      icon: '⚙️',
-      title: 'أنظمة إدارة مخصصة',
-      description: 'حلول برمجية مخصصة لإدارة العمليات وتحسين الإنتاجية.',
-      bgColor: 'from-purple-400 to-purple-600',
-      features: ['حلول مخصصة', 'تكامل سهل', 'تقارير تفصيلية', 'أمان عالي'],
-      price: 'يبدأ من 12,000 ريال'
-    },
-    {
-      icon: '🎨',
-      title: 'تصميم واجهات المستخدم',
-      description: 'تصاميم عصرية وجذابة تركز على تجربة المستخدم المثلى.',
-      bgColor: 'from-pink-400 to-pink-600',
-      features: ['تصميم حديث', 'تجربة مستخدم', 'ألوان متناسقة', 'سهولة الاستخدام'],
-      price: 'يبدأ من 3,000 ريال'
-    },
-    {
-      icon: '☁️',
-      title: 'الحوسبة السحابية',
-      description: 'حلول سحابية آمنة وقابلة للتوسع لاستضافة وإدارة التطبيقات.',
-      bgColor: 'from-cyan-400 to-cyan-600',
-      features: ['استضافة آمنة', 'نسخ احتياطي', 'قابلية التوسع', 'مراقبة مستمرة'],
-      price: 'يبدأ من 500 ريال/شهر'
-    },
-    {
-      icon: '🛠️',
-      title: 'الدعم الفني والصيانة',
-      description: 'دعم فني متواصل وصيانة دورية لضمان استمرارية العمل.',
-      bgColor: 'from-orange-400 to-orange-600',
-      features: ['دعم 24/7', 'صيانة دورية', 'تحديثات أمنية', 'استجابة سريعة'],
-      price: 'يبدأ من 1,000 ريال/شهر'
-    }
-  ];
-
+  
   portfolio = [
     {
       title: 'منصة التجارة الإلكترونية',
