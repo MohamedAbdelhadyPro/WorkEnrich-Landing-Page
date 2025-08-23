@@ -10,10 +10,11 @@ import { RouterModule } from '@angular/router';
     <nav class="fixed w-full top-0 z-50 bg-white border-b border-gray-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-16 justify-between" dir="rtl">
+          <!-- Logo -->
+          <a routerLink="/" class="text-xl font-bold text-gray-900">WorkEnrich</a>
+          
           <!-- Navigation items -->
           <div class="hidden md:flex items-baseline space-x-4 space-x-reverse">
-              <!-- Logo before home -->
-              <a routerLink="/" class="text-xl font-bold text-gray-900 ml-6">WorkEnrich</a>
               <a routerLink="/" 
                  routerLinkActive="text-[#1E2E40]" 
                  [routerLinkActiveOptions]="{exact: true}"
