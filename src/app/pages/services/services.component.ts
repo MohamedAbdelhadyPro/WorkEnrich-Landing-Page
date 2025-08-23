@@ -246,7 +246,7 @@ import { TranslationService } from '../../services/translation.service';
       <!-- HR System Highlight -->
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="bg-gradient-to-r from-[#1E2E40] to-blue-600 rounded-2xl p-12 text-white">
+          <div class="p-8 rounded-2xl text-white" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 class="text-3xl lg:text-4xl font-bold mb-6">
@@ -266,7 +266,7 @@ import { TranslationService } from '../../services/translation.service';
                     </div>
                   </div>
                 </div>
-                <a routerLink="/projects/hr-system" class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors">
+                <a routerLink="/projects/hr-system" class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors" style="color: #1A3477;">
                   عرض تفاصيل النظام
                 </a>
               </div>
@@ -305,7 +305,7 @@ import { TranslationService } from '../../services/translation.service';
       </section>
 
       <!-- CTA Section -->
-      <section class="py-20 bg-[#1E2E40]">
+      <section class="py-20" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
             جاهز لبدء مشروعك القادم؟
@@ -314,7 +314,7 @@ import { TranslationService } from '../../services/translation.service';
             تواصل معنا اليوم واحصل على استشارة مجانية لمشروعك
           </p>
           <a routerLink="/contact" 
-             class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors text-lg">
+             class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors text-lg" style="color: #1A3477;">
             ابدأ مشروعك الآن
           </a>
         </div>
