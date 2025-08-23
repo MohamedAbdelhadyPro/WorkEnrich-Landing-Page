@@ -3,19 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Force CSS loading */
-@layer base {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
   direction: rtl;
   font-display: swap;
+  height: 100%;
 }
 
 body {
@@ -25,13 +24,179 @@ body {
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  text-align: right;
+  min-height: 100vh;
 }
 
-/* Ensure fonts load properly */
-@font-face {
-  font-family: 'Cairo';
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+/* Force Tailwind utilities */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.text-blue-600 {
+  color: #2563eb !important;
+}
+
+/* Gradient backgrounds - force them */
+.hero-gradient {
+  background: linear-gradient(135deg, #1A3477, #2563eb) !important;
+}
+
+.orange-gradient {
+  background: linear-gradient(135deg, #ff7000, #ff5722) !important;
+}
+
+/* Flexbox fixes */
+.flex {
+  display: flex !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+/* Grid fixes */
+.grid {
+  display: grid !important;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+/* Spacing fixes */
+.p-4 {
+  padding: 1rem !important;
+}
+
+.p-6 {
+  padding: 1.5rem !important;
+}
+
+.p-8 {
+  padding: 2rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 2rem !important;
+}
+
+/* Border radius */
+.rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem !important;
+}
+
+.rounded-2xl {
+  border-radius: 1rem !important;
+}
+
+/* Shadow fixes */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Font sizes */
+.text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.text-3xl {
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important;
+}
+
+.text-4xl {
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+}
+
+.text-5xl {
+  font-size: 3rem !important;
+  line-height: 1 !important;
+}
+
+/* Font weights */
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.font-semibold {
+  font-weight: 600 !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
 }
 
 /* Custom scrollbar */
@@ -58,15 +223,6 @@ button, a, .group {
   will-change: transform;
 }
 
-/* Custom gradient text */
-.gradient-text {
-  background: linear-gradient(135deg, #ff7000, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* Card hover effects */
 .feature-card {
   transition: all 0.3s ease;
@@ -79,120 +235,14 @@ button, a, .group {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 }
 
-/* Button animations */
-.btn-primary {
-  position: relative;
-  overflow: hidden;
-  will-change: transform;
-}
-
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
-}
-
-.btn-primary:hover::before {
-  left: 100%;
-}
-
-/* Loading animation for images */
-img {
-  transition: opacity 0.3s ease;
-  max-width: 100%;
-  height: auto;
-}
-
-img:not([src]) {
-  opacity: 0;
-}
-
-/* Fix for production builds */
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
 /* Ensure proper RTL support */
 [dir="rtl"] * {
   direction: rtl;
 }
 
-/* Mobile optimizations */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem !important;
-    line-height: 1.2;
-  }
-  
-  .feature-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  
-  /* Fix mobile layout issues */
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
 /* RTL specific styles */
 [dir="rtl"] {
   text-align: right;
-}
-
-[dir="rtl"] .flex {
-  flex-direction: row-reverse;
-}
-
-/* Fix for flex direction in RTL */
-[dir="rtl"] .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 1;
-  margin-right: calc(var(--tw-space-x) * var(--tw-space-x-reverse));
-  margin-left: calc(var(--tw-space-x) * calc(1 - var(--tw-space-x-reverse)));
-}
-
-/* Animation keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 /* Enhanced focus states for accessibility */
@@ -201,50 +251,23 @@ button:focus, a:focus {
   outline-offset: 2px;
 }
 
-/* Custom utility classes */
-.text-shadow {
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.backdrop-blur {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-/* Production fixes */
-.group:hover .group-hover\:scale-110 {
-  transform: scale(1.1);
-}
-
-.group:hover .group-hover\:translate-x-1 {
-  transform: translateX(0.25rem);
-}
-
-/* Ensure proper color rendering */
-.text-white {
-  color: #ffffff !important;
-}
-
-.bg-white {
-  background-color: #ffffff !important;
-}
-
-/* Fix gradient backgrounds */
-.bg-gradient-to-r.from-orange-500.to-orange-600 {
-  background: linear-gradient(to right, #f97316, #ea580c) !important;
-}
-
-.bg-gradient-to-r.from-orange-600.to-red-600 {
-  background: linear-gradient(to right, #ea580c, #dc2626) !important;
-}
-
-/* Critical CSS for above-the-fold content */
-@layer utilities {
-  .hero-gradient {
-    background: linear-gradient(135deg, #1A3477, #2563eb) !important;
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
   
-  .orange-gradient {
-    background: linear-gradient(135deg, #ff7000, #ff5722) !important;
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .text-5xl {
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
+  }
+  
+  .text-4xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
   }
 }
