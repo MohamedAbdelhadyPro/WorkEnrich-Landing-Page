@@ -272,131 +272,6 @@ import { LanguageService } from '../../services/language.service';
       </div>
     </section>
 
-    <!-- Vision Section -->
-    <section class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
-      <!-- Background Elements -->
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-500/10 rounded-full blur-2xl"></div>
-      </div>
-      
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-          <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8">
-            <span class="text-white text-lg font-medium">🎯 رؤيتنا للمستقبل</span>
-          </div>
-          <h2 class="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            نحو مستقبل رقمي أفضل
-          </h2>
-          <p class="text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-            نسعى لأن نكون الشريك التقني الأول في المنطقة، نساعد الشركات على تحقيق التحول الرقمي بنجاح
-          </p>
-        </div>
-        
-        <!-- Vision Cards -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <!-- Vision Card -->
-          <div class="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-10 hover:bg-white/15 transition-all duration-500 hover:scale-105">
-            <div class="w-20 h-20 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform text-4xl shadow-2xl">
-              🚀
-            </div>
-            <h3 class="text-3xl font-bold text-white mb-6">رؤيتنا</h3>
-            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
-              أن نكون الشريك التقني الأول للشركات في المنطقة، ونساعدهم على تحقيق التحول الرقمي بنجاح من خلال حلول تقنية مبتكرة ومتطورة تواكب أحدث التطورات العالمية.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-blue-500/30 text-white text-sm rounded-full border border-blue-400/30">الريادة</span>
-              <span class="px-4 py-2 bg-cyan-500/30 text-white text-sm rounded-full border border-cyan-400/30">الابتكار</span>
-              <span class="px-4 py-2 bg-purple-500/30 text-white text-sm rounded-full border border-purple-400/30">التميز</span>
-            </div>
-          </div>
-          
-          <!-- Mission Card -->
-          <div class="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-10 hover:bg-white/15 transition-all duration-500 hover:scale-105">
-            <div class="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-400 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform text-4xl shadow-2xl">
-              🎯
-            </div>
-            <h3 class="text-3xl font-bold text-white mb-6">مهمتنا</h3>
-            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
-              تقديم حلول تقنية عالية الجودة تساعد عملاءنا على تحسين أعمالهم وزيادة كفاءتهم، مع الالتزام بأعلى معايير الخدمة والدعم المستمر لضمان نجاحهم المستدام.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-green-500/30 text-white text-sm rounded-full border border-green-400/30">الجودة</span>
-              <span class="px-4 py-2 bg-emerald-500/30 text-white text-sm rounded-full border border-emerald-400/30">الالتزام</span>
-              <span class="px-4 py-2 bg-teal-500/30 text-white text-sm rounded-full border border-teal-400/30">الدعم</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Values Section -->
-        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12 mb-16">
-          <h3 class="text-3xl font-bold text-white text-center mb-12">قيمنا الأساسية</h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-center group">
-              <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform text-3xl shadow-xl">
-                💡
-              </div>
-              <h4 class="text-xl font-bold text-white mb-4">الابتكار</h4>
-              <p class="text-blue-100 leading-relaxed">نواكب أحدث التقنيات والاتجاهات لنقدم حلولاً مبتكرة</p>
-            </div>
-            <div class="text-center group">
-              <div class="w-16 h-16 bg-gradient-to-r from-pink-400 to-rose-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform text-3xl shadow-xl">
-                🤝
-              </div>
-              <h4 class="text-xl font-bold text-white mb-4">الشراكة</h4>
-              <p class="text-blue-100 leading-relaxed">نبني علاقات طويلة الأمد مع عملائنا القائمة على الثقة</p>
-            </div>
-            <div class="text-center group">
-              <div class="w-16 h-16 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform text-3xl shadow-xl">
-                🏆
-              </div>
-              <h4 class="text-xl font-bold text-white mb-4">التميز</h4>
-              <p class="text-blue-100 leading-relaxed">نسعى للتميز في كل ما نقوم به لتحقيق أفضل النتائج</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Future Goals -->
-        <div class="text-center">
-          <h3 class="text-3xl font-bold text-white mb-8">أهدافنا المستقبلية</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-3xl font-bold text-cyan-400 mb-2">2025</div>
-              <div class="text-white font-medium mb-1">توسع إقليمي</div>
-              <div class="text-blue-200 text-sm">دخول أسواق جديدة</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-3xl font-bold text-green-400 mb-2">500+</div>
-              <div class="text-white font-medium mb-1">مشروع جديد</div>
-              <div class="text-blue-200 text-sm">خلال العامين القادمين</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-3xl font-bold text-purple-400 mb-2">AI</div>
-              <div class="text-white font-medium mb-1">الذكاء الاصطناعي</div>
-              <div class="text-blue-200 text-sm">دمج تقنيات متقدمة</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
-              <div class="text-3xl font-bold text-yellow-400 mb-2">100+</div>
-              <div class="text-white font-medium mb-1">خبير تقني</div>
-              <div class="text-blue-200 text-sm">توسيع الفريق</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- CTA Button -->
-        <div class="text-center mt-12">
-          <a routerLink="/about" class="group bg-white text-slate-900 hover:bg-blue-50 px-10 py-4 rounded-xl text-lg font-bold transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl">
-            <span class="flex items-center justify-center">
-              تعرف على قصتنا
-              <svg class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
   `
 })
 export class HomeComponent {
