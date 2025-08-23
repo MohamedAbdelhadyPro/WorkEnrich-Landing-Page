@@ -17,6 +17,12 @@ import { RouterModule } from '@angular/router';
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
+              <a routerLink="/" 
+                 routerLinkActive="text-[#1E2E40]" 
+                 [routerLinkActiveOptions]="{exact: true}"
+                 class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
+                الرئيسية
+              </a>
               <a routerLink="/services" 
                  routerLinkActive="text-purple-600" 
                  class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
