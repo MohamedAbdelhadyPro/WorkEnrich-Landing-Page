@@ -10,6 +10,46 @@ import { RouterModule } from '@angular/router';
     <!-- Hero Section -->
     <section id="hero" class="pt-24 pb-12 bg-gradient-to-br from-purple-50 via-white to-blue-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- HR Product Banner -->
+        <div class="bg-gradient-to-r from-[#1E2E40] to-blue-600 rounded-2xl p-8 mb-12 text-white relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+          <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div class="flex items-center mb-4">
+                <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">منتج جديد</span>
+                <span class="mr-3 text-yellow-300">⭐</span>
+              </div>
+              <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+                نظام إدارة الموارد البشرية
+              </h2>
+              <p class="text-xl text-blue-100 mb-6">
+                حل شامل ومتكامل لإدارة جميع عمليات الموارد البشرية في شركتك بكفاءة عالية
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a routerLink="/projects/hr-system" 
+                   class="bg-white text-[#1E2E40] hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors text-center">
+                  شاهد التفاصيل
+                </a>
+                <a routerLink="/contact" 
+                   class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-6 py-3 rounded-lg font-medium transition-colors text-center">
+                  احصل على عرض سعر
+                </a>
+              </div>
+            </div>
+            <div class="relative">
+              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="HR System" 
+                   class="w-full h-64 object-cover rounded-xl shadow-lg">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl"></div>
+              <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg">
+                <div class="text-[#1E2E40] font-bold text-sm">نظام HR متكامل</div>
+                <div class="text-gray-600 text-xs">إدارة الموظفين والرواتب</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="text-center lg:text-right">
             <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
