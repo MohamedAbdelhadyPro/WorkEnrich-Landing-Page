@@ -8,34 +8,34 @@ import { TranslationService } from '../../services/translation.service';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <footer class="text-white py-12" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
+    <footer class="py-12 bg-gray-50 border-t border-gray-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div class="col-span-1 md:col-span-2">
             <div class="flex items-center mb-4 justify-end" dir="rtl">
-              <span class="text-2xl font-bold text-white">WorkEnrich</span>
+              <span class="text-2xl font-bold text-gray-900">WorkEnrich</span>
             </div>
-            <p class="text-gray-400 mb-4">
+            <p class="text-gray-600 mb-4">
               شركة متخصصة في تطوير البرمجيات والتطبيقات المبتكرة التي تساعد الشركات على النمو والتطور في العصر الرقمي
             </p>
           </div>
           <div>
-            <h4 class="font-bold mb-4">الخدمات</h4>
-            <ul class="space-y-2 text-white">
-              <li><a routerLink="/services" class="hover:text-gray-300 transition-colors">خدمات البرمجة</a></li>
-              <li><a routerLink="/projects/ecommerce" class="hover:text-gray-300 transition-colors">المشاريع المنجزة</a></li>
-              <li><a routerLink="/projects/hr-system" class="hover:text-gray-300 transition-colors">نظام الموارد البشرية</a></li>
+            <h4 class="font-bold mb-4 text-gray-900">الخدمات</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li><a routerLink="/services" class="hover:text-blue-600 transition-colors">خدمات البرمجة</a></li>
+              <li><a routerLink="/projects/ecommerce" class="hover:text-blue-600 transition-colors">المشاريع المنجزة</a></li>
+              <li><a routerLink="/projects/hr-system" class="hover:text-blue-600 transition-colors">نظام الموارد البشرية</a></li>
             </ul>
           </div>
           <div>
-            <h4 class="font-bold mb-4">الشركة</h4>
-            <ul class="space-y-2 text-white">
-              <li><a routerLink="/about" class="hover:text-gray-300 transition-colors">من نحن</a></li>
-              <li><a routerLink="/contact" class="hover:text-gray-300 transition-colors">تواصل معنا</a></li>
+            <h4 class="font-bold mb-4 text-gray-900">الشركة</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li><a routerLink="/about" class="hover:text-blue-600 transition-colors">من نحن</a></li>
+              <li><a routerLink="/contact" class="hover:text-blue-600 transition-colors">تواصل معنا</a></li>
             </ul>
           </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-white">
+        <div class="border-t border-gray-300 mt-8 pt-8 text-center text-gray-600">
           <p>&copy; 2025 WorkEnrich. جميع الحقوق محفوظة</p>
         </div>
       </div>
