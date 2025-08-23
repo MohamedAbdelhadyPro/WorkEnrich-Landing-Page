@@ -43,7 +43,7 @@ export class TranslationService {
     }
   }
 
-  translate(key: string): string {
+  translate(key: string): any {
     const keys = key.split('.');
     let value = this.translations;
     
@@ -58,7 +58,7 @@ export class TranslationService {
     return value !== undefined ? value : key;
   }
 
-  get(key: string): string {
+  get(key: string): any {
     return this.translate(key);
   }
 
