@@ -101,9 +101,11 @@ import { LanguageService } from '../../services/language.service';
                    class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 text-center shadow-lg">
                   عرض التفاصيل
                 </a>
-                <button class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-4 rounded-xl font-bold transition-all">
+                <a href="https://client.workenrich.com/auth/login" 
+                   target="_blank"
+                   class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-4 rounded-xl font-bold transition-all text-center">
                   دخول النظام
-                </button>
+                </a>
               </div>
             </div>
             <div class="relative">
