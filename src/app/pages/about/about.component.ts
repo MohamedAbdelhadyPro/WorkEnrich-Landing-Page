@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-about',
@@ -12,10 +13,10 @@ import { RouterModule } from '@angular/router';
       <section class="bg-gradient-to-br from-purple-50 via-white to-blue-50 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            من نحن؟
+            {{ translationService.get('about.title') }}
           </h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            WorkEnrich - شركة رائدة في مجال تطوير البرمجيات والحلول الرقمية المبتكرة
+            {{ translationService.get('about.subtitle') }}
           </p>
         </div>
       </section>
@@ -26,18 +27,16 @@ import { RouterModule } from '@angular/router';
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                قصتنا
+                {{ translationService.get('about.ourStory') }}
               </h2>
               <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                WorkEnrich هي شركة رائدة في مجال تطوير البرمجيات والحلول الرقمية. 
-                تأسست الشركة برؤية واضحة لتقديم حلول تقنية مبتكرة تساعد الشركات على النمو والازدهار في العصر الرقمي.
+                {{ translationService.get('about.description1') }}
               </p>
               <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                نجمع بين الخبرة التقنية العميقة والفهم الدقيق لاحتياجات السوق لنقدم حلولاً مبتكرة تتجاوز توقعات عملائنا. 
-                فريقنا المتخصص يضم نخبة من المطورين والمصممين ذوي الخبرة العالية.
+                {{ translationService.get('about.description2') }}
               </p>
               <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                منذ تأسيسنا، نسعى لتقديم أفضل الخدمات التقنية وأكثرها ابتكاراً، مع التركيز على الجودة والأداء المتميز في كل مشروع نعمل عليه.
+                {{ translationService.get('about.description3') }}
               </p>
               <div class="space-y-4">
                 <div *ngFor="let value of values" class="flex items-start">
@@ -66,10 +65,10 @@ import { RouterModule } from '@angular/router';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              إنجازاتنا بالأرقام
+              {{ translationService.get('about.achievementsByNumbers') }}
             </h2>
             <p class="text-xl text-gray-600">
-              أرقام تتحدث عن خبرتنا ونجاحنا
+              {{ translationService.get('about.numbersSpeak') }}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -87,10 +86,10 @@ import { RouterModule } from '@angular/router';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              فريق العمل
+              {{ translationService.get('about.team') }}
             </h2>
             <p class="text-xl text-gray-600">
-              خبراء متخصصون في مختلف المجالات التقنية
+              {{ translationService.get('about.teamDesc') }}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -122,16 +121,14 @@ import { RouterModule } from '@angular/router';
               <div class="text-4xl mb-4">🎯</div>
               <h3 class="text-2xl font-bold mb-4">رؤيتنا</h3>
               <p class="text-lg leading-relaxed">
-                أن نكون الشركة الرائدة في المنطقة في تقديم الحلول التقنية المبتكرة التي تساعد الشركات على النمو والازدهار في العصر الرقمي، 
-                وأن نكون الخيار الأول للشركات التي تسعى للتحول الرقمي.
+                {{ translationService.get('about.visionText') }}
               </p>
             </div>
             <div class="bg-gradient-to-br from-green-600 to-teal-600 p-8 rounded-2xl text-white">
               <div class="text-4xl mb-4">🚀</div>
-              <h3 class="text-2xl font-bold mb-4">رسالتنا</h3>
+              <h3 class="text-2xl font-bold mb-4">{{ translationService.get('about.mission') }}</h3>
               <p class="text-lg leading-relaxed">
-                نسعى لتطوير حلول برمجية عالية الجودة تلبي احتياجات عملائنا وتتجاوز توقعاتهم، مع التركيز على الابتكار والتميز في الأداء 
-                وتقديم خدمة عملاء استثنائية.
+                {{ translationService.get('about.missionText') }}
               </p>
             </div>
           </div>
@@ -143,10 +140,10 @@ import { RouterModule } from '@angular/router';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              قيمنا الأساسية
+              {{ translationService.get('about.coreValues') }}
             </h2>
             <p class="text-xl text-gray-600">
-              المبادئ التي نؤمن بها ونعمل وفقاً لها
+              {{ translationService.get('about.coreValuesDesc') }}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -164,10 +161,10 @@ import { RouterModule } from '@angular/router';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              التقنيات التي نستخدمها
+              {{ translationService.get('about.technologies') }}
             </h2>
             <p class="text-xl text-gray-600">
-              نواكب أحدث التطورات التقنية لنقدم أفضل الحلول
+              {{ translationService.get('about.technologiesDesc') }}
             </p>
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
@@ -183,19 +180,19 @@ import { RouterModule } from '@angular/router';
       <section class="py-20 bg-[#1E2E40]">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
-            جاهز للعمل معنا؟
+            {{ translationService.get('about.readyToWork') }}
           </h2>
           <p class="text-xl text-blue-100 mb-8">
-            تواصل معنا اليوم ودعنا نساعدك في تحويل أفكارك إلى واقع رقمي
+            {{ translationService.get('about.readyToWorkDesc') }}
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a routerLink="/contact" 
                class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors text-lg">
-              تواصل معنا الآن
+              {{ translationService.get('about.contactNow') }}
             </a>
             <a routerLink="/services" 
                class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-3 rounded-lg font-medium transition-colors text-lg">
-              شاهد خدماتنا
+              {{ translationService.get('about.viewServices') }}
             </a>
           </div>
         </div>
@@ -204,56 +201,58 @@ import { RouterModule } from '@angular/router';
   `
 })
 export class AboutComponent {
+  constructor(public translationService: TranslationService) {}
+
   values = [
     {
-      title: 'فريق متخصص',
-      description: 'مطورون ومصممون ذوو خبرة عالية في أحدث التقنيات والأدوات'
+      title: this.translationService.get('about.values.specializedTeam'),
+      description: this.translationService.get('about.values.specializedTeamDesc')
     },
     {
-      title: 'جودة عالية',
-      description: 'نلتزم بأعلى معايير الجودة في جميع مراحل التطوير والتسليم'
+      title: this.translationService.get('about.values.highQuality'),
+      description: this.translationService.get('about.values.highQualityDesc')
     },
     {
-      title: 'دعم مستمر',
-      description: 'نقدم الدعم الفني والصيانة المستمرة لجميع مشاريعنا'
+      title: this.translationService.get('about.values.continuousSupport'),
+      description: this.translationService.get('about.values.continuousSupportDesc')
     },
     {
-      title: 'ابتكار مستمر',
-      description: 'نواكب أحدث التطورات التقنية ونطبقها في حلولنا'
+      title: this.translationService.get('about.values.continuousInnovation'),
+      description: this.translationService.get('about.values.continuousInnovationDesc')
     },
     {
-      title: 'شراكة طويلة الأمد',
-      description: 'نبني علاقات قوية مع عملائنا تستمر لسنوات'
+      title: this.translationService.get('about.values.longTermPartnership'),
+      description: this.translationService.get('about.values.longTermPartnershipDesc')
     },
     {
-      title: 'أسعار تنافسية',
-      description: 'نقدم أفضل قيمة مقابل المال مع جودة استثنائية'
+      title: this.translationService.get('about.values.competitivePrices'),
+      description: this.translationService.get('about.values.competitivePricesDesc')
     }
   ];
 
   stats = [
     {
       value: '200+',
-      label: 'مشروع مكتمل',
-      description: 'مشاريع ناجحة ومتنوعة',
+      label: this.translationService.get('about.stats.completedProjects'),
+      description: this.translationService.get('about.stats.completedProjectsDesc'),
       color: 'text-[#1E2E40]'
     },
     {
       value: '150+',
-      label: 'عميل راضي',
-      description: 'عملاء يثقون بخدماتنا',
+      label: this.translationService.get('about.stats.happyClients'),
+      description: this.translationService.get('about.stats.happyClientsDesc'),
       color: 'text-blue-600'
     },
     {
       value: '15+',
-      label: 'مطور متخصص',
-      description: 'فريق من الخبراء',
+      label: this.translationService.get('about.stats.developers'),
+      description: this.translationService.get('about.stats.developersDesc'),
       color: 'text-green-600'
     },
     {
       value: '5+',
-      label: 'سنوات خبرة',
-      description: 'خبرة متراكمة في السوق',
+      label: this.translationService.get('about.stats.yearsExperience'),
+      description: this.translationService.get('about.stats.yearsExperienceDesc'),
       color: 'text-purple-600'
     }
   ];
@@ -300,33 +299,33 @@ export class AboutComponent {
   coreValues = [
     {
       icon: '🎯',
-      title: 'التميز',
-      description: 'نسعى للتميز في كل ما نقوم به ونتجاوز توقعات عملائنا'
+      title: this.translationService.get('about.coreValuesItems.excellence'),
+      description: this.translationService.get('about.coreValuesItems.excellenceDesc')
     },
     {
       icon: '🤝',
-      title: 'الشراكة',
-      description: 'نؤمن بأهمية الشراكة الحقيقية مع عملائنا لتحقيق النجاح المشترك'
+      title: this.translationService.get('about.coreValuesItems.partnership'),
+      description: this.translationService.get('about.coreValuesItems.partnershipDesc')
     },
     {
       icon: '💡',
-      title: 'الابتكار',
-      description: 'نبحث دائماً عن طرق جديدة ومبتكرة لحل التحديات التقنية'
+      title: this.translationService.get('about.coreValuesItems.innovation'),
+      description: this.translationService.get('about.coreValuesItems.innovationDesc')
     },
     {
       icon: '⚡',
-      title: 'السرعة',
-      description: 'نلتزم بالمواعيد المحددة ونسلم المشاريع في الوقت المناسب'
+      title: this.translationService.get('about.coreValuesItems.speed'),
+      description: this.translationService.get('about.coreValuesItems.speedDesc')
     },
     {
       icon: '🔒',
-      title: 'الأمان',
-      description: 'نضع الأمان والخصوصية في المقدمة في جميع حلولنا'
+      title: this.translationService.get('about.coreValuesItems.security'),
+      description: this.translationService.get('about.coreValuesItems.securityDesc')
     },
     {
       icon: '📈',
-      title: 'النمو',
-      description: 'نساعد عملاءنا على النمو والتطور من خلال حلولنا التقنية'
+      title: this.translationService.get('about.coreValuesItems.growth'),
+      description: this.translationService.get('about.coreValuesItems.growthDesc')
     }
   ];
 

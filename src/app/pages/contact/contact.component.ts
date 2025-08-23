@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,10 +13,10 @@ import { FormsModule } from '@angular/forms';
       <section class="bg-gradient-to-br from-purple-50 via-white to-blue-50 py-16">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            تواصل معنا
+            {{ translationService.get('contact.title') }}
           </h1>
           <p class="text-xl text-gray-600">
-            جاهز لبدء مشروعك القادم؟ تواصل معنا اليوم واحصل على استشارة مجانية
+            {{ translationService.get('contact.subtitle') }}
           </p>
         </div>
       </section>
@@ -145,6 +146,8 @@ import { FormsModule } from '@angular/forms';
   `
 })
 export class ContactComponent {
+  constructor(public translationService: TranslationService) {}
+
   contactForm = {
     name: '',
     email: '',

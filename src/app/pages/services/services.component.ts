@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-services',
@@ -12,10 +13,10 @@ import { RouterModule } from '@angular/router';
       <section class="bg-gradient-to-br from-purple-50 via-white to-blue-50 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            خدمات البرمجة المتخصصة
+            {{ translationService.get('services.title') }}
           </h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            نقدم مجموعة شاملة من الخدمات التقنية مع أمثلة حية من مشاريعنا المنجزة بنجاح
+            {{ translationService.get('services.subtitle') }}
           </p>
         </div>
       </section>
@@ -25,10 +26,10 @@ import { RouterModule } from '@angular/router';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              خدماتنا المتخصصة
+              {{ translationService.get('services.specializedServices') }}
             </h2>
             <p class="text-xl text-gray-600">
-              حلول تقنية متكاملة لجميع احتياجات أعمالك الرقمية
+              {{ translationService.get('services.servicesDesc') }}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -177,14 +178,16 @@ import { RouterModule } from '@angular/router';
   `
 })
 export class ServicesComponent {
+  constructor(public translationService: TranslationService) {}
+
   services = [
     {
       icon: '🌐',
-      title: 'تطوير المواقع الإلكترونية',
-      description: 'مواقع حديثة ومتجاوبة باستخدام أحدث التقنيات والأطر البرمجية.',
+      title: this.translationService.get('services.servicesList.webDevelopment.title'),
+      description: this.translationService.get('services.servicesList.webDevelopment.description'),
       bgColor: 'from-blue-400 to-blue-600',
-      features: ['تصميم متجاوب', 'سرعة عالية', 'محرك بحث محسن', 'أمان متقدم'],
-      price: 'يبدأ من 5,000 ريال'
+      features: this.translationService.get('services.servicesList.webDevelopment.features'),
+      price: this.translationService.get('services.servicesList.webDevelopment.price')
     },
     {
       icon: '📱',
