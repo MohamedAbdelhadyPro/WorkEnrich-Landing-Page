@@ -264,7 +264,7 @@ import { CommonModule } from '@angular/common';
               <span class="text-purple-600 text-xl">📧</span>
             </div>
             <h4 class="font-bold text-gray-900 mb-2">البريد الإلكتروني</h4>
-            <p class="text-gray-600">info@techcraft.com</p>
+            <p class="text-gray-600">info&#64;techcraft.com</p>
           </div>
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
