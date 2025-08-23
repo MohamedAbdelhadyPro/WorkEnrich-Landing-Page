@@ -38,7 +38,7 @@ import { TranslationService } from '../../services/translation.service';
               <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                 رؤيتنا هي أن نكون الشريك التقني الأول للشركات في المنطقة، ونساعدهم على تحقيق أهدافهم من خلال حلول تقنية متطورة وخدمة عملاء متميزة.
               </p>
-              <div class="space-y-4">
+              <div class="space-y-4 text-right">
                 <div *ngFor="let value of values" class="flex items-start">
                   <div class="w-6 h-6 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 ml-3">
                     <span class="text-[#1E2E40] text-sm">✓</span>
