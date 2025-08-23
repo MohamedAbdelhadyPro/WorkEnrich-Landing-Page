@@ -81,41 +81,109 @@ import { LanguageService } from '../../services/language.service';
     <!-- HR Product Banner -->
     <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
-          <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
-          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div class="flex items-center mb-6">
-                <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">منتج جديد</span>
-                <span class="mr-3 text-yellow-300 text-xl">⭐</span>
+        <!-- Modern HR System Banner -->
+        <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-8 lg:p-12 relative overflow-hidden border border-slate-200 shadow-sm">
+          <!-- Decorative elements -->
+          <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-100/50 to-purple-100/50 rounded-full blur-2xl -mr-20 -mt-20"></div>
+          <div class="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-indigo-100/50 to-cyan-100/50 rounded-full blur-xl -ml-16 -mb-16"></div>
+          
+          <div class="relative z-10">
+            <!-- Header Section -->
+            <div class="text-center mb-12">
+              <div class="inline-flex items-center bg-white/80 backdrop-blur-sm border border-blue-200/50 px-6 py-3 rounded-full mb-6 shadow-sm">
+                <div class="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mr-3 animate-pulse"></div>
+                <span class="text-slate-700 font-semibold text-sm">منتج جديد ومتطور</span>
+                <span class="mr-2 text-yellow-500 text-lg">⭐</span>
               </div>
-              <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+              
+              <h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight">
                 نظام إدارة الموارد البشرية
               </h2>
-              <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+              <p class="text-xl text-slate-600 mb-8 leading-relaxed max-w-4xl mx-auto">
                 حل شامل ومتكامل لإدارة جميع عمليات الموارد البشرية في شركتك بكفاءة عالية وأمان متقدم
               </p>
-              <div class="flex flex-col sm:flex-row gap-4">
-                <a routerLink="/projects/hr-system" 
-                   class="bg-white hover:bg-gray-100 px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 text-center shadow-lg" style="color: #1A3477;">
-                  عرض التفاصيل
-                </a>
-                <a href="https://client.workenrich.com/auth/login"
-                   target="_blank"
-                   class="border-2 border-white text-white hover:bg-white px-8 py-4 rounded-xl font-bold transition-all text-center" style="hover:color: #1A3477;">
-                  دخول النظام
-                </a>
-              </div>
             </div>
-            <div class="relative">
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                   alt="HR System" 
-                   class="w-full h-80 object-cover rounded-2xl shadow-2xl">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>
-              <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg">
-                <div class="font-bold" style="color: #1A3477;">نظام إدارة الموارد البشرية</div>
-                <div class="text-gray-600 text-sm">إدارة شاملة للموظفين والرواتب</div>
+            
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <!-- Left Side - Features -->
+              <div class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+                      <span class="text-white text-xl">👥</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">إدارة الموظفين</h3>
+                    <p class="text-slate-600 text-sm">ملفات شاملة وتتبع دقيق</p>
+                  </div>
+                  
+                  <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                      <span class="text-white text-xl">💰</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">إدارة الرواتب</h3>
+                    <p class="text-slate-600 text-sm">حساب تلقائي ودقيق</p>
+                  </div>
+                  
+                  <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
+                      <span class="text-white text-xl">⏰</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">الحضور والانصراف</h3>
+                    <p class="text-slate-600 text-sm">تتبع دقيق للأوقات</p>
+                  </div>
+                  
+                  <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
+                      <span class="text-white text-xl">📊</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">التقارير والتحليلات</h3>
+                    <p class="text-slate-600 text-sm">رؤى ذكية لاتخاذ القرارات</p>
+                  </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                  <a routerLink="/projects/hr-system" 
+                     class="bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-700 hover:to-slate-800 text-white px-8 py-4 rounded-2xl font-bold transition-all transform hover:scale-105 text-center shadow-lg hover:shadow-xl">
+                    <span class="flex items-center justify-center">
+                      عرض التفاصيل
+                      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                      </svg>
+                    </span>
+                  </a>
+                  <a href="https://client.workenrich.com/auth/login"
+                     target="_blank"
+                     class="bg-white/80 backdrop-blur-sm border-2 border-slate-300 text-slate-700 hover:bg-white hover:border-slate-400 px-8 py-4 rounded-2xl font-bold transition-all text-center shadow-sm hover:shadow-md">
+                    دخول النظام
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Right Side - Image -->
+              <div class="relative">
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-3xl shadow-lg border border-white/50">
+                  <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                       alt="HR System" 
+                       class="w-full h-80 object-cover rounded-2xl">
+                  
+                  <!-- Floating Status Card -->
+                  <div class="absolute -bottom-4 -right-4 bg-white/95 backdrop-blur-sm px-6 py-4 rounded-2xl shadow-xl border border-slate-200">
+                    <div class="flex items-center">
+                      <div class="w-4 h-4 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mr-3 animate-pulse"></div>
+                      <div>
+                        <div class="font-bold text-slate-800 text-sm">نظام الموارد البشرية</div>
+                        <div class="text-slate-500 text-xs">متاح الآن للاستخدام</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Top Badge -->
+                  <div class="absolute -top-3 left-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                    نظام متطور
+                  </div>
+                </div>
               </div>
             </div>
           </div>
