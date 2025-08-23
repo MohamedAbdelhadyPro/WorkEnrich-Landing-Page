@@ -264,6 +264,54 @@ import { TranslationService } from '../../services/translation.service';
               <div class="text-2xl mb-2">💙</div>
               <div class="text-sm font-medium text-gray-700">Flutter</div>
             </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🔷</div>
+              <div class="text-sm font-medium text-gray-700">TypeScript</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🟨</div>
+              <div class="text-sm font-medium text-gray-700">JavaScript</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🐘</div>
+              <div class="text-sm font-medium text-gray-700">PHP</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🍃</div>
+              <div class="text-sm font-medium text-gray-700">MongoDB</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🐬</div>
+              <div class="text-sm font-medium text-gray-700">MySQL</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🐘</div>
+              <div class="text-sm font-medium text-gray-700">PostgreSQL</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">☁️</div>
+              <div class="text-sm font-medium text-gray-700">AWS</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🔥</div>
+              <div class="text-sm font-medium text-gray-700">Firebase</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🐳</div>
+              <div class="text-sm font-medium text-gray-700">Docker</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🔧</div>
+              <div class="text-sm font-medium text-gray-700">Redis</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">🎨</div>
+              <div class="text-sm font-medium text-gray-700">Tailwind CSS</div>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-2xl mb-2">📱</div>
+              <div class="text-sm font-medium text-gray-700">React Native</div>
+            </div>
           </div>
         </div>
       </section>
