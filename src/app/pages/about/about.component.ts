@@ -44,26 +44,8 @@ import { TranslationService } from '../../services/translation.service';
                     <span class="text-[#1E2E40] text-sm">✓</span>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900">فريق متخصص</h4>
-                    <p class="text-gray-600 text-sm">مطورون ومصممون ذوو خبرة عالية في أحدث التقنيات</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="w-6 h-6 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 mr-3">
-                    <span class="text-[#1E2E40] text-sm">✓</span>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900">جودة عالية</h4>
-                    <p class="text-gray-600 text-sm">نلتزم بأعلى معايير الجودة في جميع مشاريعنا</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="w-6 h-6 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 mr-3">
-                    <span class="text-[#1E2E40] text-sm">✓</span>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900">دعم مستمر</h4>
-                    <p class="text-gray-600 text-sm">نقدم الدعم الفني والصيانة المستمرة لجميع مشاريعنا</p>
+                    <h4 class="font-semibold text-gray-900">{{value.title}}</h4>
+                    <p class="text-gray-600 text-sm">{{value.description}}</p>
                   </div>
                 </div>
               </div>
@@ -311,5 +293,20 @@ import { TranslationService } from '../../services/translation.service';
   `
 })
 export class AboutComponent {
+  values = [
+    {
+      title: 'فريق متخصص',
+      description: 'مطورون ومصممون ذوو خبرة عالية في أحدث التقنيات'
+    },
+    {
+      title: 'جودة عالية',
+      description: 'نلتزم بأعلى معايير الجودة في جميع مشاريعنا'
+    },
+    {
+      title: 'دعم مستمر',
+      description: 'نقدم الدعم الفني والصيانة المستمرة لجميع مشاريعنا'
+    }
+  ];
+
   constructor(public translationService: TranslationService) {}
 }
