@@ -10,13 +10,13 @@ import { TranslationService } from '../../services/translation.service';
   template: `
     <div class="pt-24 pb-12">
       <!-- Hero Section -->
-      <section class="py-16" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
+      <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             خدمات البرمجة المتخصصة
           </h1>
-          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
-            نقدم مجموعة شاملة من الخدمات التقنية المتخصصة لتلبية احتياجات عملك
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            نقدم مجموعة شاملة من الخدمات التقنية المتخصصة لتلبية احتياجات عملك وتحقيق أهدافك الرقمية
           </p>
         </div>
       </section>
@@ -24,281 +24,272 @@ import { TranslationService } from '../../services/translation.service';
       <!-- Services Grid -->
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              خدماتنا المتخصصة
-            </h2>
-            <p class="text-xl text-gray-600">
-              حلول تقنية متطورة مصممة خصيصاً لتحقيق أهدافك
-            </p>
-          </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
-              <div class="w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
-                🌐
+            <!-- Web Development -->
+            <div class="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300">
+              <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">تطوير المواقع الإلكترونية</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">مواقع إلكترونية حديثة ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات.</p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">تطوير المواقع الإلكترونية</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                مواقع إلكترونية حديثة ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   تطوير مواقع متجاوبة
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   تصميم واجهات احترافي
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   تحسين محركات البحث
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   أداء عالي وأمان
                 </li>
               </ul>
-              <div class="text-[#1E2E40] font-semibold">يبدأ من 5,000 ريال</div>
+              <div class="text-2xl font-bold text-blue-600 mb-4">يبدأ من 5,000 ريال</div>
+              <a routerLink="/contact" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-xl font-medium transition-colors">
+                طلب الخدمة
+              </a>
             </div>
-            
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
-              <div class="w-14 h-14 bg-gradient-to-r from-green-400 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
-                📱
+
+            <!-- Mobile Apps -->
+            <div class="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-green-200 hover:shadow-xl transition-all duration-300">
+              <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">تطبيقات الجوال</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">تطبيقات iOS و Android أصلية ومتعددة المنصات بأداء عالي.</p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">تطبيقات الجوال</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                تطبيقات iOS و Android أصلية ومتعددة المنصات بأداء عالي وتجربة مستخدم مميزة
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
                   iOS & Android
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
-                  واجهة سهلة
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                  واجهة سهلة الاستخدام
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
-                  أداء سريع
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                  أداء سريع ومستقر
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
                   تحديثات مستمرة
                 </li>
               </ul>
-              <div class="text-[#1E2E40] font-semibold">يبدأ من 8,000 ريال</div>
+              <div class="text-2xl font-bold text-green-600 mb-4">يبدأ من 8,000 ريال</div>
+              <a routerLink="/contact" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl font-medium transition-colors">
+                طلب الخدمة
+              </a>
             </div>
-            
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
-              <div class="w-14 h-14 bg-gradient-to-r from-purple-400 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
-                ⚙️
+
+            <!-- Management Systems -->
+            <div class="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-purple-200 hover:shadow-xl transition-all duration-300">
+              <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
+                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">أنظمة إدارة مخصصة</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">حلول برمجية مخصصة لإدارة العمليات وتحسين الإنتاجية.</p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">أنظمة إدارة مخصصة</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                حلول برمجية مخصصة لإدارة العمليات وتحسين الإنتاجية وأتمتة المهام
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
                   حلول مخصصة
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
                   تكامل سهل
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
                   تقارير تفصيلية
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
                   أمان عالي
                 </li>
               </ul>
-              <div class="text-[#1E2E40] font-semibold">يبدأ من 12,000 ريال</div>
+              <div class="text-2xl font-bold text-purple-600 mb-4">يبدأ من 12,000 ريال</div>
+              <a routerLink="/contact" class="block w-full bg-purple-600 hover:bg-purple-700 text-white text-center py-3 rounded-xl font-medium transition-colors">
+                طلب الخدمة
+              </a>
             </div>
-            
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
-              <div class="w-14 h-14 bg-gradient-to-r from-pink-400 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
-                🎨
+
+            <!-- UI/UX Design -->
+            <div class="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-pink-200 hover:shadow-xl transition-all duration-300">
+              <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
+                <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">تصميم واجهات المستخدم</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">تصاميم عصرية وجذابة تركز على تجربة المستخدم المثلى.</p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">تصميم واجهات المستخدم</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                تصاميم عصرية وجذابة تركز على تجربة المستخدم المثلى وسهولة الاستخدام
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
                   تصميم حديث
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
-                  تجربة مستخدم
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
+                  تجربة مستخدم مميزة
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
                   ألوان متناسقة
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
                   سهولة الاستخدام
                 </li>
               </ul>
-              <div class="text-[#1E2E40] font-semibold">يبدأ من 3,000 ريال</div>
+              <div class="text-2xl font-bold text-pink-600 mb-4">يبدأ من 3,000 ريال</div>
+              <a routerLink="/contact" class="block w-full bg-pink-600 hover:bg-pink-700 text-white text-center py-3 rounded-xl font-medium transition-colors">
+                طلب الخدمة
+              </a>
             </div>
-            
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
-              <div class="w-14 h-14 bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
-                ☁️
+
+            <!-- Cloud Solutions -->
+            <div class="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-cyan-200 hover:shadow-xl transition-all duration-300">
+              <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-cyan-200 transition-colors">
+                <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">الحوسبة السحابية</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">حلول سحابية آمنة وقابلة للتوسع لاستضافة وإدارة التطبيقات.</p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">الحوسبة السحابية</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                حلول سحابية آمنة وقابلة للتوسع لاستضافة وإدارة التطبيقات والبيانات
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-cyan-500 rounded-full mr-3"></div>
                   استضافة آمنة
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
-                  نسخ احتياطي
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-cyan-500 rounded-full mr-3"></div>
+                  نسخ احتياطي تلقائي
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-cyan-500 rounded-full mr-3"></div>
                   قابلية التوسع
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-cyan-500 rounded-full mr-3"></div>
                   مراقبة مستمرة
                 </li>
               </ul>
-              <div class="text-[#1E2E40] font-semibold">يبدأ من 500 ريال/شهر</div>
+              <div class="text-2xl font-bold text-cyan-600 mb-4">يبدأ من 500 ريال/شهر</div>
+              <a routerLink="/contact" class="block w-full bg-cyan-600 hover:bg-cyan-700 text-white text-center py-3 rounded-xl font-medium transition-colors">
+                طلب الخدمة
+              </a>
             </div>
-            
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E2E40]/20 group">
-              <div class="w-14 h-14 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg text-3xl">
-                🛠️
+
+            <!-- Technical Support -->
+            <div class="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-orange-200 hover:shadow-xl transition-all duration-300">
+              <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-200 transition-colors">
+                <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">الدعم الفني والصيانة</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">دعم فني متواصل وصيانة دورية لضمان استمرارية العمل.</p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">الدعم الفني والصيانة</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                دعم فني متواصل وصيانة دورية لضمان استمرارية العمل وحل المشاكل فوراً
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                   دعم 24/7
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                   صيانة دورية
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                   تحديثات أمنية
                 </li>
-                <li class="flex items-center text-sm text-gray-600">
-                  <span class="w-2 h-2 bg-[#1E2E40] rounded-full mr-2"></span>
+                <li class="flex items-center text-gray-700">
+                  <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                   استجابة سريعة
                 </li>
               </ul>
-              <div class="text-[#1E2E40] font-semibold">يبدأ من 1,000 ريال/شهر</div>
+              <div class="text-2xl font-bold text-orange-600 mb-4">يبدأ من 1,000 ريال/شهر</div>
+              <a routerLink="/contact" class="block w-full bg-orange-600 hover:bg-orange-700 text-white text-center py-3 rounded-xl font-medium transition-colors">
+                طلب الخدمة
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Portfolio Section -->
+      <!-- Why Choose Us -->
       <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              مشاريعنا المنجزة
+              لماذا تختار خدماتنا؟
             </h2>
             <p class="text-xl text-gray-600">
-              أمثلة حية من مشاريعنا التي حققت نجاحاً باهراً لعملائنا
+              نقدم حلولاً تقنية متميزة تساعدك على تحقيق أهدافك
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div *ngFor="let project of portfolio" 
-                 class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              <div class="relative overflow-hidden">
-                <img [src]="project.image" 
-                     [alt]="project.title" 
-                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
               </div>
-              <div class="p-6">
-                <div class="flex items-center mb-2">
-                  <span class="px-3 py-1 text-xs font-medium rounded-full"
-                        [ngClass]="project.categoryColor">
-                    {{ project.category }}
-                  </span>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ project.title }}</h3>
-                <p class="text-gray-600 text-sm mb-4">{{ project.description }}</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span *ngFor="let tech of project.technologies" 
-                        class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">
-                    {{ tech }}
-                  </span>
-                </div>
-                <a [routerLink]="project.link"
-                   class="text-[#1E2E40] hover:text-[#1E2E40]/80 font-medium text-sm transition-colors">
-                  عرض التفاصيل ←
-                </a>
-              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">جودة عالية</h3>
+              <p class="text-gray-600">نلتزم بأعلى معايير الجودة في جميع مشاريعنا</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- HR System Highlight -->
-      <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="p-8 rounded-2xl text-white" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
-                  نظام إدارة الموارد البشرية (HR)
-                </h2>
-                <p class="text-xl mb-8 text-blue-100">
-                  حل شامل ومتكامل لإدارة جميع عمليات الموارد البشرية في شركتك بكفاءة عالية
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                  <div *ngFor="let feature of hrFeatures" class="flex items-start">
-                    <div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mt-1 mr-3">
-                      <span class="text-white text-sm">✓</span>
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-white mb-1">{{ feature.title }}</h4>
-                      <p class="text-blue-100 text-sm">{{ feature.description }}</p>
-                    </div>
-                  </div>
-                </div>
-                <a routerLink="/projects/hr-system" class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors" style="color: #1A3477;">
-                  عرض تفاصيل النظام
-                </a>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
               </div>
-              <div class="relative">
-                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                     alt="HR System" 
-                     class="w-full h-96 object-cover rounded-xl shadow-2xl">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl"></div>
-              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">سرعة في التنفيذ</h3>
+              <p class="text-gray-600">نسلم مشاريعك في الوقت المحدد دون تأخير</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Process Section -->
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              كيف نعمل معك؟
-            </h2>
-            <p class="text-xl text-gray-600">
-              عملية واضحة ومنظمة لضمان نجاح مشروعك
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div *ngFor="let step of processSteps; let i = index" class="text-center">
-              <div class="w-16 h-16 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-[#1E2E40] font-bold text-xl">{{ i + 1 }}</span>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
-              <p class="text-gray-600">{{ step.description }}</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">فريق متخصص</h3>
+              <p class="text-gray-600">مطورون ومصممون ذوو خبرة عالية ومهارات متقدمة</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">دعم مستمر</h3>
+              <p class="text-gray-600">نقدم الدعم الفني والصيانة المستمرة لجميع مشاريعنا</p>
             </div>
           </div>
         </div>
@@ -314,7 +305,7 @@ import { TranslationService } from '../../services/translation.service';
             تواصل معنا اليوم واحصل على استشارة مجانية لمشروعك
           </p>
           <a routerLink="/contact" 
-             class="text-white hover:opacity-90 px-8 py-3 rounded-lg font-medium transition-all text-lg shadow-lg" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
+             class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
             ابدأ مشروعك الآن
           </a>
         </div>
@@ -324,116 +315,4 @@ import { TranslationService } from '../../services/translation.service';
 })
 export class ServicesComponent {
   constructor(public translationService: TranslationService) {}
-  
-  portfolio = [
-    {
-      title: 'منصة التجارة الإلكترونية',
-      description: 'متجر إلكتروني متكامل مع نظام إدارة المخزون والمدفوعات',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'تطوير ويب',
-      categoryColor: 'bg-blue-100 text-blue-800',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '/projects/ecommerce'
-    },
-    {
-      title: 'تطبيق إدارة المهام',
-      description: 'تطبيق جوال لإدارة المشاريع والمهام مع فريق العمل',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'تطبيق جوال',
-      categoryColor: 'bg-green-100 text-green-800',
-      technologies: ['Flutter', 'Firebase', 'Dart', 'Push Notifications'],
-      link: '/projects/task-management'
-    },
-    {
-      title: 'نظام إدارة المستشفيات',
-      description: 'نظام شامل لإدارة المرضى والمواعيد والسجلات الطبية',
-      image: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'نظام إدارة',
-      categoryColor: 'bg-purple-100 text-purple-800',
-      technologies: ['Angular', 'ASP.NET', 'SQL Server', 'Azure'],
-      link: '/projects/hospital-system'
-    },
-    {
-      title: 'منصة التعليم الإلكتروني',
-      description: 'منصة تفاعلية للتعلم عن بُعد مع أدوات التقييم والمتابعة',
-      image: 'https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'تطوير ويب',
-      categoryColor: 'bg-blue-100 text-blue-800',
-      technologies: ['Vue.js', 'Laravel', 'MySQL', 'WebRTC'],
-      link: '/projects/elearning'
-    },
-    {
-      title: 'تطبيق الخدمات المصرفية',
-      description: 'تطبيق آمن للخدمات المصرفية الرقمية والتحويلات',
-      image: 'https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'تطبيق جوال',
-      categoryColor: 'bg-green-100 text-green-800',
-      technologies: ['React Native', 'Blockchain', 'Encryption', 'Biometrics'],
-      link: '/projects/banking-app'
-    },
-    {
-      title: 'نظام إدارة المخازن',
-      description: 'حل متكامل لإدارة المخزون والمبيعات والتقارير المالية',
-      image: 'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'نظام إدارة',
-      categoryColor: 'bg-purple-100 text-purple-800',
-      technologies: ['Django', 'PostgreSQL', 'Redis', 'Docker'],
-      link: '/projects/inventory-system'
-    },
-    {
-      title: 'نظام إدارة الموارد البشرية',
-      description: 'نظام شامل لإدارة الموظفين والحضور والرواتب والإجازات',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'نظام إدارة',
-      categoryColor: 'bg-indigo-100 text-indigo-800',
-      technologies: ['Angular', 'Node.js', 'PostgreSQL', 'JWT', 'Chart.js'],
-      link: '/projects/hr-system'
-    }
-  ];
-
-  hrFeatures = [
-    {
-      title: 'إدارة الموظفين',
-      description: 'ملفات شاملة لجميع الموظفين مع تتبع البيانات الشخصية والوظيفية'
-    },
-    {
-      title: 'نظام الحضور والانصراف',
-      description: 'تتبع دقيق لأوقات العمل مع تقارير تفصيلية'
-    },
-    {
-      title: 'إدارة الرواتب',
-      description: 'حساب الرواتب والمكافآت والخصومات تلقائياً'
-    },
-    {
-      title: 'إدارة الإجازات',
-      description: 'نظام طلب الإجازات والموافقة عليها إلكترونياً'
-    },
-    {
-      title: 'تقييم الأداء',
-      description: 'أدوات تقييم شاملة لقياس أداء الموظفين'
-    },
-    {
-      title: 'التقارير والتحليلات',
-      description: 'تقارير مفصلة وتحليلات ذكية لاتخاذ القرارات'
-    }
-  ];
-
-  processSteps = [
-    {
-      title: 'التشاور والتخطيط',
-      description: 'نناقش احتياجاتك ونضع خطة مفصلة للمشروع'
-    },
-    {
-      title: 'التصميم والتطوير',
-      description: 'نبدأ في تصميم وتطوير الحل وفقاً للمتطلبات'
-    },
-    {
-      title: 'الاختبار والمراجعة',
-      description: 'نختبر الحل بدقة ونراجعه معك'
-    },
-    {
-      title: 'التسليم والدعم',
-      description: 'نسلم المشروع ونقدم الدعم المستمر'
-    }
-  ];
 }
