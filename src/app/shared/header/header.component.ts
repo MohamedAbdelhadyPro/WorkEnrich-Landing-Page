@@ -58,7 +58,7 @@ import { RouterModule } from '@angular/router';
                  class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 خدمات البرمجة المتخصصة
               </a>
-              <a routerLink="/portfolio" 
+              <a routerLink="/about" 
                  routerLinkActive="text-[#1E2E40]"
                  class="text-gray-900 hover:text-[#1E2E40] px-3 py-2 text-sm font-medium transition-colors cursor-pointer">
                 من نحن
