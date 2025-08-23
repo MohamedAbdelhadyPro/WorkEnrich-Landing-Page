@@ -272,26 +272,84 @@ import { LanguageService } from '../../services/language.service';
       </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-gradient-to-r from-[#1E2E40] to-blue-600">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-          <div class="text-white">
-            <div class="text-4xl font-bold mb-2">200+</div>
-            <div class="text-blue-100">مشروع مكتمل</div>
+    <!-- Core Services Section -->
+    <section class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+      <!-- Background Elements -->
+      <div class="absolute inset-0">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+            خدماتنا الأساسية
+          </h2>
+          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+            نقدم حلولاً تقنية شاملة تلبي جميع احتياجات عملك الرقمي
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Web Development -->
+          <div class="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform text-3xl">
+              🌐
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">تطوير المواقع</h3>
+            <p class="text-blue-100 mb-6 leading-relaxed">
+              مواقع إلكترونية حديثة ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">React</span>
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">Angular</span>
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">Vue.js</span>
+            </div>
           </div>
-          <div class="text-white">
-            <div class="text-4xl font-bold mb-2">150+</div>
-            <div class="text-blue-100">عميل سعيد</div>
+          
+          <!-- Mobile Development -->
+          <div class="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform text-3xl">
+              📱
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">تطبيقات الجوال</h3>
+            <p class="text-blue-100 mb-6 leading-relaxed">
+              تطبيقات iOS و Android أصلية ومتعددة المنصات بأداء عالي وتجربة مستخدم مميزة
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">Flutter</span>
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">React Native</span>
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">Native</span>
+            </div>
           </div>
-          <div class="text-white">
-            <div class="text-4xl font-bold mb-2">15+</div>
-            <div class="text-blue-100">مطور محترف</div>
+          
+          <!-- Management Systems -->
+          <div class="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform text-3xl">
+              ⚙️
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">أنظمة الإدارة</h3>
+            <p class="text-blue-100 mb-6 leading-relaxed">
+              حلول برمجية مخصصة لإدارة العمليات وتحسين الإنتاجية مع تقارير تفصيلية
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">ERP</span>
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">CRM</span>
+              <span class="px-3 py-1 bg-white/20 text-white text-sm rounded-full">HR</span>
+            </div>
           </div>
-          <div class="text-white">
-            <div class="text-4xl font-bold mb-2">5+</div>
-            <div class="text-blue-100">سنوات خبرة</div>
-          </div>
+        </div>
+        
+        <!-- CTA Button -->
+        <div class="text-center mt-12">
+          <a routerLink="/services" class="group bg-white text-slate-900 hover:bg-blue-50 px-10 py-4 rounded-xl text-lg font-bold transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl">
+            <span class="flex items-center justify-center">
+              اعرض جميع الخدمات
+              <svg class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
     </section>
