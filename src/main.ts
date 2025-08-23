@@ -7,6 +7,8 @@ import { RouterOutlet } from '@angular/router';
 import { routes } from './app/app.routes';
 import { HeaderComponent } from './app/shared/header/header.component';
 import { FooterComponent } from './app/shared/footer/footer.component';
+import { TranslationService } from './app/services/translation.service';
+import { LanguageService } from './app/services/language.service';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +27,8 @@ export class App {}
 bootstrapApplication(App, {
   providers: [
     provideRouter(routes),
-    provideHttpClient()
+    provideHttpClient(),
+    TranslationService,
+    LanguageService
   ]
 });
