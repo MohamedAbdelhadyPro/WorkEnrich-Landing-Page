@@ -305,16 +305,16 @@ import { TranslationService } from '../../services/translation.service';
       </section>
 
       <!-- CTA Section -->
-      <section class="py-20" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
+      <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
             جاهز لبدء مشروعك القادم؟
           </h2>
-          <p class="text-xl text-blue-100 mb-8">
+          <p class="text-xl text-gray-600 mb-8">
             تواصل معنا اليوم واحصل على استشارة مجانية لمشروعك
           </p>
           <a routerLink="/contact" 
-             class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors text-lg" style="color: #1A3477;">
+             class="text-white hover:opacity-90 px-8 py-3 rounded-lg font-medium transition-all text-lg shadow-lg" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
             ابدأ مشروعك الآن
           </a>
         </div>
