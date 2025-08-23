@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
           </a>
           
           <!-- Navigation items -->
-          <div class="hidden md:flex items-baseline space-x-4 space-x-reverse">
+          <div class="hidden md:flex items-center space-x-4 space-x-reverse">
               <a routerLink="/" 
                  routerLinkActive="text-[#1E2E40]" 
                  [routerLinkActiveOptions]="{exact: true}"
