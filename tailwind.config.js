@@ -4,16 +4,7 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'cairo': ['Cairo', 'sans-serif'],
-      },
-      colors: {
-        'primary': '#1A3477',
-        'secondary': '#2563eb',
-        'orange': '#ff7000',
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
