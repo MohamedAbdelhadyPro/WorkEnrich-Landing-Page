@@ -206,11 +206,10 @@ import { RouterModule } from '@angular/router';
             </div>
             <div class="relative">
               <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
-            <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 rounded-xl text-white">
+                   alt="HR Management System"
                    class="w-full h-96 object-cover rounded-2xl shadow-2xl">
               <div class="absolute inset-0 bg-gradient-to-t from-[#1E2E40]/20 to-transparent rounded-2xl"></div>
               <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg">
-                  <div class="text-blue-100 text-sm">{{ result.label }}</div>
                 <div class="text-gray-600 text-sm">نظام الموارد البشرية المتطور</div>
               </div>
             </div>
