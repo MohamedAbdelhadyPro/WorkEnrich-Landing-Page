@@ -24,24 +24,24 @@ import { RouterModule } from '@angular/router';
               <p class="text-xl text-gray-600 mb-6 leading-relaxed">
                 نظام شامل ومتكامل من تطوير <span class="font-bold text-[#1E2E40]">WorkEnrich</span> لإدارة جميع عمليات الموارد البشرية بنظام الاشتراك الشهري المرن.
               </p>
-              <div class="bg-gradient-to-r from-[#1E2E40]/10 to-blue-100 p-4 rounded-lg mb-8">
+              <div class="bg-gradient-to-r from-blue-500/10 to-blue-600/10 p-4 rounded-lg mb-8">
                 <div class="flex items-center">
                   <span class="text-2xl mr-3">🚀</span>
                   <div>
-                    <h3 class="font-bold text-[#1E2E40] mb-1">نظام اشتراكات مرن</h3>
+                    <h3 class="font-bold text-blue-600 mb-1">نظام اشتراكات مرن</h3>
                     <p class="text-gray-600 text-sm">ادفع حسب احتياجاتك - بدون تكاليف إضافية</p>
                   </div>
                 </div>
               </div>
               <div class="flex flex-col sm:flex-row gap-4">
-                <a href="https://client.workenrich.com/auth/register" 
+                <a href="https://client.workenrich.com/auth/register"
                    target="_blank"
-                   class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors text-center">
+                   class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all text-center shadow-lg">
                   تسجيل حساب جديد
                 </a>
-                <a href="https://client.workenrich.com/auth/login" 
+                <a href="https://client.workenrich.com/auth/login"
                    target="_blank"
-                   class="border-2 border-[#1E2E40] text-[#1E2E40] hover:bg-[#1E2E40] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors text-center">
+                   class="border-2 border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-all text-center">
                   تسجيل الدخول
                 </a>
               </div>
@@ -51,7 +51,7 @@ import { RouterModule } from '@angular/router';
                    alt="HR Management System" 
                    class="w-full h-96 object-cover rounded-2xl shadow-2xl">
               <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
-                <div class="text-[#1E2E40] font-bold text-sm">منتج جديد</div>
+                <div class="text-blue-600 font-bold text-sm">منتج جديد</div>
               </div>
             </div>
           </div>
@@ -72,12 +72,12 @@ import { RouterModule } from '@angular/router';
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <!-- Basic Plan -->
-            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-[#1E2E40]/30 transition-all duration-300 hover:shadow-lg">
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg">
               <div class="text-center">
                 <h3 class="text-2xl font-bold text-gray-900 mb-2">الخطة الأساسية</h3>
                 <p class="text-gray-600 mb-6">مناسبة للشركات الصغيرة</p>
                 <div class="mb-6">
-                  <span class="text-4xl font-bold text-[#1E2E40]">299</span>
+                  <span class="text-4xl font-bold text-blue-600">299</span>
                   <span class="text-gray-600 text-lg">ريال/شهر</span>
                 </div>
                 <div class="text-sm text-gray-500 mb-8">حتى 50 موظف</div>
@@ -90,21 +90,21 @@ import { RouterModule } from '@angular/router';
                 </li>
               </ul>
               
-              <button class="w-full bg-gray-100 hover:bg-[#1E2E40] hover:text-white text-[#1E2E40] py-3 rounded-lg font-medium transition-colors">
+              <button class="w-full bg-gray-100 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-blue-600 py-3 rounded-lg font-medium transition-all">
                 ابدأ التجربة المجانية
               </button>
             </div>
 
             <!-- Professional Plan -->
-            <div class="bg-white border-2 border-[#1E2E40] rounded-2xl p-8 relative hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <div class="bg-white border-2 border-blue-600 rounded-2xl p-8 relative hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span class="bg-[#1E2E40] text-white px-6 py-2 rounded-full text-sm font-medium">الأكثر شعبية</span>
+                <span class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium">الأكثر شعبية</span>
               </div>
               <div class="text-center">
                 <h3 class="text-2xl font-bold text-gray-900 mb-2">الخطة الاحترافية</h3>
                 <p class="text-gray-600 mb-6">مناسبة للشركات المتوسطة</p>
                 <div class="mb-6">
-                  <span class="text-4xl font-bold text-[#1E2E40]">599</span>
+                  <span class="text-4xl font-bold text-blue-600">599</span>
                   <span class="text-gray-600 text-lg">ريال/شهر</span>
                 </div>
                 <div class="text-sm text-gray-500 mb-8">حتى 200 موظف</div>
@@ -117,18 +117,18 @@ import { RouterModule } from '@angular/router';
                 </li>
               </ul>
               
-              <button class="w-full bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white py-3 rounded-lg font-medium transition-colors">
+              <button class="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-3 rounded-lg font-medium transition-all shadow-lg">
                 ابدأ التجربة المجانية
               </button>
             </div>
 
             <!-- Enterprise Plan -->
-            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-[#1E2E40]/30 transition-all duration-300 hover:shadow-lg">
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg">
               <div class="text-center">
                 <h3 class="text-2xl font-bold text-gray-900 mb-2">خطة المؤسسات</h3>
                 <p class="text-gray-600 mb-6">للشركات الكبيرة والمؤسسات</p>
                 <div class="mb-6">
-                  <span class="text-4xl font-bold text-[#1E2E40]">1,299</span>
+                  <span class="text-4xl font-bold text-blue-600">1,299</span>
                   <span class="text-gray-600 text-lg">ريال/شهر</span>
                 </div>
                 <div class="text-sm text-gray-500 mb-8">موظفين غير محدود</div>
@@ -141,7 +141,7 @@ import { RouterModule } from '@angular/router';
                 </li>
               </ul>
               
-              <button class="w-full bg-gray-100 hover:bg-[#1E2E40] hover:text-white text-[#1E2E40] py-3 rounded-lg font-medium transition-colors">
+              <button class="w-full bg-gray-100 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-blue-600 py-3 rounded-lg font-medium transition-all">
                 تواصل للحصول على عرض
               </button>
             </div>
@@ -151,9 +151,11 @@ import { RouterModule } from '@angular/router';
           <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 mt-16 text-center">
             <h3 class="text-2xl font-bold text-gray-900 mb-4">جرب النظام مجاناً لمدة 30 يوم</h3>
             <p class="text-gray-600 mb-6">لا حاجة لبطاقة ائتمان - ابدأ فوراً</p>
-            <button class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+            <a href="https://client.workenrich.com/auth/register" 
+               target="_blank"
+               class="inline-block bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-lg">
               ابدأ التجربة المجانية الآن
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -172,8 +174,8 @@ import { RouterModule } from '@angular/router';
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div *ngFor="let feature of systemFeatures" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div class="w-12 h-12 bg-[#1E2E40]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#1E2E40]/20 transition-colors">
-                <span class="text-[#1E2E40] text-xl">{{ feature.icon }}</span>
+              <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-500/20 transition-colors">
+                <span class="text-blue-600 text-xl">{{ feature.icon }}</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-3">{{ feature.title }}</h3>
               <p class="text-gray-600 leading-relaxed">{{ feature.description }}</p>
@@ -192,8 +194,8 @@ import { RouterModule } from '@angular/router';
               </h2>
               <div class="space-y-6">
                 <div *ngFor="let advantage of advantages" class="flex items-start">
-                  <div class="w-8 h-8 bg-[#1E2E40]/10 rounded-full flex items-center justify-center mt-1 mr-4">
-                    <span class="text-[#1E2E40] text-sm">✓</span>
+                  <div class="w-8 h-8 bg-blue-500/10 rounded-full flex items-center justify-center mt-1 mr-4">
+                    <span class="text-blue-600 text-sm">✓</span>
                   </div>
                   <div>
                     <h4 class="font-bold text-gray-900 mb-2">{{ advantage.title }}</h4>
@@ -204,11 +206,11 @@ import { RouterModule } from '@angular/router';
             </div>
             <div class="relative">
               <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                   alt="WorkEnrich HR System" 
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 rounded-xl text-white">
                    class="w-full h-96 object-cover rounded-2xl shadow-2xl">
               <div class="absolute inset-0 bg-gradient-to-t from-[#1E2E40]/20 to-transparent rounded-2xl"></div>
               <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg">
-                <div class="text-[#1E2E40] font-bold">WorkEnrich HR</div>
+                  <div class="text-blue-100 text-sm">{{ result.label }}</div>
                 <div class="text-gray-600 text-sm">نظام الموارد البشرية المتطور</div>
               </div>
             </div>
@@ -230,11 +232,11 @@ import { RouterModule } from '@angular/router';
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div *ngFor="let story of successStories" class="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-[#1E2E40] to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span class="text-white font-bold">{{ story.company }}</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-4">{{ story.title }}</h3>
-              <div class="text-3xl font-bold text-[#1E2E40] mb-2">{{ story.improvement }}</div>
+              <div class="text-3xl font-bold text-blue-600 mb-2">{{ story.improvement }}</div>
               <p class="text-gray-600 mb-4">{{ story.metric }}</p>
               <p class="text-gray-500 text-sm italic">"{{ story.quote }}"</p>
             </div>
@@ -243,7 +245,7 @@ import { RouterModule } from '@angular/router';
       </section>
 
       <!-- CTA Section -->
-      <section class="py-20 bg-gradient-to-r from-[#1E2E40] to-blue-600">
+      <section class="py-20 bg-gradient-to-r from-blue-500 to-blue-600">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
             جاهز لتحويل إدارة الموارد البشرية في شركتك؟
@@ -252,10 +254,12 @@ import { RouterModule } from '@angular/router';
             ابدأ تجربتك المجانية اليوم ولا تدفع شيئاً لمدة 30 يوم
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button class="bg-white text-[#1E2E40] hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 shadow-lg text-lg">
+            <a href="https://client.workenrich.com/auth/register" 
+               target="_blank"
+               class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 shadow-lg text-lg">
               ابدأ التجربة المجانية
-            </button>
-            <button class="border-2 border-white text-white hover:bg-white hover:text-[#1E2E40] px-8 py-4 rounded-lg font-bold transition-all text-lg">
+            </a>
+            <button class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-bold transition-all text-lg">
               احجز عرض توضيحي
             </button>
           </div>
