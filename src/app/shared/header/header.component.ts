@@ -141,9 +141,9 @@ import { RouterModule } from '@angular/router';
                  (click)="closeMobileMenu()"
                  routerLinkActive="shadow-lg font-semibold"
                  class="block text-white px-4 py-2 rounded-lg text-base font-medium transition-all shadow-md hover:shadow-lg text-center"
-                 style="background-color: #ff8c42;"
-                 onmouseover="this.style.backgroundColor='#ff7a28'"
-                 onmouseout="this.style.backgroundColor='#ff8c42'">
+                 style="background-color: #2563eb;"
+                 onmouseover="this.style.backgroundColor='#1d4ed8'"
+                 onmouseout="this.style.backgroundColor='#2563eb'">
                 تواصل معنا
               </a>
             </div>
