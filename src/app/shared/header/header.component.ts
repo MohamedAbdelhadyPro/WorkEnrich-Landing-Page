@@ -11,7 +11,9 @@ import { RouterModule } from '@angular/router';
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-16 justify-between" dir="rtl">
           <!-- Logo -->
-          <a routerLink="/" class="text-xl font-bold text-gray-900">WorkEnrich</a>
+          <a routerLink="/" class="flex items-center">
+            <img src="assets/13.png" alt="WorkEnrich" class="h-10 w-auto">
+          </a>
           
           <!-- Navigation items -->
           <div class="hidden md:flex items-baseline space-x-4 space-x-reverse">
