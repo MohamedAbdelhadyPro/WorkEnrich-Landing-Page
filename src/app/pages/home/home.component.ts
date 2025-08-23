@@ -37,7 +37,7 @@ import { LanguageService } from '../../services/language.service';
           
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <a routerLink="/contact" class="group bg-white text-slate-900 hover:bg-blue-50 px-10 py-4 rounded-xl text-lg font-bold transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl">
+            <a routerLink="/contact" class="group bg-white text-slate-900 hover:bg-orange-50 px-10 py-4 rounded-xl text-lg font-bold transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl">
               <span class="flex items-center justify-center">
                 ابدأ مشروعك
                 <svg class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +110,7 @@ import { LanguageService } from '../../services/language.service';
               <div class="space-y-6">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4">
                       <span class="text-white text-xl">👥</span>
                     </div>
                     <h3 class="font-bold text-slate-800 mb-2">إدارة الموظفين</h3>
@@ -118,7 +118,7 @@ import { LanguageService } from '../../services/language.service';
                   </div>
                   
                   <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
                       <span class="text-white text-xl">💰</span>
                     </div>
                     <h3 class="font-bold text-slate-800 mb-2">إدارة الرواتب</h3>
@@ -126,7 +126,7 @@ import { LanguageService } from '../../services/language.service';
                   </div>
                   
                   <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-4">
                       <span class="text-white text-xl">⏰</span>
                     </div>
                     <h3 class="font-bold text-slate-800 mb-2">الحضور والانصراف</h3>
@@ -134,7 +134,7 @@ import { LanguageService } from '../../services/language.service';
                   </div>
                   
                   <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl flex items-center justify-center mb-4">
                       <span class="text-white text-xl">📊</span>
                     </div>
                     <h3 class="font-bold text-slate-800 mb-2">التقارير والتحليلات</h3>
@@ -180,7 +180,7 @@ import { LanguageService } from '../../services/language.service';
                   </div>
                   
                   <!-- Top Badge -->
-                  <div class="absolute -top-3 left-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  <div class="absolute -top-3 left-6 bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                     نظام متطور
                   </div>
                 </div>

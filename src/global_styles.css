@@ -46,7 +46,7 @@ button, a, .group {
 
 /* Custom gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #10b981);
+  background: linear-gradient(135deg, #ff7000, #ff5722);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

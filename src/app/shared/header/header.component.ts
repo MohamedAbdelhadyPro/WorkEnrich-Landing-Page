@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
         <div class="flex items-center h-16 justify-between" dir="rtl">
           <!-- Logo -->
           <a routerLink="/" class="flex items-center">
-            <img src="assets/New Project (4).svg" alt="WorkEnrich" class="h-16 w-auto">
+            <img src="src/assets/New Project (4).svg" alt="WorkEnrich" class="h-20 w-auto">
           </a>
           
           <!-- Mobile menu button -->
@@ -76,7 +76,7 @@ import { RouterModule } from '@angular/router';
               </a>
               <a routerLink="/contact" 
                  routerLinkActive="text-[#1E2E40]"
-                class="text-white px-4 py-2 rounded-lg text-sm font-medium transition-all" style="background: linear-gradient(135deg, #1A3477, #2563eb); hover:opacity: 0.9;">
+                class="text-white px-4 py-2 rounded-lg text-sm font-medium transition-all" style="background: linear-gradient(135deg, #ff7000, #ff5722);">
                 تواصل معنا
               </a>
           </div>
