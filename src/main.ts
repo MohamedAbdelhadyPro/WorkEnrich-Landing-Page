@@ -14,7 +14,7 @@ import {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, LucideAngularModule],
+  imports: [CommonModule, LucideAngularModule.pick({ Users, Building2, Award, Clock, BarChart3, Shield })],
   template: `
     <!-- Navigation -->
     <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
