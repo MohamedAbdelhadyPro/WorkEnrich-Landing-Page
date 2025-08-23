@@ -8,7 +8,7 @@ import { TranslationService } from '../../services/translation.service';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <footer class="text-white py-12" style="background-color: #1A3477;">
+    <footer class="text-white py-12" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div class="col-span-1 md:col-span-2">

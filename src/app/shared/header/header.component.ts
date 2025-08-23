@@ -76,7 +76,7 @@ import { RouterModule } from '@angular/router';
               </a>
               <a routerLink="/contact" 
                  routerLinkActive="text-[#1E2E40]"
-                class="bg-[#213F91] hover:bg-[#213F91]/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                class="text-white px-4 py-2 rounded-lg text-sm font-medium transition-all" style="background: linear-gradient(135deg, #1A3477, #2563eb); hover:opacity: 0.9;">
                 تواصل معنا
               </a>
           </div>
