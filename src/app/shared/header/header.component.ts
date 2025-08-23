@@ -30,8 +30,8 @@ import { RouterModule } from '@angular/router';
           <div class="hidden md:flex items-center space-x-4 space-x-reverse">
               <a routerLink="/" 
                  [routerLinkActiveOptions]="{exact: true}"
-                 class="text-gray-900 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
-                 routerLinkActive="text-orange-600 font-bold bg-orange-50 rounded-lg">
+                 class="text-gray-900 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer border-b-2 border-transparent"
+                 routerLinkActive="text-orange-600 font-bold border-b-2 border-orange-600">
                 الرئيسية
               </a>
               <div class="relative group">
@@ -66,18 +66,18 @@ import { RouterModule } from '@angular/router';
                 </div>
               </div>
               <a routerLink="/services" 
-                 class="text-gray-900 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
-                 routerLinkActive="text-orange-600 font-bold bg-orange-50 rounded-lg">
+                 class="text-gray-900 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer border-b-2 border-transparent"
+                 routerLinkActive="text-orange-600 font-bold border-b-2 border-orange-600">
                 خدمات البرمجة المتخصصة
               </a>
               <a routerLink="/about" 
-                 class="text-gray-900 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
-                 routerLinkActive="text-orange-600 font-bold bg-orange-50 rounded-lg">
+                 class="text-gray-900 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer border-b-2 border-transparent"
+                 routerLinkActive="text-orange-600 font-bold border-b-2 border-orange-600">
                 من نحن
               </a>
               <a routerLink="/contact" 
-                 class="text-orange-600 px-4 py-2 text-sm font-medium transition-all hover:text-orange-700 border-b-2 border-orange-600 hover:border-orange-700"
-                 routerLinkActive="text-orange-700 border-orange-700 font-semibold">
+                 class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg"
+                 routerLinkActive="bg-orange-700 shadow-lg font-semibold">
                 تواصل معنا
               </a>
           </div>
@@ -88,9 +88,9 @@ import { RouterModule } from '@angular/router';
           <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
             <a routerLink="/" 
                (click)="closeMobileMenu()"
-               routerLinkActive="text-orange-600 font-bold bg-orange-50 rounded-lg" 
+               routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600" 
                [routerLinkActiveOptions]="{exact: true}"
-               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
               الرئيسية
             </a>
             
@@ -126,22 +126,24 @@ import { RouterModule } from '@angular/router';
             
             <a routerLink="/services" 
                (click)="closeMobileMenu()"
-               routerLinkActive="text-orange-600 font-bold bg-orange-50 rounded-lg" 
-               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+               routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600" 
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
               خدمات البرمجة المتخصصة
             </a>
             <a routerLink="/about" 
                (click)="closeMobileMenu()"
-               routerLinkActive="text-orange-600 font-bold bg-orange-50 rounded-lg"
-               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+               routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600"
+               class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
               من نحن
             </a>
-            <a routerLink="/contact" 
+            <div class="px-3 py-2">
+              <a routerLink="/contact" 
                (click)="closeMobileMenu()"
-               routerLinkActive="text-orange-700 border-orange-700 font-semibold"
-               class="block mx-3 my-2 px-4 py-2 text-base font-medium border-b-2 border-orange-600 text-orange-600 hover:text-orange-700 hover:border-orange-700 transition-all text-center">
-              تواصل معنا
-            </a>
+                 routerLinkActive="bg-orange-700 shadow-lg font-semibold"
+                 class="block bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg text-base font-medium transition-all shadow-md hover:shadow-lg text-center">
+                تواصل معنا
+              </a>
+            </div>
           </div>
         </div>
       </div>
