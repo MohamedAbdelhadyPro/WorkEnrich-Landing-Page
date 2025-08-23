@@ -123,29 +123,152 @@ import { LanguageService } from '../../services/language.service';
     </section>
 
     <!-- Quick Services Preview -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">خدماتنا الرئيسية</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div class="p-6 bg-gray-50 rounded-xl">
-            <div class="text-4xl mb-4">🌐</div>
-            <h3 class="text-xl font-bold mb-2">تطوير المواقع</h3>
-            <p class="text-gray-600">مواقع إلكترونية حديثة ومتجاوبة مع جميع الأجهزة</p>
+    <!-- Our Distinguished Clients -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            عملاؤنا المميزون
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            نفخر بثقة كبرى الشركات والمؤسسات في المنطقة وشراكتنا الناجحة معهم
+          </p>
+        </div>
+        
+        <!-- Client Logos Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">STC</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">شركة الاتصالات السعودية</div>
+            </div>
           </div>
-          <div class="p-6 bg-gray-50 rounded-xl">
-            <div class="text-4xl mb-4">📱</div>
-            <h3 class="text-xl font-bold mb-2">تطبيقات الجوال</h3>
-            <p class="text-gray-600">تطبيقات iOS و Android بأداء عالي وتصميم جذاب</p>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">NCB</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">البنك الأهلي</div>
+            </div>
           </div>
-          <div class="p-6 bg-gray-50 rounded-xl">
-            <div class="text-4xl mb-4">⚙️</div>
-            <h3 class="text-xl font-bold mb-2">أنظمة الإدارة</h3>
-            <p class="text-gray-600">حلول برمجية مخصصة لإدارة العمليات التجارية</p>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">SABIC</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">سابك</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">ARAMCO</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">أرامكو السعودية</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">MOBILY</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">موبايلي</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-teal-600 to-teal-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">SAMBA</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">بنك سامبا</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">ALRAJHI</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">بنك الراجحي</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-pink-600 to-pink-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">ZAIN</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">زين السعودية</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-yellow-600 to-yellow-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">MAADEN</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">معادن</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">ACWA</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">أكوا باور</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">NEOM</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">نيوم</div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-rose-600 to-rose-700 rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <span class="text-white font-bold text-lg">PIF</span>
+              </div>
+              <div class="text-sm font-medium text-gray-700">صندوق الاستثمارات</div>
+            </div>
           </div>
         </div>
-        <a routerLink="/services" class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
-          اعرض الخدمات المتخصصة
-        </a>
+        
+        <!-- Client Testimonial -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
+          <div class="text-center">
+            <div class="text-4xl mb-4">💬</div>
+            <blockquote class="text-xl text-gray-700 mb-6 italic">
+              "WorkEnrich قدمت لنا حلولاً تقنية متطورة ساعدتنا على تحسين كفاءة عملياتنا بشكل كبير. فريق محترف وملتزم بالمواعيد."
+            </blockquote>
+            <div class="flex items-center justify-center">
+              <div class="text-center">
+                <div class="font-bold text-gray-900">أحمد المحمد</div>
+                <div class="text-gray-600 text-sm">مدير تقنية المعلومات - شركة الاتصالات السعودية</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="text-center mt-12">
+          <p class="text-lg text-gray-600 mb-6">هل تريد أن تكون من عملائنا المميزين؟</p>
+          <a routerLink="/contact" class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg">
+            ابدأ مشروعك معنا
+          </a>
+        </div>
       </div>
     </section>
 
