@@ -13,7 +13,6 @@ import { CommonModule } from '@angular/common';
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center">
             <div class="flex-shrink-0 flex items-center">
-              <img src="src/assets/13 copy copy.png" alt="WorkEnrich Logo" class="w-10 h-10 rounded-lg">
               <span class="ml-2 text-xl font-bold text-gray-900">WorkEnrich</span>
             </div>
           </div>
