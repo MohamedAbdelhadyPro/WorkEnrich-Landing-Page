@@ -511,7 +511,6 @@ import { TranslationService } from '../../services/translation.service';
       </section>
 
       <!-- CTA Section -->
-      <section class="py-20 bg-[#1E2E40]">
       <section class="py-20" style="background: linear-gradient(135deg, #1A3477, #2563eb);">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
