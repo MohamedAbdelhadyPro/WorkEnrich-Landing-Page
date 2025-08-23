@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
             <div>
               <div class="mb-4">
                 <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
-                  منتج WorkEnrich
+                  منتج جديد
                 </span>
               </div>
               <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -33,12 +33,6 @@ import { RouterModule } from '@angular/router';
                   </div>
                 </div>
               </div>
-              <div class="flex flex-wrap gap-2 mb-8">
-                <span *ngFor="let tech of technologies" 
-                      class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-                  {{ tech }}
-                </span>
-              </div>
               <div class="flex flex-col sm:flex-row gap-4">
                 <button class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
                   تسجيل حساب جديد
@@ -53,7 +47,7 @@ import { RouterModule } from '@angular/router';
                    alt="HR Management System" 
                    class="w-full h-96 object-cover rounded-2xl shadow-2xl">
               <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
-                <div class="text-[#1E2E40] font-bold text-sm">منتج WorkEnrich</div>
+                <div class="text-[#1E2E40] font-bold text-sm">منتج جديد</div>
               </div>
             </div>
           </div>
@@ -270,8 +264,6 @@ import { RouterModule } from '@angular/router';
   `
 })
 export class HrSystemProjectComponent {
-  technologies = ['Angular', 'Node.js', 'PostgreSQL', 'JWT', 'Chart.js', 'Socket.io'];
-
   basicFeatures = [
     'إدارة الموظفين الأساسية',
     'نظام الحضور والانصراف',
