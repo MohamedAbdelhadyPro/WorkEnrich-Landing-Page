@@ -1,20 +1,12 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-import { 
-  LucideAngularModule, 
-  Users, 
-  Building2, 
-  Award, 
-  Clock, 
-  BarChart3, 
-  Shield 
-} from 'lucide-angular';
+import { Users, Building2, Award, Clock, BarChart3, Shield } from 'lucide-angular';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, LucideAngularModule],
+  imports: [CommonModule, Users, Building2, Award, Clock, BarChart3, Shield],
   template: `
     <!-- Navigation -->
     <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
