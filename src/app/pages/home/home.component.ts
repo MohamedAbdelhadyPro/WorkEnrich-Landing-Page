@@ -235,7 +235,7 @@ import { LanguageService } from '../../services/language.service';
           
           <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group min-h-[120px]">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-yellow-500 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="text-white font-bold text-xs">MALAFY</span>
               </div>
               <div class="text-sm font-semibold text-gray-800">ملافي</div>
