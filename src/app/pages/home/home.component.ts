@@ -247,19 +247,61 @@ import { LanguageService } from '../../services/language.service';
         </div>
         
         <!-- Client Testimonial -->
-        <div class="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
-          <div class="text-center">
-            <div class="text-4xl mb-4">💬</div>
-            <blockquote class="text-xl text-gray-700 mb-6 italic">
-              "WorkEnrich قدمت لنا حلولاً تقنية متطورة ساعدتنا على تحسين كفاءة عملياتنا بشكل كبير. فريق محترف وملتزم بالمواعيد."
-            </blockquote>
-            <div class="flex items-center justify-center">
-              <div class="text-center">
-                <div class="font-bold text-gray-900">أحمد المحمد</div>
-                <div class="text-gray-600 text-sm">مدير تقنية المعلومات - شركة الاتصالات السعودية</div>
+        <!-- Animated Testimonials Carousel -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto relative overflow-hidden">
+          <div class="text-center mb-6">
+            <div class="text-4xl mb-2">💬</div>
+            <h3 class="text-xl font-bold text-gray-900">آراء عملائنا</h3>
+          </div>
+          
+          <!-- Testimonials Container -->
+          <div class="relative h-40 overflow-hidden">
+            <div class="absolute inset-0 transition-transform duration-700 ease-in-out"
+                 [style.transform]="'translateX(' + (currentTestimonial * -100) + '%)'">
+              <div class="flex">
+                <div *ngFor="let testimonial of testimonials; let i = index" 
+                     class="w-full flex-shrink-0 text-center px-4">
+                  <blockquote class="text-lg text-gray-700 mb-4 italic leading-relaxed">
+                    "{{ testimonial.quote }}"
+                  </blockquote>
+                  <div class="flex items-center justify-center">
+                    <div class="w-12 h-12 bg-gradient-to-r from-[#1E2E40] to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4">
+                      {{ testimonial.initials }}
+                    </div>
+                    <div class="text-right">
+                      <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
+                      <div class="text-gray-600 text-sm">{{ testimonial.position }}</div>
+                      <div class="text-gray-500 text-xs">{{ testimonial.company }}</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          
+          <!-- Navigation Dots -->
+          <div class="flex justify-center space-x-2 mt-6">
+            <button *ngFor="let testimonial of testimonials; let i = index"
+                    (click)="setCurrentTestimonial(i)"
+                    class="w-3 h-3 rounded-full transition-all duration-300"
+                    [class.bg-[#1E2E40]]="i === currentTestimonial"
+                    [class.bg-gray-300]="i !== currentTestimonial">
+            </button>
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button (click)="previousTestimonial()" 
+                  class="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button (click)="nextTestimonial()" 
+                  class="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
         </div>
         
         <!-- CTA -->
@@ -275,8 +317,81 @@ import { LanguageService } from '../../services/language.service';
   `
 })
 export class HomeComponent {
+  currentTestimonial = 0;
+  testimonials = [
+    {
+      quote: 'WorkEnrich قدمت لنا حلولاً تقنية متطورة ساعدتنا على تحسين كفاءة عملياتنا بشكل كبير. فريق محترف وملتزم بالمواعيد.',
+      name: 'أحمد المحمد',
+      position: 'مدير تقنية المعلومات',
+      company: 'شركة الاتصالات السعودية',
+      initials: 'أم'
+    },
+    {
+      quote: 'نظام الموارد البشرية من WorkEnrich غير طريقة عملنا تماماً. أصبحت إدارة الموظفين أسهل وأكثر دقة.',
+      name: 'فاطمة العتيبي',
+      position: 'مديرة الموارد البشرية',
+      company: 'البنك الأهلي التجاري',
+      initials: 'فع'
+    },
+    {
+      quote: 'التطبيق الذي طوروه لنا حقق نجاحاً كبيراً وزاد من رضا عملائنا. خدمة ممتازة ودعم فني متميز.',
+      name: 'خالد الشمري',
+      position: 'المدير التنفيذي',
+      company: 'شركة التجارة الذكية',
+      initials: 'خش'
+    },
+    {
+      quote: 'منصة التعليم الإلكتروني التي طوروها لنا ساعدت في زيادة عدد الطلاب بنسبة 400%. نتائج مذهلة!',
+      name: 'سارة القحطاني',
+      position: 'مديرة التطوير الأكاديمي',
+      company: 'أكاديمية المستقبل',
+      initials: 'سق'
+    },
+    {
+      quote: 'تطبيق الخدمات المصرفية الذي طوروه يتميز بأعلى معايير الأمان وسهولة الاستخدام. عمل رائع!',
+      name: 'عبدالرحمن الدوسري',
+      position: 'مدير التطوير الرقمي',
+      company: 'بنك الراجحي',
+      initials: 'عد'
+    }
+  ];
+  private testimonialInterval: any;
+
   constructor(
     public translationService: TranslationService,
     private languageService: LanguageService
-  ) {}
+  ) {
+    this.startAutoSlide();
+  }
+
+  ngOnDestroy() {
+    if (this.testimonialInterval) {
+      clearInterval(this.testimonialInterval);
+    }
+  }
+
+  startAutoSlide() {
+    this.testimonialInterval = setInterval(() => {
+      this.nextTestimonial();
+    }, 5000); // Change every 5 seconds
+  }
+
+  nextTestimonial() {
+    this.currentTestimonial = (this.currentTestimonial + 1) % this.testimonials.length;
+  }
+
+  previousTestimonial() {
+    this.currentTestimonial = this.currentTestimonial === 0 
+      ? this.testimonials.length - 1 
+      : this.currentTestimonial - 1;
+  }
+
+  setCurrentTestimonial(index: number) {
+    this.currentTestimonial = index;
+    // Reset auto-slide timer
+    if (this.testimonialInterval) {
+      clearInterval(this.testimonialInterval);
+      this.startAutoSlide();
+    }
+  }
 }
