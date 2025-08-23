@@ -34,12 +34,16 @@ import { RouterModule } from '@angular/router';
                 </div>
               </div>
               <div class="flex flex-col sm:flex-row gap-4">
-                <button class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                <a href="https://client.workenrich.com/auth/register" 
+                   target="_blank"
+                   class="bg-[#1E2E40] hover:bg-[#1E2E40]/90 text-white px-8 py-3 rounded-lg font-medium transition-colors text-center">
                   تسجيل حساب جديد
-                </button>
-                <button class="border-2 border-[#1E2E40] text-[#1E2E40] hover:bg-[#1E2E40] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                </a>
+                <a href="https://client.workenrich.com/auth/login" 
+                   target="_blank"
+                   class="border-2 border-[#1E2E40] text-[#1E2E40] hover:bg-[#1E2E40] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors text-center">
                   تسجيل الدخول
-                </button>
+                </a>
               </div>
             </div>
             <div class="relative">
