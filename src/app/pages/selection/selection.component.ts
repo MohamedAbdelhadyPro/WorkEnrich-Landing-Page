@@ -30,13 +30,12 @@ import { RouterModule } from '@angular/router';
            class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
           <div class="flex flex-col items-center text-center">
             <!-- Logo Container -->
-            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-              <img src="assets/talentdot-new-logo.png" alt="TalentDot" class="w-16 h-16 object-contain">
+            <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <img src="assets/logo1.png" alt="WorkEnrich" class="w-24 h-24 object-contain">
             </div>
             
             <!-- Content -->
-            <h2 class="text-2xl font-bold text-gray-900 mb-2">TalentDot</h2>
-            <p class="text-gray-500 text-sm mb-6 font-medium">HR System</p>
+             <p class="text-gray-500 text-sm mb-6 font-medium">HR System</p>
             
             <!-- CTA -->
             <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 w-full group-hover:bg-blue-100 transition-colors">
@@ -59,12 +58,11 @@ import { RouterModule } from '@angular/router';
           <div class="flex flex-col items-center text-center">
             <!-- Logo Container -->
             <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-              <img src="assets/workenrich-logo.svg" alt="WorkEnrich" class="w-16 h-16 object-contain">
+              <img src="assets/workenrich-logo.svg" alt="WorkEnrich" class="w-24 h-24 object-contain">
             </div>
             
             <!-- Content -->
-            <h2 class="text-2xl font-bold text-gray-900 mb-2">WorkEnrich</h2>
-            <p class="text-gray-500 text-sm mb-6 font-medium">Software Development</p>
+             <p class="text-gray-500 text-sm mb-6 font-medium">Software Development</p>
             
             <!-- CTA -->
             <div class="bg-orange-50 border border-orange-200 rounded-xl p-4 w-full group-hover:bg-orange-100 transition-colors">
@@ -85,7 +83,7 @@ import { RouterModule } from '@angular/router';
       <!-- Footer Text -->
       <div class="mt-16 text-center">
         <p class="text-gray-500 text-sm">
-          © 2025 WorkEnrich & TalentDot - نطور المستقبل الرقمي
+          © 2025 WorkEnrich - نطور المستقبل الرقمي
         </p>
       </div>
     </div>
