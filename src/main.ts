@@ -15,14 +15,18 @@ import { LanguageService } from './app/services/language.service';
   standalone: true,
   imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent],
   template: `
-    <app-header></app-header>
+    <app-header *ngIf="!isSelectionPage"></app-header>
     <main>
       <router-outlet></router-outlet>
     </main>
-    <app-footer></app-footer>
+    <app-footer *ngIf="!isSelectionPage"></app-footer>
   `
 })
-export class App {}
+export class App {
+  get isSelectionPage(): boolean {
+    return window.location.pathname === '/';
+  }
+}
 
 bootstrapApplication(App, {
   providers: [
