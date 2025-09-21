@@ -28,7 +28,7 @@ import { RouterModule } from '@angular/router';
           
           <!-- Navigation items -->
           <div class="hidden md:flex items-center space-x-4 space-x-reverse">
-              <a routerLink="/"
+              <a routerLink="/home"
                  [routerLinkActiveOptions]="{exact: true}"
                  class="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-orange-50"
                  routerLinkActive="text-orange-600 bg-orange-50 font-semibold">
@@ -57,7 +57,7 @@ import { RouterModule } from '@angular/router';
           <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
             <a routerLink="/" 
                (click)="closeMobileMenu()"
-               routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600" 
+               routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600"
                [routerLinkActiveOptions]="{exact: true}"
                class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent">
               الرئيسية
