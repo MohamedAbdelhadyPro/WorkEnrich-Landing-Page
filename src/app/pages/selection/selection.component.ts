@@ -31,7 +31,7 @@ import { RouterModule } from '@angular/router';
           <div class="flex flex-col items-center text-center">
             <!-- Logo Container -->
             <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-              <img src="assets/talentdot-logo.svg" alt="TalentDot" class="w-16 h-16 object-contain">
+              <img src="assets/talentdot-new-logo.png" alt="TalentDot" class="w-16 h-16 object-contain">
             </div>
             
             <!-- Content -->
