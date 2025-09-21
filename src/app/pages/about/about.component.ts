@@ -408,52 +408,6 @@ import { TranslationService } from '../../services/translation.service';
         </div>
       </section>
 
-      <!-- Values Section -->
-      <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              قيمنا الأساسية
-            </h2>
-            <p class="text-xl text-gray-600">
-              المبادئ التي نؤمن بها ونعمل وفقاً لها
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="text-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div class="text-4xl mb-4">🎯</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">التميز</h3>
-              <p class="text-gray-600">نسعى للتميز في كل ما نقوم به</p>
-            </div>
-            <div class="text-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div class="text-4xl mb-4">🤝</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">الشراكة</h3>
-              <p class="text-gray-600">نبني علاقات طويلة الأمد مع عملائنا</p>
-            </div>
-            <div class="text-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div class="text-4xl mb-4">💡</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">الابتكار</h3>
-              <p class="text-gray-600">نواكب أحدث التقنيات والاتجاهات</p>
-            </div>
-            <div class="text-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div class="text-4xl mb-4">⚡</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">السرعة</h3>
-              <p class="text-gray-600">نلتزم بالمواعيد ونسلم في الوقت المحدد</p>
-            </div>
-            <div class="text-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div class="text-4xl mb-4">🔒</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">الأمان</h3>
-              <p class="text-gray-600">نضمن أعلى مستويات الأمان والحماية</p>
-            </div>
-            <div class="text-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div class="text-4xl mb-4">📈</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">النمو</h3>
-              <p class="text-gray-600">نساعد عملاءنا على تحقيق النمو المستدام</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Technologies Section -->
       <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
