@@ -16,7 +16,7 @@ import { TranslationService } from '../../services/translation.service';
             <!-- Company Info -->
             <div class="col-span-1 md:col-span-2">
               <div class="flex items-center mb-6" dir="rtl">
-                <img src="assets/New Project (4).svg" alt="WorkEnrich" class="h-12 w-auto ml-3">
+                <img src="assets/workenrich-logo.svg" alt="WorkEnrich" class="h-10 w-auto ml-3">
               </div>
               <p class="text-gray-600 mb-6 leading-relaxed max-w-md">
                 شركة متخصصة في تطوير البرمجيات والتطبيقات المبتكرة التي تساعد الشركات على النمو والتطور في العصر الرقمي

@@ -24,8 +24,8 @@ import { RouterModule } from '@angular/router';
         <!-- WorkEnrich Logo -->
         <a routerLink="/home" 
            class="group flex flex-col items-center transition-all duration-300 transform hover:scale-110">
-          <div class="w-32 h-32 lg:w-48 lg:h-48 bg-gradient-to-br from-orange-500 to-orange-700 rounded-3xl flex items-center justify-center mb-6 shadow-2xl group-hover:shadow-3xl transition-all">
-            <span class="text-white font-bold text-2xl lg:text-4xl">WE</span>
+          <div class="w-32 h-32 lg:w-48 lg:h-48 bg-white rounded-3xl flex items-center justify-center mb-6 shadow-2xl group-hover:shadow-3xl transition-all p-4">
+            <img src="assets/workenrich-logo.svg" alt="WorkEnrich" class="w-full h-full object-contain">
           </div>
           <h2 class="text-2xl lg:text-3xl font-bold text-gray-800 text-center">WorkEnrich</h2>
           <p class="text-gray-600 text-center mt-2">Software Development</p>
