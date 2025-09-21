@@ -147,43 +147,6 @@ import { LanguageService } from '../../services/language.service';
           </div>
         </div>
         
-        <!-- Client Testimonial -->
-        <!-- Animated Testimonials Carousel -->
-        <div class="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto relative overflow-hidden">
-          <div class="text-center mb-6">
-            <div class="text-4xl mb-2">💬</div>
-            <h3 class="text-xl font-bold text-gray-900">آراء عملائنا</h3>
-          </div>
-          
-          <!-- Testimonials Container -->
-          <div class="relative h-40 overflow-hidden" 
-               (touchstart)="onTouchStart($event)"
-               (touchmove)="onTouchMove($event)"
-               (touchend)="onTouchEnd($event)">
-            <div class="absolute inset-0 transition-transform duration-700 ease-in-out"
-                 [style.transform]="'translateX(' + (currentTestimonial * -100) + '%)'">
-              <div class="flex">
-                <div *ngFor="let testimonial of testimonials; let i = index" 
-                     class="w-full flex-shrink-0 text-center px-4">
-                  <blockquote class="text-lg text-gray-700 mb-4 italic leading-relaxed">
-                    "{{ testimonial.quote }}"
-                  </blockquote>
-                  <div class="flex items-center justify-center">
-                    <div class="w-12 h-12 bg-gradient-to-r from-[#1E2E40] to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4">
-                      {{ testimonial.initials }}
-                    </div>
-                    <div class="text-right">
-                      <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-                      <div class="text-gray-600 text-sm">{{ testimonial.position }}</div>
-                      <div class="text-gray-500 text-xs">{{ testimonial.company }}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         <!-- CTA -->
         <div class="text-center mt-12">
           <p class="text-lg text-gray-600 mb-6">هل تريد أن تكون من عملائنا المميزين؟</p>
