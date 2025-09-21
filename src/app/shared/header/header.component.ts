@@ -34,37 +34,6 @@ import { RouterModule } from '@angular/router';
                  routerLinkActive="text-orange-600 bg-orange-50 font-semibold">
                 الرئيسية
               </a>
-              <div class="relative group">
-                <button class="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-orange-50 flex items-center">
-                  منتجاتنا
-                  <svg class="w-4 h-4 mr-2 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </button>
-                <div class="absolute left-0 mt-1 w-72 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                  <div class="py-3">
-                    <a routerLink="/projects/hr-system" 
-                       class="block px-5 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-all duration-200 mx-2 rounded-lg"
-                       routerLinkActive="text-orange-600 bg-orange-50 font-medium">
-                      <div class="flex items-center">
-                        <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center mr-3">
-                          <span class="text-orange-600 text-lg">👥</span>
-                        </div>
-                        <div>
-                          <div class="font-medium text-gray-900">نظام إدارة الموارد البشرية</div>
-                          <div class="text-xs text-gray-500">إدارة شاملة للموظفين والرواتب</div>
-                        </div>
-                      </div>
-                    </a>
-                    <div class="border-t border-gray-100 mt-3 pt-3">
-                      <a routerLink="/contact" 
-                         class="block px-5 py-2 text-sm text-orange-600 hover:bg-orange-50 transition-all duration-200 text-center rounded-lg mx-2 font-medium">
-                        طلب منتج مخصص
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <a routerLink="/services"
                  class="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-orange-50"
                  routerLinkActive="text-orange-600 bg-orange-50 font-semibold">
@@ -96,32 +65,18 @@ import { RouterModule } from '@angular/router';
             
             <!-- Mobile Products Dropdown -->
             <div class="space-y-1">
-              <button (click)="toggleProductsDropdown()"
-                      class="w-full flex items-center justify-between px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors">
-                <span>منتجاتنا</span>
-                <svg class="w-4 h-4" [class.rotate-180]="isProductsDropdownOpen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="pr-4 space-y-1" [class.hidden]="!isProductsDropdownOpen">
-                <a routerLink="/projects/hr-system" 
-                   (click)="closeMobileMenu()"
-                   class="block px-3 py-2 text-sm text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors"
-                   routerLinkActive="text-orange-600 bg-orange-50 font-semibold">
-                  <div class="flex items-center">
-                    <span class="text-orange-600 text-lg mr-3">👥</span>
-                    <div>
-                      <div class="font-medium">نظام إدارة الموارد البشرية</div>
-                      <div class="text-xs text-gray-500">إدارة شاملة للموظفين والرواتب</div>
-                    </div>
+              <a routerLink="/projects/hr-system" 
+                 (click)="closeMobileMenu()"
+                 class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-orange-600 hover:bg-orange-50 transition-colors border-r-4 border-transparent"
+                 routerLinkActive="text-orange-600 font-bold border-r-4 border-orange-600">
+                <div class="flex items-center">
+                  <span class="text-orange-600 text-lg mr-3">👥</span>
+                  <div>
+                    <div class="font-medium">نظام إدارة الموارد البشرية</div>
+                    <div class="text-xs text-gray-500">إدارة شاملة للموظفين والرواتب</div>
                   </div>
-                </a>
-                <a routerLink="/contact" 
-                   (click)="closeMobileMenu()"
-                   class="block px-3 py-2 text-sm text-orange-600 hover:bg-orange-50 transition-colors">
-                  طلب منتج مخصص
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
             
             <a routerLink="/services" 
@@ -150,23 +105,14 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
   isMobileMenuOpen = false;
-  isProductsDropdownOpen = false;
 
   constructor() {}
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
-    if (!this.isMobileMenuOpen) {
-      this.isProductsDropdownOpen = false;
-    }
   }
 
   closeMobileMenu() {
     this.isMobileMenuOpen = false;
-    this.isProductsDropdownOpen = false;
-  }
-
-  toggleProductsDropdown() {
-    this.isProductsDropdownOpen = !this.isProductsDropdownOpen;
   }
 }
