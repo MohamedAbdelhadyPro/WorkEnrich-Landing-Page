@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
            target="_blank"
            class="group flex flex-col items-center transition-all duration-300 transform hover:scale-110">
           <div class="w-32 h-32 lg:w-48 lg:h-48 bg-white rounded-3xl flex items-center justify-center mb-6 shadow-2xl group-hover:shadow-3xl transition-all p-4">
-            <img src="assets/talentdot-logo.svg" alt="TalentDot" class="w-full h-full object-contain">
+            <img src="assets/talentdot-logo.png" alt="TalentDot" class="w-full h-full object-contain">
           </div>
           <h2 class="text-2xl lg:text-3xl font-bold text-gray-800 text-center">TalentDot</h2>
           <p class="text-gray-600 text-center mt-2">HR System</p>
